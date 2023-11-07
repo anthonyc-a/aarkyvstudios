@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 const Nav = () => {
   return (
     <ul
-      className={`${styles.nav} flex flex-col gap-y-6`}
+      className={`${styles.nav} text-[0.68rem] md:text-[0.7rem] 3xl:text-[0.75rem] top-[8rem] md:top-[10rem] left-6 md:left-[4rem] flex flex-col gap-y-6`}
     >
       <li>
         <a href="#">Home</a>

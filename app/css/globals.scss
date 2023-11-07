@@ -5,7 +5,7 @@
 @font-face {
   font-family: "VariableFont";
   src: url("./webfonts/britti-sans-variable.woff2") format("woff2-variations");
-  font-weight: 100 900; /* Assuming the font weight ranges from 100 to 900 */
+  font-weight: 100 800;
 }
 
 ::-webkit-scrollbar {
@@ -31,18 +31,19 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  cursor: none !important;
 }
 
 body {
   text-transform: uppercase;
   font-size: 0.8rem;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.035em;
   font-family: "VariableFont", Helvetica, Arial, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
-  color: rgb(var(--foreground-rgb));
+  color: #f9f9f9;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -57,6 +58,7 @@ h3,
 h4,
 h5 {
   width: fit-content;
+  font-weight: 600;
 }
 
 h2 {
@@ -69,6 +71,10 @@ h2 {
   }
 }
 
+h3 {
+  font-weight: 600;
+}
+
 @keyframes grow {
   from {
     max-width: 0;
@@ -77,13 +83,37 @@ h2 {
   to {
     max-width: 580px;
   }
-  
+}
+
+.cursor {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #999999a1;
+  border-radius: 100%;
+  pointer-events: none;
+  transform-origin: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 1000;
+
+  @media (pointer: coarse) {
+    display: none;
+  }
 }
 
 .grow {
   animation: grow 1.5s ease-out forwards;
-  white-space: nowrap;
   overflow: hidden;
+}
+
+.underline-anim {
+
 }
 
 .divide {
@@ -93,7 +123,7 @@ h2 {
   background-color: #222;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -102,7 +132,7 @@ h2 {
     background-color: #fff;
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -114,10 +144,9 @@ h2 {
 
 .container {
   position: relative;
-  min-height: 65vh;
   padding: 4rem 4rem;
   margin-top: 2rem;
-  max-width: 1100px;
+  max-width: 1280px;
 
   &:nth-child(1) {
     border: none;
@@ -134,46 +163,43 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 800;
   transition: 0.35s ease-in-out;
 
   &:hover {
-    font-weight: 500;
+    font-weight: 600;
   }
 
   &::after {
-    content: "|";
+    content: "";
     position: absolute;
     top: 0;
-    right: -0.5rem;
-    animation: blink 1s ease-out infinite;
+    right: -0.35rem;
+    animation: blink 0s linear infinite;
 
     @keyframes blink {
       0% {
-        opacity: 0;
-      }
+        content: "|";      }
       50% {
-        opacity: 1;
-      }
+        content: "";      }
       100% {
-        opacity: 0;
-      }
+        content: "|";      }
     }
   }
 }
 
 .systems {
-  font-weight: 500;
+  font-weight: 600;
   &::before {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: -20px;
     transform: translateY(-50%);
     content: "";
     width: 5px;
     height: 5px;
     border-radius: 100%;
-    background-color: #17d710;
+    background-color: #43d13e;
     z-index: 100;
   }
 }
