@@ -8,7 +8,8 @@ import Systems from "./components/systems";
 import Cursor from "./components/cursor";
 import Scrollbar from "./components/scrollbar";
 import ThemeToggle from "./components/theme";
-import SendMail from "./components/mail";
+import Logo from "./components/logo";
+import { VisibilityProvider } from "./context/visibilityCOntext";
 
 export const metadata: Metadata = {
   title: "Aarkyv Studios — Home",
@@ -21,9 +22,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <VisibilityProvider>
+
     <html lang="en">
+
       <body>
         <Cursor/>
+        <Logo/>
         <Nav />
         <ThemeToggle/>
         <MarqueeCpt/>
@@ -33,5 +38,7 @@ export default function RootLayout({
         <Scrollbar/>
       </body>
     </html>
+    </VisibilityProvider>
+
   );
 }

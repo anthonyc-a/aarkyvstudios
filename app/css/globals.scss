@@ -145,7 +145,7 @@ h3 {
 .container {
   position: relative;
   padding: 4rem 4rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   max-width: 1280px;
 
   &:nth-child(1) {
@@ -189,17 +189,19 @@ h3 {
 }
 
 .systems {
+  position: fixed;
+  font-size: 95%;
   font-weight: 600;
+  z-index: 1000;
   &::before {
     position: absolute;
-    top: 45%;
+    top: 7px;
     left: -20px;
-    transform: translateY(-50%);
     content: "";
     width: 5px;
     height: 5px;
     border-radius: 100%;
-    background-color: #43d13e;
+    background-color: #35de30;
     z-index: 100;
   }
 }

@@ -1,7 +1,28 @@
+.reverse {
+  &::before {
+    animation-direction: reverse !important;
+    animation-delay: 0 !important;
+    max-width: unset !important;
+    animation-duration: 0.65s;
+  }
+  li {
+    animation-direction: reverse !important;
+    animation-delay: 0 !important;
+    max-width: unset !important;
+    animation-duration: 0.35s;
+    &::before {
+      animation-direction: reverse !important;
+      animation-delay: 0 !important;
+      max-width: unset !important;
+
+    }
+  }
+}
+
 .nav {
   position: fixed;
   width: fit-content;
-  z-index: 1000;
+  z-index: 9999;
 
   &::before {
     position: absolute;
@@ -11,53 +32,79 @@
     background-color: #fff;
     opacity: 0.65;
     left: 0;
-    top: 10px;
+    bottom: 10px;
+    animation: grow-y 1.15s ease-out forwards;
   }
   li {
     position: relative;
     height: 21px;
     width: fit-content;
+    max-width: 0;
     padding-left: 17px;
     position: relative;
     display: flex;
     align-items: center;
     opacity: 0.65;
-    font-weight: 500;
+    font-weight: 550;
     letter-spacing: 0.045em;
-    transition: .15s ease-in-out;
+    transition: 5s ease-in-out;
+    animation: grow-more 0.65s 0.65s ease-out forwards;
+    overflow: hidden;
     &:hover {
       opacity: 1;
-      font-weight: 600;
+      font-weight: 600 !important;
     }
     &::before {
       position: absolute;
       left: 0;
       content: "";
       width: 8px;
+      max-width: 0;
       height: 1px;
       background-color: #fff;
       opacity: 0.65;
+      animation: grow 0.15s 0.25s ease-out forwards;
+
+      @keyframes grow {
+        from {
+          max-width: 0;
+        }
+
+        to {
+          max-width: 8px;
+        }
+      }
+      @keyframes grow-more {
+        from {
+          max-width: 0;
+        }
+
+        to {
+          max-width: 80px;
+        }
+      }
+      @keyframes grow-y {
+        from {
+          max-height: 0;
+        }
+
+        to {
+          max-height: 800px;
+        }
+      }
     }
     &:nth-child(1) {
       opacity: 1;
       font-weight: 600;
+      overflow: visible;
       &::after {
         position: absolute;
         left: -20px;
         content: "";
-        width: 3px;
-        height: 3px;
+        width: 5px;
+        height: 5px;
         border-radius: 100%;
         background-color: #fff;
-      }
-    }
-    &:nth-child(2) {
-      &::after {
-        position: absolute;
-        top: 0;
-        right: -15%;
-        content: "4";
-        font-size: 60%;
       }
     }
   }
