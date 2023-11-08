@@ -56,8 +56,7 @@ const Archive: React.FC<GridItemButtonProps> = ({ images }) => {
         </div>
         <Row gutter={[16, 16]}>
           {images.map((image, index) => (
-            <Col key={index} span={6}>
-             
+            <Col key={index} span={8}>
               <Image src={'/img1.png'} alt="" width={500} height={500} />
             </Col>
           ))}

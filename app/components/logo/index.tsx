@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 const Logo = () => {
   const [showLogo, setShowLogo] = useState(false);
@@ -35,9 +36,9 @@ const Logo = () => {
   }, [showLogo]);
 
   return (
-    <div
+    <Link href="#"
       ref={logoRef}
-      className={`fixed top-10 left-12 mix-blend-difference z-[1000] font-extrabold gap-3 ${
+      className={`fixed top-10 left-12 opacity-0 mix-blend-difference z-[1000] font-extrabold gap-3 ${
         showLogo ? "flex" : "hidden"
       }`}
     >
@@ -48,7 +49,7 @@ const Logo = () => {
         height={10}
       />
       AARKYV STUDIOS
-    </div>
+    </Link>
   );
 };
 

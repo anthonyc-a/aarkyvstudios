@@ -44,7 +44,7 @@ const Systems = () => {
   return (
     <>
       <div
-        className={`systems fixed top-10  z-10  hover:underline ${
+        className={`systems fixed top-11 z-10  hover:underline ${
           showLogo ? "right-10 md:right-12" : "left-10 md:left-[16rem]"
         }`}
         onClick={handleOpenModal}
@@ -53,7 +53,7 @@ const Systems = () => {
       </div>
       <button
         className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
-          showLogo ? "top-[36px] right-[16rem]" : "top-[36px] left-10"
+          showLogo ? "top-[39px] right-[16rem]" : "top-[39px] left-10"
         }`}
         onClick={handleOpenContactModal}
       >
@@ -64,7 +64,7 @@ const Systems = () => {
         visible={isModalOpen}
         onCancel={handleCloseModal}
         footer={[
-          <button key="close" onClick={handleCloseModal}>
+          <button key="close" className="text-black" onClick={handleCloseModal}>
             Close Modal
           </button>,
         ]}

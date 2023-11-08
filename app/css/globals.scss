@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Britti Sans Variable";
   src: url("./webfonts/britti-sans-variable.woff2") format("woff2-variations");
-  font-weight: 100 800;
+  font-weight: 100 900;
 }
 
 ::-webkit-scrollbar {
@@ -30,6 +30,11 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+}
+
+.cookies {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 
 * {
