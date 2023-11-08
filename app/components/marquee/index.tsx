@@ -11,13 +11,13 @@ const MarqueeCpt = () => {
         speed={40}
         direction="left"
       >
-        <div className="flex gap-4 font-[550] text-[0.7rem] tracking-[0.035em]">
+        <div className="flex gap-4 font-[510] text-[0.68rem] tracking-[0.035em]">
           <div>
-          Crafting visually  stunning media through cutting-edge design and technology
+          Crafting visually  stunning multimedia through cutting-edge design and technology
           </div>
           —
           <div>
-          Crafting visually stunning media through cutting-edge design and technology
+          Crafting visually stunning multimedia through cutting-edge design and technology
           </div>
           —
         </div>

@@ -35,6 +35,7 @@
 .cookies {
   left: 39% !important;
   transform: translateX(-50%) !important;
+  font-size: 0.72rem;
 }
 
 .cta {
@@ -304,6 +305,7 @@ video {
   transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   left: 50%;
   transform: translateX(-50%);
+  filter: brightness(0.8) !important;
 }
 
 .cross {
@@ -335,7 +337,7 @@ video {
     width: 5px;
     height: 5px;
     border-radius: 100%;
-    background-color: #35de30;
+    background-color: #37f030;
   }
 }
 
