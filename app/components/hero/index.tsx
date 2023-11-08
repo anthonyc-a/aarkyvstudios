@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="absolute font-light top-0 left-0 w-full h-full ">
+      <div className="absolute font-light text-[13px] top-0 left-0 w-full h-full ">
         <div className="absolute cross top-0 left-0 w-4 h-4 flex justify-center items-center">
           +
         </div>
@@ -47,8 +47,8 @@ const Hero: React.FC = () => {
           zIndex: -1,
         }}
       />
-      <div className="flex flex-col items-center">
-        <span className="mix-blend-difference flex gap-3">
+      <div className="inner mix-blend-difference flex flex-col w-[240px] gap-3">
+        <span className=" bg-transparent z-50 flex gap-3">
           {" "}
           <Image
             src={"/logo.svg"}
@@ -58,7 +58,13 @@ const Hero: React.FC = () => {
           />
           AARKYV STUDIOS
         </span>
-        <a href="#about" className="mt-3 text-[0.65rem] font-semibold z-50 bg-white text-black p-1.5 px-5 rounded-3xl">Learn More</a>
+        <a
+          href="#about"
+          className="cta flex items-center justify-between rounded-[2px] text-[0.65rem] font-bold z-50 bg-white text-black p-[6px] px-4"
+        >
+          Learn More
+          <Image src={"/arrow.svg"} alt="arrow" width={9} height={9} />
+        </a>
       </div>
     </div>
   );

@@ -86,6 +86,13 @@ const Home = () => {
     <div className="relative w-fill flex flex-col items-center">
       <section id="home" className="container">
         <Hero />
+        <div className="absolute underline flex items-center opacity-80 hover:opacity-100 gap-4 bottom-[38px] right-[15%] font-semibold text-[0.7rem]">
+          <Image src='arrowDown.svg' alt='arrow down' width={14} height={14} />
+          scroll down
+        </div>
+        <div className="scrollbar">
+          <div className="scrollbar-inner"></div>
+        </div>
       </section>
 
       <section id="clients" className="container">
