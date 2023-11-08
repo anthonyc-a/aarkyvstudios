@@ -10,6 +10,55 @@ import Scrollbar from "./components/scrollbar";
 import ThemeToggle from "./components/theme";
 import Logo from "./components/logo";
 import { VisibilityProvider } from "./context/visibilityCOntext";
+import Archive from "./components/archive";
+
+const images = [
+  {
+    src: "/img1.png",
+    alt: "Image 1",
+    caption: "This is the first image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 2",
+    caption: "This is the second image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 3",
+    caption: "This is the third image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 1",
+    caption: "This is the first image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 2",
+    caption: "This is the second image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 3",
+    caption: "This is the third image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 1",
+    caption: "This is the first image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 2",
+    caption: "This is the second image",
+  },
+  {
+    src: "/img1.png",
+    alt: "Image 3",
+    caption: "This is the third image",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Aarkyv Studios — Home",
@@ -23,22 +72,20 @@ export default function RootLayout({
 }) {
   return (
     <VisibilityProvider>
-
-    <html lang="en">
-
-      <body>
-        <Cursor/>
-        <Logo/>
-        <Nav />
-        <ThemeToggle/>
-        <MarqueeCpt/>
-        <Systems/>
-        <main>{children}</main>
-        <Cookies/>
-        <Scrollbar/>
-      </body>
-    </html>
+      <html lang="en">
+        <body>
+          <Cursor />
+          <Logo />
+          <Nav />
+          <ThemeToggle />
+          <MarqueeCpt />
+          <Systems />
+          <main>{children}</main>
+          <Cookies />
+          <Archive images={images} />
+          <Scrollbar />
+        </body>
+      </html>
     </VisibilityProvider>
-
   );
 }

@@ -47,7 +47,8 @@ const Research = () => {
       setIsModalOpen(false);
     };
   return (
-    <div className="grid w-full mx-auto max-w-[860px] relative mt-16 grid-cols-1 gap-6 text-black">
+    <>
+    <div className="grid w-full mx-auto max-w-[580px] relative mt-16 grid-cols-1 gap-6 text-black">
       {gridItems.map((item: any, index: any) => (
         <div
           key={index}
@@ -68,6 +69,17 @@ const Research = () => {
         </div>
       ))}
     </div>
+    {isModalOpen && (
+        <div className="fixed z-[500] top-0 left-0 w-full h-full bg-black text-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-8 rounded-[2px]">
+            <h3>Systems</h3>
+            <p>version: 2.2.0</p>
+            <button onClick={handleCloseModal}>Close Modal</button>{" "}
+          </div>
+        </div>
+      )}
+    </>
+    
   );
 };
 

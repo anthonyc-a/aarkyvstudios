@@ -66,13 +66,13 @@ const Home = () => {
       <section id="clients" className="container">
         <div className="divide"></div>
         <div className="p-12 relative px-6 mb-12">
-          <AccentHeaderOne text="Recent Projects" />
+          <AccentHeaderOne text="Projects" />
           <h2>Our Clients</h2>
-          <div className="grid relative mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 text-black">
+          <div className="grid relative mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
               <div
                 key={index}
-                className={`${item.bgColor} hover:brightness-75 rounded-sm relative p-8 flex items-center gap-8`}
+                className={`${item.bgColor} project hover:brightness-75 rounded-sm relative p-8 flex items-center gap-8`}
                 onClick={handleOpenModal}
               >
                 <Image src={item.src} alt={item.alt} width={200} height={200} />
@@ -80,13 +80,23 @@ const Home = () => {
                   <h3>{item.title}</h3>
                   <p className="text-[#666] font-[500]">{item.text}</p>
                 </div>
-                <Image
-                  src="/arrow.svg"
-                  alt="arrow"
-                  width={10}
-                  height={10}
-                  className="absolute bottom-5 right-5"
-                />
+                {item.title === "Snapi" ? (
+                  <Image
+                    src="/loader.svg"
+                    alt="cookie"
+                    width={14}
+                    height={14}
+                    className="absolute top-5 right-5"
+                  />
+                ) : (
+                  <Image
+                    src="/arrow.svg"
+                    alt="arrow"
+                    width={10}
+                    height={10}
+                    className="absolute top-5 right-5"
+                  />
+                )}
               </div>
             ))}
           </div>
@@ -109,7 +119,28 @@ const Home = () => {
         <div className="p-16">
           <AccentHeaderOne text="About us" />
           <h2>ABOUT US</h2>
-          <Services />
+          <div className="p-4 ml-auto gap-8 flex flex-col text-2xl font-black w-full max-w-[430px]">
+            <Image src="/img5.png" alt="img" width={250} height={250} />
+            <h4>
+              Crafting visually stunning user experiences through cutting-edge
+              design and technology.
+            </h4>
+          </div>
+          <div className="p-4   w-full font-black max-w-[430px]">
+            <h4 className="text-2xl">
+              Based in London <br /> United Kingdom{" "}
+            </h4>
+            <p>
+              Bespoke web design services that focus on creating a visually
+              striking and user-friendly online presence for your business.
+              Bespoke web design services that focus on creating a visually
+              striking and user-friendly online presence for your business.
+            </p>
+          </div>
+          <div className="p-4 ml-auto text-2xl font-black w-full max-w-[430px]">
+            OVER 5 years working with small to medium-sized businesses, startups
+            and individuals.
+          </div>
         </div>
         <div className="divide"></div>
       </section>

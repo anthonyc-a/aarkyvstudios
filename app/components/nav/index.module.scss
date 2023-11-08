@@ -22,6 +22,7 @@
 .nav {
   position: fixed;
   width: fit-content;
+  mix-blend-mode: difference;
   z-index: 9999;
 
   &::before {
@@ -45,13 +46,13 @@
     display: flex;
     align-items: center;
     opacity: 0.65;
-    font-weight: 550;
+    font-weight: 400;
     letter-spacing: 0.045em;
     transition: 5s ease-in-out;
     animation: grow-more 0.65s 0.65s ease-out forwards;
     overflow: hidden;
     &:hover {
-      opacity: 1;
+      opacity: 1 !important;
       font-weight: 600 !important;
     }
     &::before {
