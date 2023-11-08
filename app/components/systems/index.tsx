@@ -44,7 +44,7 @@ const Systems = () => {
   return (
     <>
       <div
-        className={`systems fixed top-11 z-10 hidden md:block  hover:underline ${
+        className={`systems fixed top-11 z-10 hidden md:block underline  hover:decoration-transparent ${
           showLogo ? "right-10 md:right-12" : "left-10 md:left-[16rem]"
         }`}
         onClick={handleOpenModal}
@@ -52,7 +52,7 @@ const Systems = () => {
         systems: active
       </div>
       <button
-        className={`fixed  p-1.5 px-10 bg-[#888] rounded-[32px] z-10 ${
+        className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
           showLogo ? "top-[39px] right-8 md:right-[16rem]" : "top-[39px] right-8 md:left-10 md:right-[unset]"
         }`}
         onClick={handleOpenContactModal}
