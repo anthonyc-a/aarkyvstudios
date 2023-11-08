@@ -39,6 +39,7 @@
 
 .ant-modal {
   width: 860px !important;
+  border-radius: 2px !important;
 }
 
 * {
@@ -240,6 +241,7 @@ video {
   position: fixed;
   font-size: 90%;
   font-weight: 600;
+  transition: .35s ease-in-out;
   z-index: 1000;
   &::before {
     position: absolute;

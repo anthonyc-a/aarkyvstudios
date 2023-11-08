@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { VisibilityContext } from "../../context/visibilityCOntext";
+import { VisibilityContext } from "@/app/context/Visibility";
 
 const Hero: React.FC = () => {
   const { isVisibleRef, setIsVisible } = useContext(VisibilityContext);
@@ -16,6 +16,7 @@ const Hero: React.FC = () => {
       className="hero w-full max-w-[850px] flex hover:font-extrabold overflow-hidden justify-center h-[380px] items-center gap-3 p-4 py-10"
       ref={ref}
       onMouseEnter={() => setIsHovered(true)}
+      onClick={() => setIsHovered(!isHovered)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="absolute top-0 left-0 w-full h-full "></div>

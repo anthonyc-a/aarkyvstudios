@@ -7,7 +7,7 @@ import AccentHeaderOne from "./components/accent";
 import Hero from "./components/hero";
 import Services from "./components/services";
 import Research from "./components/research";
-import { VisibilityContext } from "./context/visibilityCOntext";
+import { VisibilityContext } from "./context/Visibility";
 
 const gridItems = [
   {
@@ -66,7 +66,7 @@ const gridItems = [
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // add state for controlling modal
-  const [modalContent, setModalContent] = useState({}); // add state for modal content
+  const [modalContent, setModalContent] = useState<any>({}); // add state for modal content
 
   const { isVisibleRef } = useContext(VisibilityContext);
 

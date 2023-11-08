@@ -9,10 +9,10 @@ import Cursor from "./components/cursor";
 import Scrollbar from "./components/scrollbar";
 import ThemeToggle from "./components/theme";
 import Logo from "./components/logo";
-import { VisibilityProvider } from "./context/visibilityCOntext";
 import Archive from "./components/archive";
+import { VisibilityProvider } from "./context/Visibility";
 
-const images = [
+const images:any = [
   {
     src: "/img1.png",
     alt: "Image 1",
@@ -58,6 +58,7 @@ const images = [
     alt: "Image 3",
     caption: "This is the third image",
   },
+
 ];
 
 export const metadata: Metadata = {
@@ -73,6 +74,9 @@ export default function RootLayout({
   return (
     <VisibilityProvider>
       <html lang="en">
+        <head>
+          <meta name="theme-color" content="#080808" />
+        </head>
         <body>
           <Cursor />
           <Logo />
