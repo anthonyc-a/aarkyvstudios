@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React, { useContext } from "react";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Modal } from "antd"; // import Modal component from Ant Design
 import AccentHeaderOne from "./components/accent";
 import Hero from "./components/hero";
 import Services from "./components/services";
@@ -12,19 +12,29 @@ import { VisibilityContext } from "./context/visibilityCOntext";
 const gridItems = [
   {
     src: "/img2.png",
-
     alt: "Item 1",
     title: "Double",
     text: "Marketing Agency",
     bgColor: "bg-gray-100",
+    content: {
+      title: "Double",
+      text: "Marketing Agency",
+      image: "/img2.png",
+      description: "Project information for Double",
+    },
   },
   {
     src: "/img1.png",
-
     alt: "Item 2",
     title: "Archvizual",
     text: "3D Design Studio",
     bgColor: "bg-gray-100",
+    content: {
+      title: "Archvizual",
+      text: "3D Design Studio",
+      image: "/img1.png",
+      description: "Project information for Archvizual",
+    },
   },
   {
     src: "/img3.png",
@@ -32,6 +42,12 @@ const gridItems = [
     title: "Verve",
     text: "Streaming Platform",
     bgColor: "bg-gray-100",
+    content: {
+      title: "Verve",
+      text: "Streaming Platform",
+      image: "/img3.png",
+      description: "Project information for Verve",
+    },
   },
   {
     src: "/img4.png",
@@ -39,22 +55,31 @@ const gridItems = [
     title: "Snapi",
     text: "Marketing Tool",
     bgColor: "bg-gray-100",
+    content: {
+      title: "Snapi",
+      text: "Marketing Tool",
+      image: "/img4.png",
+      description: "Project information for Snapi",
+    },
   },
 ];
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // add state for controlling modal
+  const [modalContent, setModalContent] = useState({}); // add state for modal content
 
   const { isVisibleRef } = useContext(VisibilityContext);
 
   console.log("Is Hero visible:", isVisibleRef.current);
 
-  const handleOpenModal = () => {
+  const handleOpenModal = (content: any) => {
     setIsModalOpen(true);
+    setModalContent(content);
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    setModalContent({});
   };
 
   return (
@@ -73,7 +98,7 @@ const Home = () => {
               <div
                 key={index}
                 className={`${item.bgColor} project hover:brightness-75 rounded-sm relative p-8 flex items-center gap-8`}
-                onClick={handleOpenModal}
+                onClick={() => handleOpenModal(item.content)} // pass project information to handleOpenModal function
               >
                 <Image src={item.src} alt={item.alt} width={200} height={200} />
                 <div className="relative">
@@ -159,15 +184,18 @@ const Home = () => {
         <h2>CONTACT</h2>
       </section>
 
-      {isModalOpen && (
-        <div className="fixed z-[500] top-0 left-0 w-full h-full bg-black text-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-8 rounded-[2px]">
-            <h3>Modal Content</h3>
-            <button onClick={handleCloseModal}>Close Modal</button>{" "}
-            {/* add button to close modal */}
-          </div>
+      <Modal // replace current modal code with Ant Design Modal component
+        visible={isModalOpen}
+        onCancel={handleCloseModal}
+        footer={null}
+      >
+        <div className="flex flex-col items-center">
+          <Image src={modalContent.image} alt={modalContent.title} width={400} height={400} />
+          <h3>{modalContent.title}</h3>
+          <p>{modalContent.text}</p>
+          <p>{modalContent.description}</p>
         </div>
-      )}
+      </Modal>
     </div>
   );
 };

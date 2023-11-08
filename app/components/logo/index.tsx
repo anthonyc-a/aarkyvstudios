@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 const Logo = () => {
   const [showLogo, setShowLogo] = useState(false);
+  const logoRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,8 +24,19 @@ const Logo = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (showLogo) {
+      gsap.fromTo(
+        logoRef.current,
+        { opacity: 0, x: -10 },
+        { opacity: 1, x: 0, duration: .5 }
+      );
+    }
+  }, [showLogo]);
+
   return (
     <div
+      ref={logoRef}
       className={`fixed top-10 left-12 mix-blend-difference z-[1000] font-extrabold gap-3 ${
         showLogo ? "flex" : "hidden"
       }`}
@@ -40,3 +53,4 @@ const Logo = () => {
 };
 
 export default Logo;
+

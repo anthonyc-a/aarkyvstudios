@@ -26,6 +26,12 @@
   }
 }
 
+.dark {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,8 +49,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
-  color: #f9f9f9;
-  background: #080808;
+  color: #fff;
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)) 0%,
+    rgb(var(--background-end-rgb)) 100%
+  );
 }
 
 image {
@@ -240,3 +250,6 @@ video {
     pointer-events: none;
   }
 }
+  svg {
+    filter: invert(1) !important;
+  }
