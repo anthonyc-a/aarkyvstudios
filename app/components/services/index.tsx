@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { Modal } from "antd";
 
 const gridItems = [
   {
@@ -29,14 +30,18 @@ const gridItems = [
 
 const Services = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // add state for controlling modal
+  const [modalContent, setModalContent] = useState(""); // add state for modal content
 
-  const handleOpenModal = () => {
+  const handleOpenModal = (content: string) => {
     setIsModalOpen(true);
+    setModalContent(content);
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    setModalContent("");
   };
+
   return (
     <>
       <div className="grid w-full max-w-[640px] relative mt-16 grid-cols-1 gap-8 text-black">
@@ -44,17 +49,11 @@ const Services = () => {
           <div
             key={index}
             className={`service brightness-90 rounded-sm overflow-hidden relative p-8 min-h-[140px] flex items-center gap-8`}
+            onClick={() => handleOpenModal(item.title)}
           >
-        
             <div className="relative z-10">
-            <Image
-                src={item.img}
-                alt={item.img}
-                width={30}
-                height={30}
-              />
+              <Image src={item.img} alt={item.img} width={30} height={30} />
               <h3 className="text-white mt-4">{item.title}</h3>
-              
             </div>
             <div
               className="absolute top-0 left-0 w-full h-full z-[5]"
@@ -73,15 +72,18 @@ const Services = () => {
           </div>
         ))}
       </div>
-      {isModalOpen && (
-        <div className="fixed z-[500] top-0 left-0 w-full h-full bg-black text-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-8 rounded-[2px]">
-            <h3>Modal Content</h3>
-            <button onClick={handleCloseModal}>Close Modal</button>{" "}
-            {/* add button to close modal */}
-          </div>
+      <Modal
+        visible={isModalOpen}
+        onCancel={handleCloseModal}
+        footer={null}
+        centered
+      >
+        <div className="bg-white p-8 rounded-[2px]">
+          <h3>{modalContent}</h3>
+          <button onClick={handleCloseModal}>Close Modal</button>{" "}
+          {/* add button to close modal */}
         </div>
-      )}
+      </Modal>
     </>
   );
 };

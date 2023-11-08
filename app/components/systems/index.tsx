@@ -63,19 +63,14 @@ const Systems = () => {
         title="Systems"
         visible={isModalOpen}
         onCancel={handleCloseModal}
-        footer={[
-          <button key="close" className="text-black" onClick={handleCloseModal}>
-            Close Modal
-          </button>,
-        ]}
+        okButtonProps={{ disabled: true, style: { display: "none" } }}
       >
-        <p>Version: 2.2.0</p>
         <p>System Status: Online</p>
-        <p>System Uptime: 99.9%</p>
-        <p>Current Users: 100</p>
+        <p>Version: 2.2.0</p>
+        <p>Font: Britti Sans Variable</p>
         <p>
           Local Time:{" "}
-          {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })}
+          {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })} (ICT)
         </p>
       </Modal>
       <Modal

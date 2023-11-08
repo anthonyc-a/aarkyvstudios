@@ -111,7 +111,7 @@ const Home = () => {
                     alt="cookie"
                     width={14}
                     height={14}
-                    className="absolute top-5 right-5"
+                    className="absolute bottom-5 right-5"
                   />
                 ) : (
                   <Image
@@ -119,7 +119,7 @@ const Home = () => {
                     alt="arrow"
                     width={10}
                     height={10}
-                    className="absolute top-5 right-5"
+                    className="absolute bottom-5 right-5"
                   />
                 )}
               </div>
@@ -188,12 +188,16 @@ const Home = () => {
         visible={isModalOpen}
         onCancel={handleCloseModal}
         footer={null}
+        style={{ borderRadius: "2px" }}
       >
-        <div className="flex flex-col items-center">
+        <div className="flex gap-8 items-center">
           <Image src={modalContent.image} alt={modalContent.title} width={400} height={400} />
+          <div>
           <h3>{modalContent.title}</h3>
           <p>{modalContent.text}</p>
           <p>{modalContent.description}</p>
+          </div>
+         
         </div>
       </Modal>
     </div>
