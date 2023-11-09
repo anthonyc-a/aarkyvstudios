@@ -433,7 +433,7 @@ h3 {
   transition: 0.35s ease-in-out;
 
   .inner {
-    transform: translate(-100%, 0%);
+    transform: translate(-100%, 20%);
   }
 
   &:hover {
@@ -566,8 +566,8 @@ input {
     top: 5px;
     left: -20px;
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     border-radius: 100%;
     background-color: #37f030;
   }

@@ -92,7 +92,7 @@ const Home = () => {
 
 
         <div className="subscribe absolute bottom-8 left-[12%]">
-          <div className="w-[420px]">
+          <div className="w-[400px]">
             <input
               type="text"
               placeholder="subscribe for updates"
