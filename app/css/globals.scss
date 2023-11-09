@@ -69,7 +69,7 @@
   display: flex;
 }
 
-.cta, .marquee, .project {
+.cta, .marquee, .project, .service, .research {
   clip-path: polygon(
     0 0,
     100% 0,
@@ -394,7 +394,7 @@ h3 {
     left: 0;
     width: 12px;
     height: 1px;
-    background-color: #fff;
+    background-color: #f9f9f9;
   }
   &::after {
     content: "";
@@ -403,13 +403,13 @@ h3 {
     right: 0;
     width: 12px;
     height: 1px;
-    background-color: #fff;
+    background-color: #f9f9f9;
   }
 }
 
 .container {
   position: relative;
-  padding: 4rem 4rem;
+  padding: 2rem 4rem;
   margin-top: 1rem;
   max-width: 1280px;
 
@@ -539,6 +539,7 @@ input {
   position: fixed;
   font-size: 89%;
   font-weight: 600;
+  mix-blend-mode: difference;
   z-index: 1000;
 
   span {

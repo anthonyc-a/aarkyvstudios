@@ -8,30 +8,23 @@ const gridItems = [
       src: "/img2.png",
 
       alt: "Item 1",
-      title: "Double",
-      text: "Marketing Agency",
+      title: "Chroma",
+      text: "Software",
       bgColor: "bg-gray-100",
     },
     {
       src: "/img1.png",
 
       alt: "Item 2",
-      title: "Archvizual",
-      text: "3D Design Studio",
+      title: "Blok Studios",
+      text: "Architecture",
       bgColor: "bg-gray-100",
     },
     {
       src: "/img3.png",
-      alt: "Item 3",
-      title: "Verve",
-      text: "Streaming Platform",
-      bgColor: "bg-gray-100",
-    },
-    {
-      src: "/img4.png",
-      alt: "Item 4",
-      title: "Snapi",
-      text: "Marketing Tool",
+      alt: "Change Project",
+      title: "Change Project",
+      text: "Charity",
       bgColor: "bg-gray-100",
     },
   ];
@@ -52,20 +45,14 @@ const Research = () => {
       {gridItems.map((item: any, index: any) => (
         <div
           key={index}
-          className={`${item.bgColor} hover:brightness-75 rounded-sm relative p-8 flex items-center gap-8`}
+          className={`${item.bgColor} research hover:brightness-75 rounded-sm relative p-8 flex items-center gap-8`}
           onClick={handleOpenModal}
         >
           <div className="relative">
             <h3>{item.title}</h3>
             <p className="text-[#666] font-[500]">{item.text}</p>
           </div>
-          <Image
-            src="/arrow.svg"
-            alt="arrow"
-            width={10}
-            height={10}
-            className="absolute bottom-5 right-5"
-          />
+       
         </div>
       ))}
     </div>

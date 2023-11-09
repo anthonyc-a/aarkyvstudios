@@ -7,7 +7,7 @@ const MarqueeCpt = () => {
       <Marquee
       gradient
         gradientColor="#fff"
-        gradientWidth={6}
+        gradientWidth={24}
         speed={40}
         direction="left"
       >

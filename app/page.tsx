@@ -10,6 +10,9 @@ import Research from "./components/research";
 import { VisibilityContext } from "./context/Visibility";
 import Particles from "./components/particles";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import ProjectModal from "./components/project";
+import Timeline from "./components/timeline";
+import CustomTimeline from "./components/timeline";
 
 const gridItems = [
   {
@@ -88,9 +91,6 @@ const Home = () => {
     <div className="relative w-fill flex flex-col items-center">
       <section id="home" className="container overflow-hidden">
         <div className="hero-mask"></div>
-        <Particles/>
-
-
         <div className="subscribe absolute bottom-8 left-[12%]">
           <div className="w-[400px]">
             <input
@@ -109,8 +109,8 @@ const Home = () => {
             <Image
               src="/airplane.svg"
               alt="arrow"
-              width={13}
-              height={13}
+              width={12}
+              height={12}
               className="absolute top-[12px] left-0 opacity-60"
             />
           </div>
@@ -141,9 +141,7 @@ const Home = () => {
           />
           scroll down
         </a>
-        <div className="scrollbar">
-          <div className="scrollbar-inner"></div>
-        </div>
+        
       </section>
 
       <section id="clients" className="container">
@@ -152,11 +150,11 @@ const Home = () => {
           <AccentHeaderOne text="Projects" />
 
           <h2>Our Clients</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
-            / / 001 — 001
+          <p className="text-[#ccc] text-[0.75rem] my-3 font-[500]">
+            001 — 01 //
           </p>
 
-          <div className="grid relative mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
+          <div className="grid relative mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
               <div
                 key={index}
@@ -192,16 +190,18 @@ const Home = () => {
         <div className="divide"></div>
       </section>
 
-      <section id="services" className="container">
+      <section id="services" className="container overflow-hidden">
         <div className="divide"></div>
-        <div className="p-16">
-          <AccentHeaderOne text="Our services" />
-
-          <h2>SERVICES</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
-            / / 001 — 001
+        <div className="p-16 ">
+          <AccentHeaderOne text="capabilities" />
+          <h2>services</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-3 font-[500]">
+            002 — 01 //
           </p>
-          <Services />
+          <div className="w-full flex justify-between gap-8 mt-2">
+            <Services />
+            <CustomTimeline />
+          </div>
         </div>
         <div className="divide"></div>
       </section>
@@ -215,14 +215,14 @@ const Home = () => {
           <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
             / / 003 — 001
           </p>
-          <div className="p-4 ml-auto gap-8 flex flex-col text-2xl font-black w-full max-w-[430px]">
+          <div className="p-4  gap-8 flex flex-col text-2xl font-black w-full max-w-[430px]">
             <Image src="/img5.png" alt="img" width={250} height={250} />
             <h4>
               Crafting visually stunning user experiences through cutting-edge
               design and technology.
             </h4>
           </div>
-          <div className="p-4   w-full font-black max-w-[430px]">
+          <div className="p-4 ml-auto   w-full font-black max-w-[430px]">
             <h4 className="text-2xl">
               Based in London <br /> United Kingdom{" "}
             </h4>
@@ -233,7 +233,7 @@ const Home = () => {
               striking and user-friendly online presence for your business.
             </p>
           </div>
-          <div className="p-4 ml-auto text-2xl font-black w-full max-w-[430px]">
+          <div className="p-4 text-2xl font-black w-full max-w-[430px]">
             OVER 5 years working with small to medium-sized businesses, startups
             and individuals.
           </div>
@@ -258,26 +258,11 @@ const Home = () => {
         <h2>CONTACT</h2>
       </section>
 
-      <Modal // replace current modal code with Ant Design Modal component
-        visible={isModalOpen}
-        onCancel={handleCloseModal}
-        footer={null}
-        style={{ borderRadius: "2px" }}
-      >
-        <div className="flex gap-8 items-center">
-          <Image
-            src={modalContent.image}
-            alt={modalContent.title}
-            width={400}
-            height={400}
-          />
-          <div>
-            <h3>{modalContent.title}</h3>
-            <p>{modalContent.text}</p>
-            <p>{modalContent.description}</p>
-          </div>
-        </div>
-      </Modal>
+      <ProjectModal
+        isModalOpen={isModalOpen}
+        handleCloseModal={handleCloseModal}
+        modalContent={modalContent}
+      />
     </div>
   );
 };
