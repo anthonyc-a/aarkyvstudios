@@ -88,7 +88,7 @@ const Home = () => {
       <section id="home" className="container">
         <div className="hero-mask"></div>
 
-        <div className="subscribe absolute top-[15vh] right-0">
+        <div className="subscribe absolute top-[16vh] right-0">
           <div className="w-[320px]">
             <input
               type="text"
@@ -101,14 +101,14 @@ const Home = () => {
               alt="arrow"
               width={8}
               height={8}
-              className="absolute top-[7px] right-0 opacity-60"
+              className="absolute top-[8px] right-0 opacity-60"
             />
           </div>
         </div>
         <Hero />
         <a
           href="#clients"
-          className="absolute  hover:decoration-transparent flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[12%] font-semibold text-[0.7rem]"
+          className="absolute  hover:decoration-transparent flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[13%] font-semibold text-[0.7rem]"
         >
           <Image
             src="arrowDown.svg"
