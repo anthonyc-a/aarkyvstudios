@@ -95,7 +95,7 @@ const Home = () => {
             alt="arrow down"
             width={15}
             height={15}
-            className="border border-[#666] rounded-full"
+            className="border border-[#f9f9f9] rounded-full"
           />
           scroll down
         </a>
