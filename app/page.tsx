@@ -108,7 +108,7 @@ const Home = () => {
         <Hero />
         <a
           href="#clients"
-          className="absolute  hover:underline flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[13%] font-semibold text-[0.7rem]"
+          className="absolute  underline flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[13%] font-semibold text-[0.7rem]"
         >
           <Image
             src="arrowDown.svg"
