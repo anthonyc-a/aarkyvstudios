@@ -88,12 +88,12 @@ const Home = () => {
       <section id="home" className="container">
         <div className="hero-mask"></div>
 
-        <div className="subscribe absolute top-[16vh] right-0">
+        <div className="subscribe absolute bottom-8 left-[10%]">
           <div className="w-[320px]">
             <input
               type="text"
               placeholder="subscribe for updates"
-              className="w-full py-[5px]"
+              className="w-full py-[6px]"
             />
             <div className="absolute top-0 left-0  w-full h-full -z-10" />
             <Image

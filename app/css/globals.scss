@@ -68,12 +68,13 @@
     transform: translateX(-145%) translateY(-50%);
     transition: .35s ease-in-out;
   }
+  &:hover {
     &::before {
       content: "archive";
-      font-size: 0.7rem;
-      font-weight: 550;
-    transform: translateX(-145%) translateY(-50%);
+
     }
+  }
+  
 }
 
 .ant-modal {
