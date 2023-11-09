@@ -89,12 +89,21 @@ const Home = () => {
         <div className="hero-mask"></div>
 
         <div className="subscribe absolute top-[15vh] right-0">
-          <div className="w-[280px]">
-          <input type="text" placeholder="subscribe for updates" className="w-full py-[4px]" />
-          <div className="absolute top-0 left-0  w-full h-full -z-10" />
-          <Image src="/arrowRight.svg" alt="arrow" width={8} height={8} className="absolute top-[7px] right-0" />
+          <div className="w-[320px]">
+            <input
+              type="text"
+              placeholder="subscribe for updates"
+              className="w-full py-[4px]"
+            />
+            <div className="absolute top-0 left-0  w-full h-full -z-10" />
+            <Image
+              src="/arrowRight.svg"
+              alt="arrow"
+              width={8}
+              height={8}
+              className="absolute top-[7px] right-0"
+            />
           </div>
- 
         </div>
         <Hero />
         <a

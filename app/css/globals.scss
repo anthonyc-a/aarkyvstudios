@@ -38,7 +38,7 @@
   font-size: 0.72rem;
 }
 
-.cta {
+.cta, .marquee {
   clip-path: polygon(
     0 0,
     100% 0,
@@ -57,7 +57,7 @@
 
 
 .archive {
-  transform: scale(0.9);
+  transform: scale(0.95);
   transform-origin: bottom right;
   &::before {
     transition: 0.25s ease-out;
