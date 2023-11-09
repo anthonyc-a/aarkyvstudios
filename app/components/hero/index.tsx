@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           "https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
         }
         autoPlay
-        className="saturate-[3] max-w-[850px] backdrop-blur-sm h-[100%] object-cover  "
+        className="max-w-[850px] backdrop-blur-sm h-[100%] object-cover  "
         loop
         muted
         style={{
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           zIndex: -1,
         }}
       />
-      <div className="inner flex flex-col w-[240px] gap-[14px]">
+      <div className="inner mix-blend-difference flex flex-col w-[240px] gap-[14px]">
         <div className="logo-container mix-blend-difference flex gap-[16px]">
           <Image
             src={"/logo.svg"}
