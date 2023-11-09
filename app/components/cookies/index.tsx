@@ -26,7 +26,7 @@ const Cookies = () => {
 
   return (
     <>
-        <div className="cookies bg-[#08080883] backdrop-blur grow w-full max-w-[620px] md:whitespace-nowrap fixed bottom-4 md:bottom-8 right-0 md:right-8 border hover:border-[#555] border-[#222]">
+        <div className="cookies bg-[#08080828] backdrop-blur grow w-full max-w-[620px] md:whitespace-nowrap fixed bottom-4 md:bottom-8 right-0 md:right-8 border hover:border-[#555] border-[#222]">
           <div className="w-full h-full p-6 flex items-center justify-between">
             <div className="absolute detail top-0 left-0   h-[1px] bg-[#fff]"></div>
             <div className="absolute detail top-0 right-0  bg-[#fff]"></div>
