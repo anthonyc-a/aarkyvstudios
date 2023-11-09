@@ -38,6 +38,36 @@
   font-size: 0.72rem;
 }
 
+.links {
+  white-space: nowrap;
+
+}
+
+.links a {
+  display: flex;
+  white-space: nowrap;
+  font-weight: 400;
+  opacity: 0.5;
+
+  &:hover {
+    font-weight: 600;
+    opacity: 1;
+  }
+}
+
+.links a span {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: .35s ease-out;
+
+}
+
+.links a:hover span {
+  max-width: 40px;
+  display: flex;
+}
+
 .cta, .marquee {
   clip-path: polygon(
     0 0,

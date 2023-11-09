@@ -9,6 +9,7 @@ import Services from "./components/services";
 import Research from "./components/research";
 import { VisibilityContext } from "./context/Visibility";
 import Particles from "./components/particles";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const gridItems = [
   {
@@ -106,6 +107,17 @@ const Home = () => {
           </div>
         </div>
         <Hero />
+        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-32 right-0 font-semibold text-[0.72rem]">
+          <a href="/">
+            i<span>nst</span>g<span>ram</span>
+          </a>
+          <a href="/">
+            g<span>it</span>h<span>ub</span>
+          </a>
+          <a href="/">
+            l<span>inked</span>i<span>n</span>{" "}
+          </a>
+        </div>
         <a
           href="#clients"
           className="absolute  underline flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[13%] font-semibold text-[0.7rem]"
@@ -128,12 +140,11 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-12 relative px-6 mb-12">
           <AccentHeaderOne text="Projects" />
-        
+
           <h2>Our Clients</h2>
           <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
             / / 001 — 001
           </p>
-         
 
           <div className="grid relative mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
@@ -175,13 +186,12 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-16">
           <AccentHeaderOne text="Our services" />
-         
+
           <h2>SERVICES</h2>
           <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
             / / 001 — 001
           </p>
           <Services />
-
         </div>
         <div className="divide"></div>
       </section>
@@ -190,7 +200,7 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-16">
           <AccentHeaderOne text="About us" />
-        
+
           <h2>ABOUT US</h2>
           <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
             / / 003 — 001

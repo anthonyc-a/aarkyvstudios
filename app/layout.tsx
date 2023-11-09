@@ -79,7 +79,6 @@ export default function RootLayout({
         </head>
         <body>
           <div className="overlay" />
-          <Particles/>
           <Cursor />
           <Logo />
           <Nav />
