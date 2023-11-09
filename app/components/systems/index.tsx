@@ -52,7 +52,7 @@ const Systems = () => {
         <span className="">systems</span> online
       </div>
       <button
-        className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
+        className={`fixed  p-1.5 px-10 bg-[#333] rounded-[32px] z-10 ${
           showLogo
             ? "top-[39px] right-8 md:right-[16rem]"
             : "top-[39px] right-8 md:left-10 md:right-[unset]"
