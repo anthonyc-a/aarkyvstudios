@@ -128,11 +128,11 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-12 relative px-6 mb-12">
           <AccentHeaderOne text="Projects" />
-
-          <h2>Our Clients</h2>
-          <p className="text-[#ccc] text-[0.75rem] mt-1 font-[500]">
+          <p className="text-[#ccc] text-[0.75rem] mb-4 font-[500]">
             / / 001 — 001
           </p>
+          <h2>Our Clients</h2>
+         
 
           <div className="grid relative mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
