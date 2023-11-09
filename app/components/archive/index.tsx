@@ -51,9 +51,7 @@ const Archive: React.FC<GridItemButtonProps> = ({ images }: any) => {
         width={800}
         style={{ borderRadius: "2px", zIndex: 10000 }}
       >
-        <div className="flex justify-between pb-8">
-          <h2>Archive</h2>
-        </div>
+        <div className="min-h-[800px] pb-8">
         <Row gutter={[16, 16]}>
           {images.map((image: any, index: any) => (
             <Col key={index} span={8}>
@@ -61,6 +59,8 @@ const Archive: React.FC<GridItemButtonProps> = ({ images }: any) => {
             </Col>
           ))}
         </Row>
+        </div>
+     
       </Modal>
     </>
   );

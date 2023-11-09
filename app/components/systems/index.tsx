@@ -44,36 +44,52 @@ const Systems = () => {
   return (
     <>
       <div
-        className={`systems fixed top-11 z-10 hidden md:block underline  hover:decoration-transparent ${
+        className={`systems fixed top-11 z-10 hidden md:block  hover:underline ${
           showLogo ? "right-10 md:right-12" : "left-10 md:left-[16rem]"
         }`}
         onClick={handleOpenModal}
       >
-        systems: active
+        <span className="">systems</span> online
       </div>
       <button
-        className={`fixed  p-1.5 px-10 bg-[#888] rounded-[32px] z-10 ${
-          showLogo ? "top-[39px] right-8 md:right-[16rem]" : "top-[39px] right-8 md:left-10 md:right-[unset]"
+        className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
+          showLogo
+            ? "top-[39px] right-8 md:right-[16rem]"
+            : "top-[39px] right-8 md:left-10 md:right-[unset]"
         }`}
         onClick={handleOpenContactModal}
       >
         <Image src="/mail.svg" alt="mail" width={15} height={15} />
       </button>
       <Modal
-        title="Systems"
+        title={
+          <div className="flex items-center">
+            <Image
+              src="/logo.svg"
+              alt="Aarkyv Studios Logo"
+              width={10}
+              height={10}
+              className="invert-[1]"
+            />
+            <span className="ml-3">Aarkyv Studios</span>
+          </div>
+        }
         visible={isModalOpen}
         onCancel={handleCloseModal}
         okButtonProps={{ disabled: true, style: { display: "none" } }}
       >
-        <p>Version: 2.2.0</p>
+        <p className="">Version: 2.2.0</p>
+        <p>Language: TypeScript</p>
+        <p>Animation Library: GSAP</p>
         <p>Font: Britti Sans Variable</p>
         <p>
-          Latest Update:{" "}
-          {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })} (ICT), SE Asia
+          Last Updated:{" "}
+          {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })}{" "}
+          (ICT), Thailand
         </p>
       </Modal>
       <Modal
-        title="Contact Us"
+        title="Get in touch"
         visible={isContactModalOpen}
         onCancel={handleCloseContactModal}
         footer={[

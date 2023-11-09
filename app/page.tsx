@@ -86,10 +86,19 @@ const Home = () => {
     <div className="relative w-fill flex flex-col items-center">
       <section id="home" className="container">
         <Hero />
-        <div className="absolute underline flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[12%] font-semibold text-[0.7rem]">
-          <Image src='arrowDown.svg' alt='arrow down' width={14} height={14} />
+        <a
+          href="#clients"
+          className="absolute underline hover:decoration-transparent flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[12%] font-semibold text-[0.7rem]"
+        >
+          <Image
+            src="arrowDown.svg"
+            alt="arrow down"
+            width={15}
+            height={15}
+            className="border rounded-full"
+          />
           scroll down
-        </div>
+        </a>
         <div className="scrollbar">
           <div className="scrollbar-inner"></div>
         </div>
@@ -99,7 +108,12 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-12 relative px-6 mb-12">
           <AccentHeaderOne text="Projects" />
+
           <h2>Our Clients</h2>
+          <p className="text-[#ccc] text-[0.75rem] mt-2 font-[500]">
+            / / 001 — 001
+          </p>
+
           <div className="grid relative mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
               <div
@@ -198,13 +212,17 @@ const Home = () => {
         style={{ borderRadius: "2px" }}
       >
         <div className="flex gap-8 items-center">
-          <Image src={modalContent.image} alt={modalContent.title} width={400} height={400} />
+          <Image
+            src={modalContent.image}
+            alt={modalContent.title}
+            width={400}
+            height={400}
+          />
           <div>
-          <h3>{modalContent.title}</h3>
-          <p>{modalContent.text}</p>
-          <p>{modalContent.description}</p>
+            <h3>{modalContent.title}</h3>
+            <p>{modalContent.text}</p>
+            <p>{modalContent.description}</p>
           </div>
-         
         </div>
       </Modal>
     </div>

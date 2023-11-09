@@ -7,17 +7,17 @@ const MarqueeCpt = () => {
       <Marquee
       gradient
         gradientColor="#fff"
-        gradientWidth={16}
+        gradientWidth={6}
         speed={40}
         direction="left"
       >
         <div className="flex gap-4 font-[510] text-[0.68rem] tracking-[0.035em]">
           <div>
-          Crafting visually  stunning multimedia through cutting-edge design and technology
+          Crafting visually  stunning experiences through cutting-edge design and technology
           </div>
           —
           <div>
-          Crafting visually stunning multimedia through cutting-edge design and technology
+          Crafting visually stunning experiences through cutting-edge design and technology
           </div>
           —
         </div>

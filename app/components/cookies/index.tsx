@@ -25,14 +25,14 @@ const Cookies = () => {
           <div className="w-full h-full p-6 flex items-center justify-between">
             <p className="flex items-center gap-3 font-[450]">
               <Image src={"/cookie.svg"} alt="" width={19} height={19} />
-              This website uses cookies to improve your experience.
+              This website uses cookies to enhance your experience.
             </p>
             <div className="flex gap-6">
               <span
-                className="underline-anim underline hover:underline"
+                className="underline-anim underline hover:decoration-transparent"
                 onClick={close}
               >
-                close
+                I Understand
               </span>
             </div>
           </div>

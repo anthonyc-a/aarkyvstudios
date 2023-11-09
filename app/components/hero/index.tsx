@@ -55,14 +55,14 @@ const Hero: React.FC = () => {
             width={10}
             height={10}
           />
-          <span>AARKYV STUDIOS</span>
+          <span className="font-black">AARKYV STUDIOS</span>
         </div>
         <a
           href="#about"
           className="cta flex items-center justify-between rounded-[2px] text-[0.65rem] font-bold bg-white text-black p-[6px] px-4"
         >
           Learn More
-          <Image src={"/arrow.svg"} alt="arrow" width={9} height={9} />
+          <Image src={"/arrow.svg"} alt="arrow" width={8} height={8} />
         </a>
       </div>
     </div>

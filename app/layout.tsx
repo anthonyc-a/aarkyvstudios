@@ -11,8 +11,9 @@ import ThemeToggle from "./components/theme";
 import Logo from "./components/logo";
 import Archive from "./components/archive";
 import { VisibilityProvider } from "./context/Visibility";
+import Particles from "./components/particles";
 
-const images:any = [
+const images: any = [
   {
     src: "/img1.png",
     alt: "Image 1",
@@ -58,7 +59,6 @@ const images:any = [
     alt: "Image 3",
     caption: "This is the third image",
   },
-
 ];
 
 export const metadata: Metadata = {
@@ -78,6 +78,8 @@ export default function RootLayout({
           <meta name="theme-color" content="#080808" />
         </head>
         <body>
+          <div className="overlay" />
+          <Particles/>
           <Cursor />
           <Logo />
           <Nav />
