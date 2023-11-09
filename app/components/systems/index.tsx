@@ -45,7 +45,7 @@ const Systems = () => {
     <>
       <div
         className={`systems fixed top-11 z-10 hidden md:block  hover:underline ${
-          showLogo ? "right-10 md:right-12" : "left-10 md:left-[17rem]"
+          showLogo ? "right-10 md:right-12" : "left-10 md:left-[16rem]"
         }`}
         onClick={handleOpenModal}
       >
