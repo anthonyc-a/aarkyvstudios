@@ -107,7 +107,7 @@ const Home = () => {
           </div>
         </div>
         <Hero />
-        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-32 right-0 font-semibold text-[0.7rem]">
+        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-28 right-0 font-semibold text-[0.7rem]">
           socials:
           <a href="/">
             i<span>nst</span>g<span>ram</span>
@@ -143,7 +143,7 @@ const Home = () => {
           <AccentHeaderOne text="Projects" />
 
           <h2>Our Clients</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
+          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
             / / 001 — 001
           </p>
 
