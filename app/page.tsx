@@ -89,7 +89,7 @@ const Home = () => {
         <div className="hero-mask"></div>
 
         <div className="subscribe absolute bottom-8 left-[10%]">
-          <div className="w-[320px]">
+          <div className="w-[360px]">
             <input
               type="text"
               placeholder="subscribe for updates"
@@ -177,10 +177,11 @@ const Home = () => {
           <AccentHeaderOne text="Our services" />
          
           <h2>SERVICES</h2>
-          <Services />
-          <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
-            / / 002 — 001
+          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
+            / / 001 — 001
           </p>
+          <Services />
+
         </div>
         <div className="divide"></div>
       </section>
@@ -225,6 +226,9 @@ const Home = () => {
         <div className="p-16">
           <AccentHeaderOne text="Blog" />
           <h2>Research</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
+            / / 001 — 001
+          </p>
           <Research />
         </div>
         <div className="divide"></div>
