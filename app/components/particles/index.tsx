@@ -23,7 +23,7 @@ const Particles = () => {
       });
     }
 
-    const baseHelixRadius = 85;
+    const baseHelixRadius = 80;
     const frequency = 0.1;
     const amplitude = canvas.height / 5;
 
