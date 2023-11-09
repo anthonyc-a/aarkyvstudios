@@ -93,7 +93,7 @@ const Home = () => {
             <input
               type="text"
               placeholder="subscribe for updates"
-              className="w-full py-[4px]"
+              className="w-full py-[5px]"
             />
             <div className="absolute top-0 left-0  w-full h-full -z-10" />
             <Image
