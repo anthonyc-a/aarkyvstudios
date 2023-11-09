@@ -433,7 +433,7 @@ video {
   left: 50%;
   transform: translateX(-50%);
   filter: brightness(0.5) !important;
-  opacity: 0.87;
+  opacity: 0.5;
 
   &:hover ~ a {
     opacity: 0.5;
