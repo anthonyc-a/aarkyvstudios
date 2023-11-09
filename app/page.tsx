@@ -86,8 +86,10 @@ const Home = () => {
 
   return (
     <div className="relative w-fill flex flex-col items-center">
-      <section id="home" className="container">
+      <section id="home" className="container overflow-hidden">
         <div className="hero-mask"></div>
+        <Particles/>
+
 
         <div className="subscribe absolute bottom-8 left-[12%]">
           <div className="w-[420px]">
