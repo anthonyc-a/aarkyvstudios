@@ -101,7 +101,7 @@ const Home = () => {
               alt="arrow"
               width={8}
               height={8}
-              className="absolute top-[7px] right-0"
+              className="absolute top-[7px] right-0 opacity-60"
             />
           </div>
         </div>

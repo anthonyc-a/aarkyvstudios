@@ -473,8 +473,9 @@ input {
     background: linear-gradient(to top, rgba(201, 195, 215, 0.035) 0%, rgba(0,0,0,0.3) 100%, rgba(0,0,0,0.5) 100%);
   }
 
-.cross {
+.cross, .detail {
   color: #666;
+  z-index: 10;
   &:nth-child(1) {
     transform: translate(-50%, -50%);
   }
@@ -487,6 +488,11 @@ input {
   &:nth-child(4) {
     transform: translate(50%, 50%);
   }
+}
+
+.detail {
+  width: 6px;
+  height: 1px;
 }
 
 .systems {
