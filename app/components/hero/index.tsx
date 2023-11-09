@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           "https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
         }
         autoPlay
-        className="saturate-100 max-w-[850px] backdrop-blur-sm h-[100%] object-cover  "
+        className="saturate-[3] max-w-[850px] backdrop-blur-sm h-[100%] object-cover  "
         loop
         muted
         style={{

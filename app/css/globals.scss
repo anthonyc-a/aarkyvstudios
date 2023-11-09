@@ -220,7 +220,7 @@ body {
   position: absolute;
   top: 40%;
   transform: translateX(-50%);
-  right: 0;
+  right: 3rem;
   width: 1px;
   height: 120px;
   background-color: #222;
@@ -433,7 +433,7 @@ video {
   transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   left: 50%;
   transform: translateX(-50%);
-  filter: brightness(0.5) !important;
+  filter: brightness(0.65) !important;
 
   &:hover ~ a {
     opacity: 0.5;
