@@ -18,7 +18,7 @@ const Particles = () => {
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         t: (i * Math.PI * 10) / particleCount,
-        speedT: 0.01,
+        speedT: 0.005,
         chaosFactor: Math.random() * 100 - 50, // Random offset to y position
       });
     }
