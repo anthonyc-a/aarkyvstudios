@@ -13,11 +13,11 @@ const MarqueeCpt = () => {
       >
         <div className="flex gap-4 font-[510] text-[0.66rem] tracking-[0.035em]">
           <div>
-          Crafting visually  stunning experiences through cutting-edge design and technology
+          Crafting visually  stunning user experiences through cutting-edge design and technology
           </div>
           —
           <div>
-          Crafting visually stunning experiences through cutting-edge design and technology
+          Crafting visually stunning user experiences through cutting-edge design and technology
           </div>
           —
         </div>

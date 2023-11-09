@@ -128,10 +128,11 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-12 relative px-6 mb-12">
           <AccentHeaderOne text="Projects" />
-          <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
+        
+          <h2>Our Clients</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
             / / 001 — 001
           </p>
-          <h2>Our Clients</h2>
          
 
           <div className="grid relative mt-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
@@ -174,8 +175,12 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-16">
           <AccentHeaderOne text="Our services" />
+         
           <h2>SERVICES</h2>
           <Services />
+          <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
+            / / 002 — 001
+          </p>
         </div>
         <div className="divide"></div>
       </section>
@@ -184,7 +189,11 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-16">
           <AccentHeaderOne text="About us" />
+        
           <h2>ABOUT US</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
+            / / 003 — 001
+          </p>
           <div className="p-4 ml-auto gap-8 flex flex-col text-2xl font-black w-full max-w-[430px]">
             <Image src="/img5.png" alt="img" width={250} height={250} />
             <h4>
