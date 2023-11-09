@@ -107,7 +107,8 @@ const Home = () => {
           </div>
         </div>
         <Hero />
-        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-32 right-0 font-semibold text-[0.72rem]">
+        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-32 right-0 font-semibold text-[0.7rem]">
+          socials:
           <a href="/">
             i<span>nst</span>g<span>ram</span>
           </a>

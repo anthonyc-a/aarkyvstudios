@@ -46,11 +46,11 @@
 .links a {
   display: flex;
   white-space: nowrap;
-  font-weight: 400;
-  opacity: 0.5;
+  font-weight: 500;
+  opacity: 0.87;
+  transition: .2s linear;
 
   &:hover {
-    font-weight: 600;
     opacity: 1;
     text-decoration: underline;
   }
@@ -543,7 +543,7 @@ input {
   z-index: 1000;
 
   span {
-    padding-right: 2px;
+    padding-right: 4px;
     &::after {
       content: ":";
       position: absolute;

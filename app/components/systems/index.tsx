@@ -49,7 +49,8 @@ const Systems = () => {
         }`}
         onClick={handleOpenModal}
       >
-        <span className="">systems</span> online
+        <span className="">systems</span>{" "}
+        <div className="font-medium inline-block">online</div>
       </div>
       <button
         className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
