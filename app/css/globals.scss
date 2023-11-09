@@ -55,22 +55,6 @@
   );
 }
 
-.marquee {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 8px),
-    calc(100% - 8px) 100%,
-    0 100%
-  );
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 8px),
-    calc(100% - 8px) 100%,
-    0 100%
-  );
-}
 
 .archive {
   transform: scale(0.9);
@@ -233,6 +217,7 @@ body {
 .scrollbar {
   position: absolute;
   top: 40%;
+  transform: translateX(-50%);
   right: 0;
   width: 1px;
   height: 120px;

@@ -39,7 +39,7 @@ const Cookies = () => {
             </p>
             <div className="flex gap-6">
               <span
-                className="underline-anim underline hover:decoration-transparent"
+                className="underline-anim underline"
                 onClick={close}
               >
                 I Understand
