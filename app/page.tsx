@@ -110,7 +110,7 @@ const Home = () => {
           <AccentHeaderOne text="Projects" />
 
           <h2>Our Clients</h2>
-          <p className="text-[#ccc] text-[0.75rem] mt-2 font-[500]">
+          <p className="text-[#ccc] text-[0.75rem] mt-1 font-[500]">
             / / 001 — 001
           </p>
 

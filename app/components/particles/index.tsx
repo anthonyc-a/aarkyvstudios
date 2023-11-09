@@ -58,7 +58,7 @@ const Particles = () => {
         ctx.fill();
 
         // Draw right helix
-        ctx.fillStyle = "#333";
+        ctx.fillStyle = "#666";
         ctx.beginPath();
         ctx.arc(
           x,
