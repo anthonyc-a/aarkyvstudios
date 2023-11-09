@@ -128,7 +128,7 @@ const Home = () => {
         <div className="divide"></div>
         <div className="p-12 relative px-6 mb-12">
           <AccentHeaderOne text="Projects" />
-          <p className="text-[#ccc] text-[0.75rem] mb-4 font-[500]">
+          <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
             / / 001 — 001
           </p>
           <h2>Our Clients</h2>
