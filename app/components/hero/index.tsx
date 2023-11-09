@@ -12,7 +12,8 @@ const Hero: React.FC = () => {
   }, [isVisibleRef, setIsVisible]);
 
   return (
-    <div
+    <a href="#about">
+ <div
       className="hero w-full max-w-[850px] flex hover:font-extrabold justify-center h-[380px] items-center gap-3 p-4 py-10 relative"
       ref={ref}
       onMouseEnter={() => setIsHovered(true)}
@@ -47,7 +48,7 @@ const Hero: React.FC = () => {
           zIndex: -1,
         }}
       />
-      <div className="inner mix-blend-difference flex flex-col w-[240px] gap-[14px]">
+      <div className="inner flex flex-col w-[240px] gap-[14px]">
         <div className="logo-container mix-blend-difference flex gap-[16px]">
           <Image
             src={"/logo.svg"}
@@ -62,11 +63,19 @@ const Hero: React.FC = () => {
           className="cta flex items-center justify-between rounded-[2px] text-[0.65rem] font-bold bg-white text-black p-[6px] px-4"
         >
           Learn More
-          <Image src={"/arrow.svg"} alt="arrow" width={8} height={8} />
+          <Image
+            src={"/arrow.svg"}
+            alt="arrow"
+            width={8}
+            height={8}
+            className={`${isHovered && "translate-x-[2px] translate-y-[-1px]"} transition-all duration-300`}
+          />
         </a>
-       
       </div>
     </div>
+
+    </a>
+   
   );
 };
 
