@@ -84,12 +84,10 @@
     transform: translateX(-145%) translateY(-50%);
     transition: .35s ease-in-out;
   }
-  &:hover {
     &::before {
       content: "archive";
     transform: translateX(-145%) translateY(-50%);
     }
-  }
 }
 
 .ant-modal {
@@ -234,10 +232,10 @@ body {
 
 .scrollbar {
   position: absolute;
-  top: 18vh;
+  top: 40%;
   right: 0;
   width: 1px;
-  height: 152px;
+  height: 120px;
   background-color: #222;
   mix-blend-mode: difference;
   transition: 0.2s ease-out;
@@ -449,14 +447,19 @@ video {
   transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   left: 50%;
   transform: translateX(-50%);
-  filter: brightness(0.8) !important;
+  filter: brightness(0.5) !important;
+  opacity: 0.87;
+
+  &:hover ~ a {
+    opacity: 0.5;
+  }
 }
 
 .particles { 
   position: absolute;
   top: 0%;
   left: 0;
-  transform: translateY(-20%) rotate(-90deg);
+  transform: translateY(-0%) rotate(-90deg);
   z-index: -50;
 }
 

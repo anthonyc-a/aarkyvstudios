@@ -48,6 +48,9 @@ const Hero: React.FC = () => {
         }}
       />
       <div className="inner flex flex-col w-[240px] gap-[14px]">
+      <div className="absolute bottom-0 right-0">
+          <Image src={"/mouse.svg"} alt="AARKYV STUDIOS" width={15} height={15} />
+        </div>
         <div className="logo-container mix-blend-difference flex gap-[16px]">
           <Image
             src={"/logo.svg"}
@@ -64,6 +67,7 @@ const Hero: React.FC = () => {
           Learn More
           <Image src={"/arrow.svg"} alt="arrow" width={8} height={8} />
         </a>
+       
       </div>
     </div>
   );
