@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
               height={8}
               className={`${
                 isHovered && "translate-x-[2px] translate-y-[-1px]"
-              } transition-all duration-300`}
+              } transition-all duration-300 delay-300`}
             />
           </a>
         </div>

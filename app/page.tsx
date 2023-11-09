@@ -128,7 +128,7 @@ const Home = () => {
         </div>
         <a
           href="#clients"
-          className="absolute  underline flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[15%] text-[0.7rem]"
+          className="absolute  flex items-center hover:decoration-transparent gap-4 bottom-[38px] right-[15%] text-[0.7rem]"
         >
           <Image
             src="arrowDown.svg"
