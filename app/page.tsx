@@ -90,11 +90,11 @@ const Home = () => {
         <div className="hero-mask"></div>
 
         <div className="subscribe absolute bottom-8 left-[10%]">
-          <div className="w-[360px]">
+          <div className="w-[420px]">
             <input
               type="text"
               placeholder="subscribe for updates"
-              className="w-full py-[6px]"
+              className="w-full py-[10px] p-7"
             />
             <div className="absolute top-0 left-0  w-full h-full -z-10" />
             <Image
@@ -102,7 +102,14 @@ const Home = () => {
               alt="arrow"
               width={8}
               height={8}
-              className="absolute top-[8px] right-0 opacity-60"
+              className="absolute top-[13px] right-0 opacity-60"
+            />
+            <Image
+              src="/airplane.svg"
+              alt="arrow"
+              width={12}
+              height={12}
+              className="absolute top-[12px] left-0 opacity-60"
             />
           </div>
         </div>
@@ -121,7 +128,7 @@ const Home = () => {
         </div>
         <a
           href="#clients"
-          className="absolute  underline flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[13%] font-semibold text-[0.7rem]"
+          className="absolute  underline flex items-center hover:opacity-100 gap-4 bottom-[38px] right-[15%] text-[0.7rem]"
         >
           <Image
             src="arrowDown.svg"

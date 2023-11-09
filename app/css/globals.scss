@@ -60,7 +60,7 @@
   max-width: 0;
   overflow: hidden;
   white-space: nowrap;
-  transition: .35s ease-out;
+  transition: .35s ease-in-out;
 
 }
 
@@ -89,7 +89,6 @@
 
 .archive {
   transform: scale(0.95);
-  transform-origin: bottom right;
   &::before {
     transition: 0.25s ease-out;
     position: absolute;
@@ -329,7 +328,7 @@ p {
 }
 
 h2 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 800;
   transition: font-weight 0.35s ease-in-out;
 
@@ -532,7 +531,7 @@ input {
 }
 
 .detail {
-  width: 6px;
+  width: 4px;
   height: 1px;
 }
 
