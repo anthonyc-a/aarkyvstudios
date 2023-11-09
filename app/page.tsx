@@ -100,8 +100,8 @@ const Home = () => {
             <Image
               src="/arrowRight.svg"
               alt="arrow"
-              width={8}
-              height={8}
+              width={9}
+              height={9}
               className="absolute top-[13px] right-0 opacity-60"
             />
             <Image
