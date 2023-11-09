@@ -8,6 +8,7 @@ import Hero from "./components/hero";
 import Services from "./components/services";
 import Research from "./components/research";
 import { VisibilityContext } from "./context/Visibility";
+import Particles from "./components/particles";
 
 const gridItems = [
   {
@@ -85,8 +86,10 @@ const Home = () => {
   return (
     <div className="relative w-fill flex flex-col items-center">
       <section id="home" className="container">
+        <div className="hero-mask"></div>
+
         <div className="subscribe absolute top-[15vh] right-0">
-          <input type="text" placeholder="subscribe for updates" className="w-[280px] p-1" />
+          <input type="text" placeholder="subscribe for updates" className="w-[280px] py-1" />
         </div>
         <Hero />
         <a
