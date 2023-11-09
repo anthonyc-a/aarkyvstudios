@@ -85,6 +85,9 @@ const Home = () => {
   return (
     <div className="relative w-fill flex flex-col items-center">
       <section id="home" className="container">
+        <div className="subscribe absolute top-[15vh] right-0">
+          <input type="text" placeholder="subscribe for updates" className="w-[280px] p-1" />
+        </div>
         <Hero />
         <a
           href="#clients"
