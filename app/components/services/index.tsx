@@ -77,7 +77,7 @@ import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 
       return (
         <>
-          <div className="grid w-full md:w-1/2 max-w-[640px] min-h-[380px] relative mt-8 grid-cols-1 gap-5">
+          <div className="grid w-full md:w-1/2 max-w-[480px] min-h-[380px] relative mt-8 grid-cols-1 gap-5">
             {visibleItems.map((item: any, index: any) => (
               <div
                 key={index}
@@ -92,7 +92,7 @@ import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
                   className="absolute top-0 left-0 w-full h-full z-[5]"
                   style={{
                     background:
-                      "linear-gradient(to right, rgba(20,20,20,0.6), rgba(20,20,20,0.1))",
+                      "linear-gradient(to right, rgba(10,10,10,0.6), rgba(10,10,10,0.1))",
                   }}
                 ></div>
                 <Image

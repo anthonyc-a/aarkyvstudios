@@ -205,15 +205,28 @@ const Home = () => {
         <div className="divide"></div>
       </section>
 
+      <section id="research" className="container">
+        <div className="divide"></div>
+        <div className="p-16">
+          <AccentHeaderOne text="Branches" />
+          <h2>Research</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
+            003 — 01 //
+          </p>
+          <Research />
+        </div>
+        <div className="divide"></div>
+      </section>
+
       <section id="services" className="container overflow-hidden">
         <div className="divide"></div>
         <div className="p-16 ">
           <AccentHeaderOne text="capabilities" />
           <h2>Our Services</h2>
           <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
-            003 — 01 //
+            004 — 01 //
           </p>
-          <div className="w-full flex justify-between mt-2 gap-16">
+          <div className="w-full flex justify-between mt-4 gap-16">
           <Faq />
 
           <Services />
@@ -223,18 +236,7 @@ const Home = () => {
         <div className="divide"></div>
       </section>
 
-      <section id="research" className="container">
-        <div className="divide"></div>
-        <div className="p-16">
-          <AccentHeaderOne text="Branches" />
-          <h2>Research</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
-            004 — 01 //
-          </p>
-          <Research />
-        </div>
-        <div className="divide"></div>
-      </section>
+      
 
       <section id="contact" className="container">
         <h2>CONTACT</h2>

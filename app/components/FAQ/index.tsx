@@ -55,7 +55,7 @@ const Faq = () => {
                 activeAccordion === item.question ? "#f9f9f9" : "#222",
             }}
           >
-            <h3 className="text-[0.85rem]  font-semibold mb-2">
+            <h3 className="text-[0.87rem]  font-semibold mb-2">
               {item.question}
             </h3>
             {activeAccordion === item.question ? (
