@@ -75,7 +75,7 @@ export default function RootLayout({
     <VisibilityProvider>
       <html lang="en">
         <head>
-          <meta name="theme-color" content="#080808" />
+          <meta name="theme-color" content="#030303" />
         </head>
         <body>
           <div className="overlay" />

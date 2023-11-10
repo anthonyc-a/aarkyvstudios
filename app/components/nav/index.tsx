@@ -34,7 +34,7 @@ const Nav = () => {
         <ul
           className={`${
             styles.nav
-          } text-[0.66rem] 3xl:text-[0.75rem] top-[8rem] md:top-[13rem] left-6 md:left-[4rem] flex flex-col gap-y-6 ${
+          } text-[0.65rem] 3xl:text-[0.75rem] top-[8rem] md:top-[13rem] left-6 md:left-[4rem] flex flex-col gap-y-6 ${
             initialAnimation ? styles.initialAnimation : ""
           }`}
         >
@@ -45,10 +45,10 @@ const Nav = () => {
             <a href="#clients">Clients</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#services">Services</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -59,7 +59,7 @@ const Nav = () => {
         <ul
           className={`${styles.nav} ${
             styles.reverse
-          } text-[0.66rem] 3xl:text-[0.75rem] top-[8rem] md:top-[13rem] left-6 md:left-[4rem] flex flex-col gap-y-6 ${
+          } text-[0.65rem] 3xl:text-[0.75rem] top-[8rem] md:top-[13rem] left-6 md:left-[4rem] flex flex-col gap-y-6 ${
             initialAnimation ? styles.initialAnimation : ""
           }`}
         >
@@ -70,10 +70,10 @@ const Nav = () => {
             <a href="#clients">Clients</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#services">Services</a>
           </li>
           <li>
             <a href="#contact">Contact</a>

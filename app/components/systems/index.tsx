@@ -44,19 +44,29 @@ const Systems = () => {
   return (
     <>
       <div
-        className={`systems fixed top-11 z-10 hidden md:block  hover:underline ${
-          showLogo ? "right-10 md:right-[14rem]" : "left-10 md:left-[18rem]"
+        className={`systems fixed z-10 hidden md:block  hover:underline ${
+          showLogo
+            ? "right-10 hidden top-11 hover:text-inherit md:right-[14rem]"
+            : "left-10 top-11 md:left-[18rem]"
         }`}
         onClick={handleOpenModal}
       >
-        <span className="">systems</span>{" "}
-        <div className="font-medium inline-block">online</div>
+        <span className={`${showLogo ? "hidden" : ""}`}>systems</span>{" "}
+        <a
+          className={`${
+            showLogo
+              ? "font-semibold decoration-inherit"
+              : "font-medium decoration-transparent"
+          } inline-block`}
+        >
+          online
+        </a>
       </div>
       <button
         className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
           showLogo
-            ? "top-[37px] right-8 md:right-12"
-            : "top-[37px] right-8 md:left-12 md:right-[unset]"
+            ? "top-[36px] right-8 md:right-12"
+            : "top-[36px] right-8 md:left-12 md:right-[unset]"
         }`}
         onClick={handleOpenContactModal}
       >
@@ -79,10 +89,10 @@ const Systems = () => {
         onCancel={handleCloseModal}
         okButtonProps={{ disabled: true, style: { display: "none" } }}
       >
-        <p className="">Version: 2.2.0</p>
+        <p className="">Site Version: 2.2.0</p>
         <p>Language: TypeScript</p>
-        <p>Animation Library: GSAP</p>
         <p>Font: Britti Sans Variable</p>
+        <p className="">Servers: Online (99% uptime)</p>
         <p>
           Last Updated:{" "}
           {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })}{" "}

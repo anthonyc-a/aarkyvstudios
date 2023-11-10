@@ -33,7 +33,7 @@ const Cookies = () => {
             <div className="absolute detail top-0 right-0  bg-[#fff]"></div>
             <div className="absolute detail bottom-0 left-0  bg-[#fff]"></div>
             <div className="absolute detail bottom-0 right-0  bg-[#fff]"></div>
-            <p className="flex items-center gap-3 font-[450]">
+            <p className="flex items-center gap-3 txt font-[450]">
               <Image src={"/cookie.svg"} alt="" width={19} height={19} />
               This website uses cookies to enhance your experience.
             </p>

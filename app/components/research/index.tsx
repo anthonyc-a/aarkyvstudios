@@ -104,7 +104,7 @@ const Research = () => {
         />
         <div className="absolute bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
         <div className="absolute bottom-0 w-full p-8 text-white">
-          <h3 className="text-xl font-bold mb-[2px]">Medewi beach, Bali</h3>
+          <h3 className="text-[16px] font-bold mb-[2px]">Medewi beach, Bali</h3>
           <p className="text-[#999]">Blok Studios Concept</p>
         </div>
       </div>

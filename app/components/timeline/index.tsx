@@ -8,7 +8,7 @@ type TimelineItem = {
 
 const timelineItems: TimelineItem[] = [
   {
-    title: "01 / Discover",
+    title: "01 - Discover",
     description:
       "We'll work with you to understand your project and plan its development.",
   },
@@ -51,7 +51,7 @@ const CustomTimeline = () => {
             color={index ? "white" : "blue"}
             onClick={() => handleItemClick(item)}
           >
-            <h5 className="text-[13px] hover:underline font-medium leading-6 text-white">
+            <h5 className="text-[17px] hover:underline font-semibold leading-6 text-white">
               {item.title}
             </h5>
           </Timeline.Item>

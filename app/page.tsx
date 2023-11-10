@@ -13,6 +13,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import ProjectModal from "./components/project";
 import Timeline from "./components/timeline";
 import CustomTimeline from "./components/timeline";
+import About from "./components/about";
 
 const gridItems = [
   {
@@ -150,7 +151,7 @@ const Home = () => {
           <AccentHeaderOne text="Projects" />
 
           <h2>Our Clients</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-3 font-[500]">
+          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
             001 — 01 //
           </p>
 
@@ -158,7 +159,7 @@ const Home = () => {
             {gridItems.map((item: any, index: any) => (
               <div
                 key={index}
-                className={`${item.bgColor} project hover:brightness-75 rounded-sm relative p-8 flex items-center gap-8`}
+                className={`${item.bgColor} project hover:brightness-75 rounded-sm relative p-8 flex items-center gap-10`}
                 onClick={() => handleOpenModal(item.content)} // pass project information to handleOpenModal function
               >
                 <Image src={item.src} alt={item.alt} width={200} height={200} />
@@ -193,57 +194,39 @@ const Home = () => {
       <section id="about" className="container">
         <div className="divide"></div>
         <div className="p-16">
-          <AccentHeaderOne text="About us" />
+          <AccentHeaderOne text="About" />
 
           <h2>ABOUT US</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-4 font-[500]">
-            / / 003 — 001
+          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
+            / / 002 — 001
           </p>
-          <div className="p-4  gap-8 flex flex-col text-2xl font-black w-full max-w-[430px]">
-            <Image src="/img5.png" alt="img" width={250} height={250} />
-            <h4>
-              Crafting visually stunning user experiences through cutting-edge
-              design and technology.
-            </h4>
-          </div>
-          <div className="p-4 ml-auto   w-full font-black max-w-[430px]">
-            <h4 className="text-2xl">
-              Based in London <br /> United Kingdom{" "}
-            </h4>
-            <p>
-              Bespoke web design services that focus on creating a visually
-              striking and user-friendly online presence for your business.
-              Bespoke web design services that focus on creating a visually
-              striking and user-friendly online presence for your business.
-            </p>
-          </div>
-          <div className="p-4 text-2xl font-black w-full max-w-[430px]">
-            OVER 5 years working with small to medium-sized businesses, startups
-            and individuals.
-          </div>
+          <About/>
         </div>
         <div className="divide"></div>
       </section>
 
-      <section id="research" className="container">
+
+           <section id="research" className="container">
         <div className="divide"></div>
         <div className="p-16">
           <AccentHeaderOne text="Blog" />
           <h2>Research</h2>
           <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
-             002 — 001 //
+             003 — 001 //
           </p>
           <Research />
         </div>
         <div className="divide"></div>
       </section>
 
+     
+
       <section id="services" className="container overflow-hidden">
         <div className="divide"></div>
         <div className="p-16 ">
           <AccentHeaderOne text="capabilities" />
           <h2>services</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-3 font-[500]">
+          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
             003 — 01 //
           </p>
           <div className="w-full flex justify-between gap-8 mt-2">
@@ -253,6 +236,8 @@ const Home = () => {
         </div>
         <div className="divide"></div>
       </section>
+
+ 
     
 
       <section id="contact" className="container">

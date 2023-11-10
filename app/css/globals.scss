@@ -319,8 +319,10 @@ h5 {
   font-weight: 600;
 }
 
-p {
-  text-transform: unset !important;
+.txt {
+  text-transform: none !important;
+  font-size: 0.84rem;
+  color: #ddd;
 }
 
 .service {
