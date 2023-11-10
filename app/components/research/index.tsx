@@ -1,72 +1,114 @@
-'use client'
+"use client";
 
-import Image from "next/image";
+import { Modal, Button, Image, Row, Col } from "antd";
 import React, { useState } from "react";
 
 const gridItems = [
-    {
-      src: "/img2.png",
+  {
+    src: "/aarkyv.png",
+    alt: "Item 1",
+    title: "Aarkyv",
+    text: "Blog",
+    bgColor: "bg-gray-100",
+    date: "2021",
+  },
 
-      alt: "Item 1",
-      title: "Chroma",
-      text: "Software",
-      bgColor: "bg-gray-100",
-    },
-    {
-      src: "/img1.png",
-
-      alt: "Item 2",
-      title: "Blok Studios",
-      text: "Architecture",
-      bgColor: "bg-gray-100",
-    },
-    {
-      src: "/img3.png",
-      alt: "Change Project",
-      title: "Change Project",
-      text: "Charity",
-      bgColor: "bg-gray-100",
-    },
-  ];
+  {
+    src: "/blok.png",
+    alt: "Item 2",
+    title: "Blok",
+    text: "Architecture",
+    bgColor: "bg-gray-100",
+    date: "2023",
+  },
+  {
+    src: "/chroma.png",
+    alt: "Item 1",
+    title: "Chroma",
+    text: "Software",
+    bgColor: "bg-gray-100",
+    date: "2024",
+  },
+  {
+    src: "/change.png",
+    alt: "Change Project",
+    title: "Change",
+    text: "Social Development",
+    bgColor: "bg-gray-100",
+    date: "2025",
+  },
+];
 
 const Research = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false); // add state for controlling modal
+  const [isModalOpen, setIsModalOpen] = useState(false); // add state for controlling modal
 
-    const handleOpenModal = () => {
-      setIsModalOpen(true);
-    };
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
 
-    const handleCloseModal = () => {
-      setIsModalOpen(false);
-    };
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   return (
-    <>
-    <div className="grid w-full mx-auto max-w-[580px] relative mt-16 grid-cols-1 gap-6 text-black">
-      {gridItems.map((item: any, index: any) => (
-        <div
-          key={index}
-          className={`${item.bgColor} research hover:brightness-75 rounded-sm relative p-8 flex items-center gap-8`}
-          onClick={handleOpenModal}
+    <div className="mt-10 flex gap-10">
+      <div className="grid w-full max-w-[500px] relative grid-cols-1 gap-6 text-[#111]">
+        {gridItems.map((item: any, index: any) => (
+          <div
+            key={index}
+            className={`${item.bgColor} research hover:brightness-75 rounded-sm relative p-4 flex items-center gap-8`}
+            onClick={handleOpenModal}
+          >
+            <div className="relative flex justify-between items-center w-full gap-10 p-2">
+              <div className="flex items-center gap-6">
+                <div className="flex gap-8">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    width={35}
+                    height={35}
+                    className="border border-gray-300 rounded-[4px]"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-[550]">{item.title}</h3>
+                  <p className="text-[#666] text-[0.7rem] font-[500] mt-[3px]">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+              {item.date}
+            </div>
+          </div>
+        ))}
+      </div>
+      {isModalOpen && (
+        <Modal
+          title="Systems"
+          visible={isModalOpen}
+          onCancel={handleCloseModal}
+          footer={[
+            <Button key="back" onClick={handleCloseModal}>
+              Close Modal
+            </Button>,
+          ]}
         >
-          <div className="relative">
-            <h3>{item.title}</h3>
-            <p className="text-[#666] font-[500]">{item.text}</p>
-          </div>
-       
-        </div>
-      ))}
-    </div>
-    {isModalOpen && (
-        <div className="fixed z-[500] top-0 left-0 w-full h-full bg-black text-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-8 rounded-[2px]">
-            <h3>Systems</h3>
-            <p>version: 2.2.0</p>
-            <button onClick={handleCloseModal}>Close Modal</button>{" "}
-          </div>
-        </div>
+          <p>Version: 2.2.0</p>
+          <p>Some more content here...</p>
+        </Modal>
       )}
-    </>
-    
+      <div className="w-full h-full clip overflow-hidden relative">
+        <Image
+          src="/bali.png"
+          alt="blok"
+          className=" w-full object-cover rounded-sm brightness-90"
+        />
+        <div className="absolute bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
+        <div className="absolute bottom-0 w-full p-8 text-white">
+          <h3 className="text-xl font-bold mb-[2px]">Medewi beach, Bali</h3>
+          <p className="text-[#999]">Blok Studios Concept</p>
+        </div>
+      </div>
+    </div>
   );
 };
 

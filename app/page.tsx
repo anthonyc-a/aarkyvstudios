@@ -190,22 +190,6 @@ const Home = () => {
         <div className="divide"></div>
       </section>
 
-      <section id="services" className="container overflow-hidden">
-        <div className="divide"></div>
-        <div className="p-16 ">
-          <AccentHeaderOne text="capabilities" />
-          <h2>services</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-3 font-[500]">
-            002 — 01 //
-          </p>
-          <div className="w-full flex justify-between gap-8 mt-2">
-            <Services />
-            <CustomTimeline />
-          </div>
-        </div>
-        <div className="divide"></div>
-      </section>
-
       <section id="about" className="container">
         <div className="divide"></div>
         <div className="p-16">
@@ -247,12 +231,29 @@ const Home = () => {
           <AccentHeaderOne text="Blog" />
           <h2>Research</h2>
           <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
-            / / 001 — 001
+             002 — 001 //
           </p>
           <Research />
         </div>
         <div className="divide"></div>
       </section>
+
+      <section id="services" className="container overflow-hidden">
+        <div className="divide"></div>
+        <div className="p-16 ">
+          <AccentHeaderOne text="capabilities" />
+          <h2>services</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-3 font-[500]">
+            003 — 01 //
+          </p>
+          <div className="w-full flex justify-between gap-8 mt-2">
+            <Services />
+            <CustomTimeline />
+          </div>
+        </div>
+        <div className="divide"></div>
+      </section>
+    
 
       <section id="contact" className="container">
         <h2>CONTACT</h2>

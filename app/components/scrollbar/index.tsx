@@ -21,7 +21,7 @@ const Scrollbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-1/3  right-10 w-[1px] bg-[#222] h-[140px] mix-blend-difference">
+    <div className="fixed scroller  right-10 w-[1px] bg-[#222] h-[140px] mix-blend-difference">
       <div
         className="w-full bg-[#f9f9f9]"
         style={{ height: `${scrollPosition}%` }}
