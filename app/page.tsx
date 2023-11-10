@@ -149,7 +149,7 @@ const Home = () => {
       <section id="clients" className="container">
         <div className="p-12 relative px-20">
           <div className="flex">
-            <span className="text-[0.7rem] text-[#999]">01 — 001 //</span>
+            <span className="text-[0.7rem] text-[#f9f9f9]">01 — 001 //</span>
             <AccentHeaderOne text="Projects" />
           </div>
 
@@ -193,7 +193,7 @@ const Home = () => {
       <section id="about" className="container">
         <div className="px-[120px]">
           <div className="flex">
-            <span className="text-[0.7rem] text-[#999]">02 — 001 //</span>
+            <span className="text-[0.7rem] text-[#f9f9f9]">02 — 001 //</span>
             <AccentHeaderOne text="About" />
           </div>
 
@@ -206,7 +206,7 @@ const Home = () => {
       <section id="research" className="container">
         <div className="px-12">
           <div className="flex">
-            <span className="text-[0.7rem] text-[#999]">03 — 001 //</span>
+            <span className="text-[0.7rem] text-[#f9f9f9]">03 — 001 //</span>
             <AccentHeaderOne text="Projects" />
           </div>
           <h2>Research</h2>

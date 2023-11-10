@@ -50,7 +50,7 @@ const Research = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="mt-10 flex gap-20">
+    <div className="mt-10 flex gap-12">
       <div className="grid w-full max-w-[800px] max-h-[300px] relative grid-cols-1 gap-5 text-[#222]">
         {gridItems.map((item: any, index: any) => (
           <div
@@ -107,7 +107,7 @@ const Research = () => {
         <div className="absolute bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
         <div className="absolute bottom-0 w-full p-6 text-white">
           <h3 className="text-[16px] font-bold mb-[2px]">Medewi beach, Bali</h3>
-          <p className="text-[#999]">3D Visualisation with midjourney</p>
+          <p className="text-[#999] text-[0.72rem]">3D Visualisation with midjourney</p>
         </div>
       </div>
     </div>
