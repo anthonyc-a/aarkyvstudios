@@ -74,11 +74,11 @@ const Services = () => {
 
   return (
     <>
-      <div className="grid w-full md:w-1/2 max-w-[480px] min-h-[380px] relative mt-8 grid-cols-1 gap-5">
+      <div className="grid w-full md:w-1/2 max-w-[480px] min-h-[380px] relative mt-6 grid-cols-1 gap-5">
         {visibleItems.map((item: any, index: any) => (
           <div
             key={index}
-            className={`service hover:brightness-75  overflow-hidden relative p-6 h-[104px] justify-between flex items-center gap-8`}
+            className={`service overflow-hidden relative p-6 h-[104px] justify-between flex items-center gap-8`}
             onClick={() => handleOpenModal(item.title)}
           >
             <div className="relative z-10">

@@ -58,8 +58,7 @@ const Hero: React.FC = () => {
             />
             <span className="font-black">AARKYV STUDIOS</span>
           </div>
-          <a
-            href="#about"
+          <button
             className="cta flex items-center justify-between  text-[0.65rem] font-bold bg-white text-black p-[6px] px-4"
           >
             Learn More
@@ -72,7 +71,7 @@ const Hero: React.FC = () => {
                 isHovered && "translate-x-[2px] translate-y-[-1px]"
               } transition-all duration-300 delay-300`}
             />
-          </a>
+          </button>
         </div>
       </div>
     </a>

@@ -119,7 +119,7 @@ const Home = () => {
           </div>
         </div>
         <Hero />
-        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-[112px] right-0 font-semibold text-[0.7rem]">
+        <div className="absolute links   flex items-center hover:opacity-100 gap-6 top-[120px] right-0 font-semibold text-[0.7rem]">
           socials:
           <a href="/">
             i<span>nst</span>g<span>ram</span>
@@ -147,17 +147,19 @@ const Home = () => {
       </section>
 
       <section id="clients" className="container">
-        <div className="p-12 relative px-6">
-          <AccentHeaderOne text="Projects" />
+        <div className="p-12 relative px-20">
+          <div className="flex">
+            <span className="text-[0.7rem] text-[#999]">01 — 001 //</span>
+            <AccentHeaderOne text="Projects" />
+          </div>
 
           <h2>Our Clients</h2>
-      
 
-          <div className="grid relative mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
+          <div className="grid relative mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
               <div
                 key={index}
-                className={`${item.bgColor} project hover:brightness-75 relative p-8 flex items-center gap-10`}
+                className={`${item.bgColor} project click hover:brightness-75 relative p-6 flex items-center gap-10`}
                 onClick={() => handleOpenModal(item.content)} // pass project information to handleOpenModal function
               >
                 <Image src={item.src} alt={item.alt} width={200} height={200} />
@@ -189,43 +191,44 @@ const Home = () => {
       </section>
 
       <section id="about" className="container">
-        <div className="px-20">
-          <AccentHeaderOne text="About" />
+        <div className="px-[120px]">
+          <div className="flex">
+            <span className="text-[0.7rem] text-[#999]">02 — 001 //</span>
+            <AccentHeaderOne text="About" />
+          </div>
 
           <h2>ABOUT US</h2>
-         
+
           <About />
         </div>
       </section>
 
       <section id="research" className="container">
         <div className="px-12">
-          <AccentHeaderOne text="Projects" />
+          <div className="flex">
+            <span className="text-[0.7rem] text-[#999]">03 — 001 //</span>
+            <AccentHeaderOne text="Projects" />
+          </div>
           <h2>Research</h2>
-         
+
           <Research />
         </div>
       </section>
 
       <section id="services" className="container overflow-hidden">
         <div className="px-20 ">
-          <AccentHeaderOne text="services" />
+          <div className="flex">
+            <span className="text-[0.7rem] text-[#999]">04 — 001 //</span>
+            <AccentHeaderOne text="Services" />
+          </div>
           <h2>Services & FAQ</h2>
-        
+
           <div className="w-full flex justify-between mt-4 gap-24">
-
-          <Services />
-          <Faq />
-
+            <Services />
+            <Faq />
           </div>
         </div>
       </section>
-
-    
-
-  
-
-      
 
       <section id="contact" className="container">
         <h2>CONTACT</h2>

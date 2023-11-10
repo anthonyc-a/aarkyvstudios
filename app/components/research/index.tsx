@@ -51,11 +51,11 @@ const Research = () => {
   };
   return (
     <div className="mt-10 flex gap-20">
-      <div className="grid w-full max-w-[800px] max-h-[300px] relative grid-cols-1 gap-6 text-[#111]">
+      <div className="grid w-full max-w-[800px] max-h-[300px] relative grid-cols-1 gap-5 text-[#222]">
         {gridItems.map((item: any, index: any) => (
           <div
             key={index}
-            className={`bg-[#e9e9e9] research hover:brightness-75 relative p-4 flex items-center gap-8`}
+            className={`bg-[#e9e9e9] research click hover:brightness-75 relative p-4 flex items-center gap-8`}
             onClick={handleOpenModal}
           >
             <div className="relative flex justify-between items-center w-full gap-10 p-2">
@@ -70,7 +70,7 @@ const Research = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="font-[550]">{item.title}</h3>
+                  <h3 className="font-[520]">{item.title}</h3>
                   <p className="text-[#666] text-[0.7rem] font-[500] mt-[3px]">
                     {item.text}
                   </p>

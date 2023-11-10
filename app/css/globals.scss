@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Britti Sans Variable";
   src: url("./webfonts/britti-sans-variable.woff2") format("woff2-variations");
-  font-weight: 100 900;
+  font-weight: 100 800;
 }
 
 ::-webkit-scrollbar {
@@ -26,12 +26,6 @@
   }
 }
 
-.dark {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
-}
-
 .cookies {
   left: 32% !important;
   transform: translateX(-50%) !important;
@@ -40,7 +34,6 @@
 
 .links {
   white-space: nowrap;
-
 }
 
 .links a {
@@ -48,7 +41,7 @@
   white-space: nowrap;
   font-weight: 500;
   opacity: 0.87;
-  transition: .2s linear;
+  transition: 0.2s linear;
 
   &:hover {
     opacity: 1;
@@ -60,8 +53,7 @@
   max-width: 0;
   overflow: hidden;
   white-space: nowrap;
-  transition: .35s ease-in-out;
-
+  transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);;
 }
 
 .links a:hover span {
@@ -69,7 +61,12 @@
   display: flex;
 }
 
-.cta, .marquee, .project, .service, .research, .clip {
+.cta,
+.marquee,
+.project,
+.service,
+.research,
+.clip {
   clip-path: polygon(
     0 0,
     100% 0,
@@ -86,25 +83,24 @@
   );
 }
 
-
 .archive {
   transform: scale(0.9);
   &::before {
     transition: 0.25s ease-out;
     position: absolute;
-    content: '';
-    top: 50%;
+    content: "";
+    top: 0;
     left: 0;
-    transform: translateX(-145%) translateY(-50%);
-    transition: .35s ease-in-out;
+    transform: rotate(-90deg) translateX(90%) translateY(-150%);
+    transition: 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);;
   }
   &:hover {
     &::before {
-      content: "archive";
+      content: "portfolio";
+      transform: rotate(-90deg) translateX(100%) translateY(-150%);
 
     }
   }
-  
 }
 
 .ant-modal {
@@ -240,12 +236,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+  color: #000;
+  background: #fff;
+}
+
+.overlay {
+    filter: invert(1);
+  }
+
+  svg {
+    filter: invert(1) !important;
+  }
+
+.dark {
+  background: #000;
   color: #f9f9f9;
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)) 0%,
-    rgb(var(--background-end-rgb)) 100%
-  );
+
+  .overlay {
+    filter: invert(0);
+  }
 }
 
 .scrollbar {
@@ -320,6 +329,7 @@ h5 {
   font-size: 0.83rem;
   font-weight: 400;
   line-height: 1.4;
+  color: #ddd;
   letter-spacing: 0 !important;
 }
 
@@ -333,8 +343,8 @@ h5 {
 }
 
 h2 {
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 1.35rem;
+  font-weight: 900;
   transition: font-weight 0.35s ease-in-out;
 
   &:hover {
@@ -470,8 +480,7 @@ video {
   transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   left: 50%;
   transform: translateX(-50%);
-  filter: contrast(1.15) brightness(0.95)  !important;
-  opacity: 0.87;
+  filter: contrast(1.15) brightness(0.95) !important;
 
   &:hover ~ a {
     opacity: 0.5;
@@ -499,7 +508,7 @@ input {
   }
 }
 
-.particles { 
+.particles {
   position: absolute;
   top: 0%;
   left: 10%;
@@ -507,18 +516,23 @@ input {
   z-index: -50;
   height: 100%;
   width: 100%;
-  }
-  .hero-mask {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(201, 195, 215, 0.035) 0%, rgba(0,0,0,0.3) 100%, rgba(0,0,0,0.5) 100%);
-  }
+}
+.hero-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(201, 195, 215, 0.035) 0%,
+    rgba(0, 0, 0, 0.3) 100%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
 
-
-.cross, .detail {
+.cross,
+.detail {
   color: #333;
   z-index: 10;
   &:nth-child(1) {
@@ -544,7 +558,6 @@ input {
   position: fixed;
   font-size: 89%;
   font-weight: 600;
-  mix-blend-mode: difference;
   z-index: 1000;
 
   span {
@@ -587,4 +600,12 @@ input {
 }
 svg {
   filter: invert(1) !important;
+}
+
+.click, button {
+  transition: .25s transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  &:hover {
+    transform: scale(0.99);
+    transform-origin: center;
+  }
 }

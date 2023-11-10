@@ -5,11 +5,11 @@ import Marquee from "react-fast-marquee";
 const About = () => {
   return (
     <div>
-      <div className="gap-4 flex flex-col  w-full mt-12">
-        <div className="grid items-center grid-rows-2 gap-24 gap-y-[120px] grid-cols-2">
+      <div className="gap-4 flex flex-col  w-full mt-4 mb-8">
+        <div className="grid items-center grid-rows-2 gap-24 gap-y-[80px] grid-cols-2">
           <div className="item ">
             <h4 className="text-[20px] leading-[1.3] font-black">
-              Crafting visually stunning user experiences through cutting-edge
+              Crafting visually stunning user experiences with cutting-edge
               design and technology.
             </h4>
             <p className="txt mt-3">
@@ -21,8 +21,8 @@ const About = () => {
               Our Services
             </button>
           </div>
-          <Marquee className="rclip h-64 clip  bg-[#f9f9f9]">
-            <div className="item flex items-center justify-between gap-16 w-full ml-auto p-12 ">
+          <Marquee className="h-64 clip overflow-hidden  bg-[#f9f9f9]">
+            <div className="item flex  overflow-hidden items-center justify-between gap-16 w-full ml-auto p-12 ">
               <Image
                 src="/img5.png"
                 alt="About Us Image"
@@ -58,13 +58,13 @@ const About = () => {
               src="/ppl.png"
               alt="About Us Image"
               width={330}
-              height={286}
-              className="w-full h-64 clip object-cover "
+              height={236}
+              className="w-full h-56 clip object-cover "
             />
           </div>
           <div className="item">
             <h4 className="text-[20px] text-right leading-[1.3] font-black">
-              Over 5 years collaborating with small to medium-sized businesses,
+               5+ years working with small to medium-sized businesses,
               startups and individuals.
             </h4>
             <div className="flex gap-4 ml-auto w-fit items-center">
@@ -79,6 +79,7 @@ const About = () => {
           </div>
           <div className="item">
             <h4 className="text-[20px] flex items-center gap-3 leading-[1.35] font-black">
+                <Image src="/globe.svg" alt="pin" width={21} height={21} />
               Based in the
               United Kingdom
             </h4>
@@ -96,9 +97,9 @@ const About = () => {
             <Image
               src="/ldn.png"
               alt="About Us Image"
-              width={330}
-              height={286}
-              className="w-full h-64 object-cover clip "
+              width={300}
+              height={236}
+              className="w-full h-56 object-cover clip "
             />
           </div>
         </div>

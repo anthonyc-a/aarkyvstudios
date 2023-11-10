@@ -46,18 +46,14 @@ const Systems = () => {
       <div
         className={`systems fixed z-10 hidden md:block  hover:underline ${
           showLogo
-            ? "right-10 hidden top-11 hover:text-inherit md:right-[14rem]"
+            ? "right-10 hidden top-11 hover:text-inherit md:right-[12rem]"
             : "left-10 top-11 md:left-[18rem]"
         }`}
         onClick={handleOpenModal}
       >
-        <span className={`${showLogo ? "hidden" : ""}`}>systems</span>{" "}
+        <span >systems</span>{" "}
         <a
-          className={`${
-            showLogo
-              ? "font-semibold decoration-inherit"
-              : "font-medium decoration-transparent"
-          } inline-block`}
+        
         >
           online
         </a>
@@ -65,7 +61,7 @@ const Systems = () => {
       <button
         className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
           showLogo
-            ? "top-[36px] right-8 md:right-12"
+            ? "top-[36px] right-8 md:right-8"
             : "top-[36px] right-8 md:left-12 md:right-[unset]"
         }`}
         onClick={handleOpenContactModal}
@@ -92,7 +88,6 @@ const Systems = () => {
         <p className="">Site Version: 2.2.0</p>
         <p>Language: TypeScript</p>
         <p>Font: Britti Sans Variable</p>
-        <p className="">Servers: Online</p>
         <p>
           Last Updated:{" "}
           {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })}{" "}
