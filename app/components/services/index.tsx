@@ -41,13 +41,6 @@ const gridItems = [
     bgColor: "bg-gray-500",
     src: "https://www.aarkyv.studio/_next/image?url=%2Fdev.png&w=750&q=75",
   },
-  {
-    alt: "Item 6",
-    title: "Marketing",
-    img: "/dev.svg",
-    bgColor: "bg-gray-500",
-    src: "https://www.aarkyv.studio/_next/image?url=%2Fdev.png&w=750&q=75",
-  },
 ];
 
 const Services = () => {
@@ -66,7 +59,7 @@ const Services = () => {
     setModalContent("");
   };
 
-  const visibleItems = showMore ? gridItems : gridItems.slice(0, 4);
+  const visibleItems = showMore ? gridItems : gridItems.slice(0, 3);
 
   const handleAccordionClick = (question: string) => {
     setActiveAccordion(activeAccordion === question ? "" : question);
