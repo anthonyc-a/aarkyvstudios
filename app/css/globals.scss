@@ -33,7 +33,7 @@
 }
 
 .cookies {
-  left: 35% !important;
+  left: 32% !important;
   transform: translateX(-50%) !important;
   font-size: 0.72rem;
 }
@@ -240,13 +240,12 @@
 body {
   text-transform: uppercase;
   font-size: 0.8rem;
-  letter-spacing: 0.035em;
   font-family: "VariableFont", Helvetica, Arial, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
-  color: #ddd;
+  color: #f9f9f9;
   background: linear-gradient(
     to bottom,
     rgb(var(--background-start-rgb)) 0%,
@@ -324,8 +323,8 @@ h5 {
 .txt {
   text-transform: none !important;
   font-size: 0.83rem;
-  font-weight: 350;
-  line-height: 1.35;
+  font-weight: 400;
+  line-height: 1.4;
   letter-spacing: 0 !important;
 }
 
@@ -420,7 +419,7 @@ h3 {
 
 .container {
   position: relative;
-  padding: 2rem 4rem;
+  padding: 2rem;
   margin-top: 1rem;
   max-width: 1280px;
 

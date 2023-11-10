@@ -91,7 +91,7 @@ const Home = () => {
 
   return (
     <div className="relative w-fill flex flex-col items-center">
-      <section id="home" className="container overflow-hidden mb-16">
+      <section id="home" className="container overflow-hidden">
         <div className="hero-mask"></div>
         <div className="subscribe absolute bottom-8 left-[12%]">
           <div className="w-[400px]">
@@ -146,14 +146,11 @@ const Home = () => {
       </section>
 
       <section id="clients" className="container">
-        <div className="divide"></div>
-        <div className="p-12 relative px-6 mb-12">
+        <div className="p-12 relative px-6">
           <AccentHeaderOne text="Projects" />
 
           <h2>Our Clients</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
-            001 — 01 //
-          </p>
+      
 
           <div className="grid relative mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
@@ -188,53 +185,42 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="divide"></div>
       </section>
 
       <section id="about" className="container">
-        <div className="divide"></div>
-        <div className="p-16">
+        <div className="px-20">
           <AccentHeaderOne text="About" />
 
           <h2>ABOUT US</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
-            002 — 01 //
-          </p>
+         
           <About />
         </div>
-        <div className="divide"></div>
-      </section>
-
-      <section id="research" className="container">
-        <div className="divide"></div>
-        <div className="p-16">
-          <AccentHeaderOne text="Branches" />
-          <h2>Research</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
-            003 — 01 //
-          </p>
-          <Research />
-        </div>
-        <div className="divide"></div>
       </section>
 
       <section id="services" className="container overflow-hidden">
-        <div className="divide"></div>
-        <div className="p-16 ">
-          <AccentHeaderOne text="capabilities" />
-          <h2>Our Services</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
-            004 — 01 //
-          </p>
-          <div className="w-full flex justify-between mt-4 gap-16">
-          <Faq />
+        <div className="px-20 ">
+          <AccentHeaderOne text="services" />
+          <h2>Services & FAQ</h2>
+        
+          <div className="w-full flex justify-between mt-4 gap-24">
 
           <Services />
+          <Faq />
 
           </div>
         </div>
-        <div className="divide"></div>
       </section>
+
+      <section id="research" className="container">
+        <div className="px-12">
+          <AccentHeaderOne text="Branches" />
+          <h2>Research</h2>
+         
+          <Research />
+        </div>
+      </section>
+
+  
 
       
 

@@ -5,8 +5,8 @@ import Marquee from "react-fast-marquee";
 const About = () => {
   return (
     <div>
-      <div className="gap-4 flex flex-col  w-full mt-6">
-        <div className="grid items-center grid-rows-2 gap-24 gap-y-20 grid-cols-2">
+      <div className="gap-4 flex flex-col  w-full mt-12">
+        <div className="grid items-center grid-rows-2 gap-24 gap-y-32 grid-cols-2">
           <div className="item ">
             <h4 className="text-[20px] leading-[1.3] font-black">
               Crafting visually stunning user experiences through cutting-edge
@@ -79,7 +79,6 @@ const About = () => {
           </div>
           <div className="item">
             <h4 className="text-[20px] flex items-center gap-3 leading-[1.35] font-black">
-              <Image src="/globe.svg" alt="About Us Image" width={24} height={24} />
               Based in the
               United Kingdom
             </h4>

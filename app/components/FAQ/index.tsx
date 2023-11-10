@@ -48,14 +48,14 @@ const Faq = () => {
       {faqItems.map((item, index) => (
         <div key={index} className="mb-4">
           <div
-            className="flex border-b border-[#222] hover:border-[#f9f9f9] pb-2 justify-between items-center cursor-pointer"
+            className="flex border-b border-[#222] hover:border-[#f9f9f9] pb-1 justify-between items-center cursor-pointer"
             onClick={() => handleAccordionClick(item.question)}
             style={{
               borderColor:
-                activeAccordion === item.question ? "#f9f9f9" : "#222",
+                activeAccordion === item.question ? "#f9f9f9" : "#666",
             }}
           >
-            <h3 className="text-[0.87rem]  font-semibold mb-2">
+            <h3 className="text-[0.85rem]  font-semibold mb-2">
               {item.question}
             </h3>
             {activeAccordion === item.question ? (

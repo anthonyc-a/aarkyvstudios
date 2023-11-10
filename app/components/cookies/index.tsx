@@ -27,7 +27,7 @@ const Cookies = () => {
   return (
     <>
       {show && (
-        <div className="cookies bg-[#08080828] backdrop-blur grow w-full max-w-[620px] md:whitespace-nowrap fixed bottom-4 md:bottom-6 right-0 md:right-8 border hover:border-[#555] border-[#222]">
+        <div className="cookies bg-[#08080894] backdrop-blur grow w-full max-w-[620px] md:whitespace-nowrap fixed bottom-4 md:bottom-6 right-0 md:right-8 border hover:border-[#555] border-[#222]">
           <div className="w-full h-full p-6 flex items-center justify-between">
             <div className="absolute detail top-0 left-0  bg-[#fff]"></div>
             <div className="absolute detail top-0 right-0  bg-[#fff]"></div>
@@ -39,7 +39,7 @@ const Cookies = () => {
             </p>
             <div className="flex gap-6">
               <span
-                className="underline-anim underline hover:decoration-transparent"
+                className="underline-anim hover:underline"
                 onClick={close}
               >
                 I Understand
