@@ -113,7 +113,8 @@
 }
 
 .ant-modal {
-  border-radius: 2px !important;
+  background-color: #f9f9f9 !important;
+  border-radius: 0 !important;
   clip-path: polygon(
     0 0,
     100% 0,
@@ -130,7 +131,8 @@
   );
 }
 .ant-modal-content {
-  border-radius: 2px !important;
+  background-color: #f9f9f9 !important;
+  border-radius: 0 !important;
   clip-path: polygon(
     0 0,
     100% 0,
@@ -321,8 +323,10 @@ h5 {
 
 .txt {
   text-transform: none !important;
-  font-size: 0.84rem;
-  color: #ddd;
+  font-size: 0.83rem;
+  font-weight: 350;
+  line-height: 1.35;
+  letter-spacing: 0 !important;
 }
 
 .service {
@@ -473,7 +477,7 @@ video {
   left: 50%;
   transform: translateX(-50%);
   filter: contrast(1.15) brightness(0.95)  !important;
-  opacity: 0.65;
+  opacity: 0.87;
 
   &:hover ~ a {
     opacity: 0.5;

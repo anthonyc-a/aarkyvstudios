@@ -51,7 +51,7 @@ const Archive: React.FC<GridItemButtonProps> = ({ images }: any) => {
         width={800}
         style={{ borderRadius: "2px", zIndex: 10000 }}
       >
-        <div className="min-h-[800px] pb-8">
+        <div className="pb-8">
         <Row gutter={[16, 16]}>
           {images.map((image: any, index: any) => (
             <Col key={index} span={8}>

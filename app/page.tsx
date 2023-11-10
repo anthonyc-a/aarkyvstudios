@@ -14,6 +14,7 @@ import ProjectModal from "./components/project";
 import Timeline from "./components/timeline";
 import CustomTimeline from "./components/timeline";
 import About from "./components/about";
+import Faq from "./components/FAQ";
 
 const gridItems = [
   {
@@ -90,7 +91,7 @@ const Home = () => {
 
   return (
     <div className="relative w-fill flex flex-col items-center">
-      <section id="home" className="container overflow-hidden">
+      <section id="home" className="container overflow-hidden mb-16">
         <div className="hero-mask"></div>
         <div className="subscribe absolute bottom-8 left-[12%]">
           <div className="w-[400px]">
@@ -117,7 +118,7 @@ const Home = () => {
           </div>
         </div>
         <Hero />
-        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-[124px] right-0 font-semibold text-[0.7rem]">
+        <div className="absolute links text-white   flex items-center hover:opacity-100 gap-6 top-[112px] right-0 font-semibold text-[0.7rem]">
           socials:
           <a href="/">
             i<span>nst</span>g<span>ram</span>
@@ -142,7 +143,6 @@ const Home = () => {
           />
           scroll down
         </a>
-        
       </section>
 
       <section id="clients" className="container">
@@ -151,7 +151,7 @@ const Home = () => {
           <AccentHeaderOne text="Projects" />
 
           <h2>Our Clients</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
+          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
             001 — 01 //
           </p>
 
@@ -159,7 +159,7 @@ const Home = () => {
             {gridItems.map((item: any, index: any) => (
               <div
                 key={index}
-                className={`${item.bgColor} project hover:brightness-75 rounded-sm relative p-8 flex items-center gap-10`}
+                className={`${item.bgColor} project hover:brightness-75 relative p-8 flex items-center gap-10`}
                 onClick={() => handleOpenModal(item.content)} // pass project information to handleOpenModal function
               >
                 <Image src={item.src} alt={item.alt} width={200} height={200} />
@@ -197,48 +197,44 @@ const Home = () => {
           <AccentHeaderOne text="About" />
 
           <h2>ABOUT US</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
-            / / 002 — 001
+          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
+            002 — 01 //
           </p>
-          <About/>
+          <About />
         </div>
         <div className="divide"></div>
       </section>
-
-
-           <section id="research" className="container">
-        <div className="divide"></div>
-        <div className="p-16">
-          <AccentHeaderOne text="Blog" />
-          <h2>Research</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
-             003 — 001 //
-          </p>
-          <Research />
-        </div>
-        <div className="divide"></div>
-      </section>
-
-     
 
       <section id="services" className="container overflow-hidden">
         <div className="divide"></div>
         <div className="p-16 ">
           <AccentHeaderOne text="capabilities" />
-          <h2>services</h2>
-          <p className="text-[#ccc] text-[0.75rem] my-2 font-[500]">
+          <h2>Our Services</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
             003 — 01 //
           </p>
-          <div className="w-full flex justify-between gap-8 mt-2">
-            <Services />
-            <CustomTimeline />
+          <div className="w-full flex justify-between mt-2 gap-16">
+          <Faq />
+
+          <Services />
+
           </div>
         </div>
         <div className="divide"></div>
       </section>
 
- 
-    
+      <section id="research" className="container">
+        <div className="divide"></div>
+        <div className="p-16">
+          <AccentHeaderOne text="Branches" />
+          <h2>Research</h2>
+          <p className="text-[#ccc] text-[0.75rem] my-1 font-[500]">
+            004 — 01 //
+          </p>
+          <Research />
+        </div>
+        <div className="divide"></div>
+      </section>
 
       <section id="contact" className="container">
         <h2>CONTACT</h2>

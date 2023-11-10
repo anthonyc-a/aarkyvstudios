@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             "https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
           }
           autoPlay
-          className="max-w-[850px] backdrop-blur-sm h-[100%] object-cover  "
+          className="max-w-[850px] backdrop-blur-sm h-[100%] object-cover clip "
           loop
           muted
           style={{
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
           </div>
           <a
             href="#about"
-            className="cta flex items-center justify-between rounded-[2px] text-[0.65rem] font-bold bg-white text-black p-[6px] px-4"
+            className="cta flex items-center justify-between  text-[0.65rem] font-bold bg-white text-black p-[6px] px-4"
           >
             Learn More
             <Image

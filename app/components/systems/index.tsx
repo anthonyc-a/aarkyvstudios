@@ -92,7 +92,7 @@ const Systems = () => {
         <p className="">Site Version: 2.2.0</p>
         <p>Language: TypeScript</p>
         <p>Font: Britti Sans Variable</p>
-        <p className="">Servers: Online (99% uptime)</p>
+        <p className="">Servers: Online</p>
         <p>
           Last Updated:{" "}
           {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })}{" "}

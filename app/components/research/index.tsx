@@ -51,11 +51,11 @@ const Research = () => {
   };
   return (
     <div className="mt-10 flex gap-10">
-      <div className="grid w-full max-w-[500px] relative grid-cols-1 gap-6 text-[#111]">
+      <div className="grid w-full max-w-[800px] max-h-[300px] relative grid-cols-1 gap-6 text-[#111]">
         {gridItems.map((item: any, index: any) => (
           <div
             key={index}
-            className={`${item.bgColor} research hover:brightness-75 rounded-sm relative p-4 flex items-center gap-8`}
+            className={`bg-[#f9f9f9] research hover:brightness-75 relative p-4 flex items-center gap-8`}
             onClick={handleOpenModal}
           >
             <div className="relative flex justify-between items-center w-full gap-10 p-2">
@@ -64,9 +64,9 @@ const Research = () => {
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    width={35}
-                    height={35}
-                    className="border border-gray-300 rounded-[4px]"
+                    width={36}
+                    height={36}
+                    className="border border-gray-300 rounded-md"
                   />
                 </div>
                 <div>
@@ -76,7 +76,9 @@ const Research = () => {
                   </p>
                 </div>
               </div>
-              {item.date}
+              <p className="text-[#666]">
+                    {item.date}
+                  </p>
             </div>
           </div>
         ))}
@@ -100,10 +102,10 @@ const Research = () => {
         <Image
           src="/bali.png"
           alt="blok"
-          className=" w-full object-cover rounded-sm brightness-90"
+          className=" w-full object-cover"
         />
         <div className="absolute bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
-        <div className="absolute bottom-0 w-full p-8 text-white">
+        <div className="absolute bottom-0 w-full p-6 text-white">
           <h3 className="text-[16px] font-bold mb-[2px]">Medewi beach, Bali</h3>
           <p className="text-[#999]">Blok Studios Concept</p>
         </div>

@@ -43,7 +43,7 @@ const CustomTimeline = () => {
   };
 
   return (
-    <div className="w-full md:w-1/2 mt-10 pl-20">
+    <div className="w-full mt-10 pl-20">
       <Timeline mode="left" color="white">
         {timelineItems.map((item, index) => (
           <Timeline.Item
