@@ -30,19 +30,7 @@ const gridItems = [
       description: "Project information for Double",
     },
   },
-  {
-    src: "/img1.png",
-    alt: "Item 2",
-    title: "Archvizual",
-    text: "3D Design Studio",
-    bgColor: "bg-gray-100",
-    content: {
-      title: "Archvizual",
-      text: "3D Design Studio",
-      image: "/img1.png",
-      description: "Project information for Archvizual",
-    },
-  },
+
   {
     src: "/img3.png",
     alt: "Item 3",
@@ -54,6 +42,19 @@ const gridItems = [
       text: "Streaming Platform",
       image: "/img3.png",
       description: "Project information for Verve",
+    },
+  },
+  {
+    src: "/img1.png",
+    alt: "Item 2",
+    title: "Archvizual",
+    text: "3D Design Studio",
+    bgColor: "bg-gray-100",
+    content: {
+      title: "Archvizual",
+      text: "3D Design Studio",
+      image: "/img1.png",
+      description: "Project information for Archvizual",
     },
   },
   {
@@ -197,6 +198,15 @@ const Home = () => {
         </div>
       </section>
 
+      <section id="research" className="container">
+        <div className="px-12">
+          <AccentHeaderOne text="Projects" />
+          <h2>Research</h2>
+         
+          <Research />
+        </div>
+      </section>
+
       <section id="services" className="container overflow-hidden">
         <div className="px-20 ">
           <AccentHeaderOne text="services" />
@@ -211,14 +221,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="research" className="container">
-        <div className="px-12">
-          <AccentHeaderOne text="Branches" />
-          <h2>Research</h2>
-         
-          <Research />
-        </div>
-      </section>
+    
 
   
 

@@ -85,9 +85,9 @@ const Services = () => {
               <Image src={item.img} alt={item.img} width={72} height={72} />
               <h3 className="text-white mt-4">{item.title}</h3>
             </div>
-            <button className="clip z-10 text-[0.65rem] p-1 px-4 bg-[#f9f9f9] text-[#111]">
+            {/* <button className="clip z-10 text-[0.65rem] p-1 px-4 bg-[#f9f9f9] text-[#111]">
               +
-            </button>
+            </button> */}
             <div
               className="absolute pointer-events-none  top-0 left-0 w-full h-full z-[5]"
               style={{
@@ -100,7 +100,7 @@ const Services = () => {
                   alt={item.alt}
                   width={500}
                   height={500}
-                  className="absolute hiddenhover:block top-0 left-0  w-full h-full object-cover z-[-1]"
+                  className="absolute top-0 left-0  w-full h-full object-cover"
                 />
           </div>
         ))}

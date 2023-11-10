@@ -69,11 +69,6 @@
   display: flex;
 }
 
-.scroller {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .cta, .marquee, .project, .service, .research, .clip {
   clip-path: polygon(
     0 0,

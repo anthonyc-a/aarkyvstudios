@@ -16,7 +16,7 @@ const gridItems = [
   {
     src: "/blok.png",
     alt: "Item 2",
-    title: "Blok",
+    title: "Blok Studios",
     text: "Architecture",
     bgColor: "bg-gray-100",
     date: "2023",
@@ -32,7 +32,7 @@ const gridItems = [
   {
     src: "/change.png",
     alt: "Change Project",
-    title: "Change",
+    title: "Change Project",
     text: "Social Development",
     bgColor: "bg-gray-100",
     date: "2025",
@@ -107,7 +107,7 @@ const Research = () => {
         <div className="absolute bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
         <div className="absolute bottom-0 w-full p-6 text-white">
           <h3 className="text-[16px] font-bold mb-[2px]">Medewi beach, Bali</h3>
-          <p className="text-[#999]">3D Visualisation</p>
+          <p className="text-[#999]">3D Visualisation with midjourney</p>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <div className="gap-4 flex flex-col  w-full mt-12">
-        <div className="grid items-center grid-rows-2 gap-24 gap-y-32 grid-cols-2">
+        <div className="grid items-center grid-rows-2 gap-24 gap-y-[120px] grid-cols-2">
           <div className="item ">
             <h4 className="text-[20px] leading-[1.3] font-black">
               Crafting visually stunning user experiences through cutting-edge
@@ -59,7 +59,7 @@ const About = () => {
               alt="About Us Image"
               width={330}
               height={286}
-              className="w-full h-64 clip object-cover brightness-[0.8] "
+              className="w-full h-64 clip object-cover "
             />
           </div>
           <div className="item">
@@ -98,7 +98,7 @@ const About = () => {
               alt="About Us Image"
               width={330}
               height={286}
-              className="w-full h-64 object-cover clip brightness-[0.8] "
+              className="w-full h-64 object-cover clip "
             />
           </div>
         </div>
