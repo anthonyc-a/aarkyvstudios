@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="absolute font-extralight text-[13px] top-0 left-0 w-full h-full ">
+        <div className="absolute font-extralight text-[16px] top-0 left-0 w-full h-full ">
           <div className="absolute cross top-0 left-0 w-4 h-4 flex justify-center items-center">
             +
           </div>
@@ -34,12 +34,16 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
+        <div className="absolute play-button flex gap-2 items-center text-[0.72rem] font-[500] bottom-8 right-8">
+          <Image src={"/mouse.svg"} alt="play" width={15} height={15} />
+        </div>
+
         <video
           src={
             "https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
           }
           autoPlay
-          className="max-w-[850px] backdrop-blur-sm h-[100%] object-cover clip "
+          className="max-w-[850px] h-[100%] object-cover clip clip-lg "
           loop
           muted
           style={{
@@ -56,10 +60,10 @@ const Hero: React.FC = () => {
               width={10}
               height={10}
             />
-            <span className="font-black">AARKYV STUDIOS</span>
+            <span className="font-bold text-[1rem]">AARKYV STUDIOS</span>
           </div>
           <button
-            className="cta flex items-center justify-between  text-[0.65rem] font-bold bg-white text-black p-[6px] px-4"
+            className="cta flex items-center justify-between  text-[0.7rem] font-[680] bg-white text-[#111] p-[6px] px-4"
           >
             Learn More
             <Image

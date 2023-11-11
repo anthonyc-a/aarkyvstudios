@@ -71,30 +71,14 @@ const Services = () => {
         {visibleItems.map((item: any, index: any) => (
           <div
             key={index}
-            className={`service overflow-hidden relative p-6 h-[104px] justify-between flex items-center gap-8`}
+            className={`service relative p-6 h-[104px] justify-between flex items-center gap-8`}
             onClick={() => handleOpenModal(item.title)}
           >
             <div className="relative z-10">
               <Image src={item.img} alt={item.img} width={72} height={72} />
               <h3 className="text-white mt-4">{item.title}</h3>
             </div>
-            {/* <button className="clip z-10 text-[0.65rem] p-1 px-4 bg-[#f9f9f9] text-[#111]">
-              +
-            </button> */}
-            <div
-              className="absolute pointer-events-none  top-0 left-0 w-full h-full z-[5]"
-              style={{
-                background:
-                  "linear-gradient(to right, rgba(10,10,10,0.8), rgba(10,10,10,0.1))",
-              }}
-            ></div>
-             <Image
-                  src={item.src}
-                  alt={item.alt}
-                  width={500}
-                  height={500}
-                  className="absolute top-0 left-0  w-full h-full object-cover"
-                />
+           
           </div>
         ))}
         <div className="flex mt-6 ml-auto">

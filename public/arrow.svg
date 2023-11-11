@@ -1,8 +1,8 @@
 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g opacity="0.65">
-        <path d="M2.12891 1H9.99989V8.87064" stroke="black" stroke-width="1"
+        <path d="M2.12891 1H9.99989V8.87064" stroke="#111" stroke-width="1"
             stroke-linecap="square" />
-        <path d="M9.27274 1.72728L2 9.00002" stroke="black" stroke-width="1"
+        <path d="M9.27274 1.72728L2 9.00002" stroke="#111" stroke-width="1"
             stroke-linecap="square" />
     </g>
 </svg>

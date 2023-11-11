@@ -8,7 +8,7 @@ const About = () => {
       <div className="gap-4 flex flex-col  w-full mt-4 mb-8">
         <div className="grid items-center grid-rows-2 gap-24 gap-y-[80px] grid-cols-2">
           <div className="item ">
-            <h4 className="text-[20px] leading-[1.3] font-black">
+            <h4 className="text-[20px] leading-[1.3]">
               Crafting visually stunning user experiences with cutting-edge
               design and technology.
             </h4>
@@ -63,7 +63,7 @@ const About = () => {
             />
           </div>
           <div className="item">
-            <h4 className="text-[20px] text-right leading-[1.3] font-black">
+            <h4 className="text-[20px] text-right leading-[1.3]">
                5+ years working with small to medium-sized businesses,
               startups and individuals.
             </h4>
@@ -78,7 +78,7 @@ const About = () => {
             </div>
           </div>
           <div className="item">
-            <h4 className="text-[20px] flex items-center gap-3 leading-[1.35] font-black">
+            <h4 className="text-[20px] flex items-center gap-3 leading-[1.35]">
                 <Image src="/globe.svg" alt="pin" width={21} height={21} />
               Based in the
               United Kingdom

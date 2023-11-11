@@ -50,7 +50,7 @@ const Research = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="mt-10 flex gap-12">
+    <div className="mt-10 flex gap-20">
       <div className="grid w-full max-w-[800px] max-h-[300px] relative grid-cols-1 gap-5 text-[#222]">
         {gridItems.map((item: any, index: any) => (
           <div
@@ -70,8 +70,8 @@ const Research = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="font-[520]">{item.title}</h3>
-                  <p className="text-[#666] text-[0.7rem] font-[500] mt-[3px]">
+                  <h3 className="font-[600]">{item.title}</h3>
+                  <p className="text-[#666] text-[0.7rem] font-[420] mt-[2px]">
                     {item.text}
                   </p>
                 </div>

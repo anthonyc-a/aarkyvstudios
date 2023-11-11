@@ -9,7 +9,7 @@ const Particles = () => {
   const drawParticles = () => {
     const canvas: any = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    const particleCount = 3000;
+    const particleCount = 4000;
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -58,7 +58,7 @@ const Particles = () => {
         ctx.fill();
 
         // Draw right helix
-        ctx.fillStyle = "#444";
+        ctx.fillStyle = "#333";
         ctx.beginPath();
         ctx.arc(
           x,

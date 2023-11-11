@@ -15,6 +15,8 @@ import Timeline from "./components/timeline";
 import CustomTimeline from "./components/timeline";
 import About from "./components/about";
 import Faq from "./components/FAQ";
+import useFrictionScroll from "./hooks/useFrictionScroll";
+import Scrollbar from "./components/scrollbar";
 
 const gridItems = [
   {
@@ -90,11 +92,22 @@ const Home = () => {
     setModalContent({});
   };
 
+  const scrollRef = useFrictionScroll();
+
   return (
-    <div className="relative w-fill flex flex-col items-center">
+    <div
+      ref={scrollRef}
+      style={{ height: "100%", overflow: "auto" }}
+      className="relative w-fill flex flex-col items-center"
+    >
       <section id="home" className="container overflow-hidden">
-        <div className="hero-mask"></div>
-        <div className="subscribe absolute bottom-8 left-[12%]">
+        <Particles />
+         <div className="scrollbar">
+          <div className="scrollbar-inner"></div>
+        </div> 
+        <div className="fixed bottom-0 w-full h-1/4 bg-gradient-to-t from-[#00000046] to-transparent"></div>
+
+        <div className="subscribe absolute bottom-10 left-[12%]">
           <div className="w-[400px]">
             <input
               type="text"
@@ -114,7 +127,7 @@ const Home = () => {
               alt="arrow"
               width={12}
               height={12}
-              className="absolute top-[12px] left-0 opacity-60"
+              className="absolute top-[12px] left-0"
             />
           </div>
         </div>
@@ -131,29 +144,17 @@ const Home = () => {
             l<span>inked</span>i<span>n</span>{" "}
           </a>
         </div>
-        <a
-          href="#clients"
-          className="absolute  flex items-center hover:decoration-transparent gap-4 bottom-[38px] right-[13%] text-[0.7rem]"
-        >
-          <Image
-            src="arrowDown.svg"
-            alt="arrow down"
-            width={15}
-            height={15}
-            className="border border-[#f9f9f9] rounded-full"
-          />
-          scroll down
-        </a>
+    
       </section>
 
       <section id="clients" className="container">
         <div className="p-12 relative px-20">
           <div className="flex">
-            <span className="text-[0.7rem] text-[#f9f9f9]">01 — 001 //</span>
             <AccentHeaderOne text="Projects" />
           </div>
 
           <h2>Our Clients</h2>
+          <p className="text-[0.72rem] mt-2 text-[#999]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
           <div className="grid relative mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-black">
             {gridItems.map((item: any, index: any) => (
@@ -165,7 +166,7 @@ const Home = () => {
                 <Image src={item.src} alt={item.alt} width={200} height={200} />
                 <div className="relative">
                   <h3>{item.title}</h3>
-                  <p className="text-[#666] font-[500]">{item.text}</p>
+                  <p className="text-[#666] font-[420]">{item.text}</p>
                 </div>
                 {item.title === "Snapi" ? (
                   <Image
@@ -193,12 +194,10 @@ const Home = () => {
       <section id="about" className="container">
         <div className="px-[120px]">
           <div className="flex">
-            <span className="text-[0.7rem] text-[#f9f9f9]">02 — 001 //</span>
             <AccentHeaderOne text="About" />
           </div>
 
           <h2>ABOUT US</h2>
-
           <About />
         </div>
       </section>
@@ -206,11 +205,10 @@ const Home = () => {
       <section id="research" className="container">
         <div className="px-12">
           <div className="flex">
-            <span className="text-[0.7rem] text-[#f9f9f9]">03 — 001 //</span>
             <AccentHeaderOne text="Projects" />
           </div>
           <h2>Research</h2>
-
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <Research />
         </div>
       </section>
@@ -218,7 +216,6 @@ const Home = () => {
       <section id="services" className="container overflow-hidden">
         <div className="px-20 ">
           <div className="flex">
-            <span className="text-[0.7rem] text-[#999]">04 — 001 //</span>
             <AccentHeaderOne text="Services" />
           </div>
           <h2>Services & FAQ</h2>

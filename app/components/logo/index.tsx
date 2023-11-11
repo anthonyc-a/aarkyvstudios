@@ -38,7 +38,7 @@ const Logo = () => {
   return (
     <Link href="#"
       ref={logoRef}
-      className={`fixed top-10 left-12 opacity-0  z-[1000] font-extrabold gap-3 ${
+      className={`fixed top-10 left-12 opacity-0  z-[1000] font-[700] gap-3 ${
         showLogo ? "flex" : "hidden"
       }`}
     >

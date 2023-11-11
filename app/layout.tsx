@@ -78,6 +78,7 @@ export default function RootLayout({
           <meta name="theme-color" content="#030303" />
         </head>
         <body>
+          <div className="overlay"></div>
           <Cursor />
           <Logo />
           <Nav />

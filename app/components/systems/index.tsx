@@ -51,7 +51,7 @@ const Systems = () => {
         }`}
         onClick={handleOpenModal}
       >
-        <span >systems</span>{" "}
+        <span>systems</span>
         <a
         
         >
@@ -59,10 +59,10 @@ const Systems = () => {
         </a>
       </div>
       <button
-        className={`fixed  p-1.5 px-10 bg-[#666] rounded-[32px] z-10 ${
+        className={`fixed  p-1 px-10 bg-[#f9f9f9] clip z-10 ${
           showLogo
-            ? "top-[36px] right-8 md:right-8"
-            : "top-[36px] right-8 md:left-12 md:right-[unset]"
+            ? "top-[40px] right-8 md:right-8"
+            : "top-[40px] right-8 md:left-12 md:right-[unset]"
         }`}
         onClick={handleOpenContactModal}
       >
