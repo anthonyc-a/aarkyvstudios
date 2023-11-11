@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
               width={10}
               height={10}
             />
-            <span className="font-bold text-[1rem]">AARKYV STUDIOS</span>
+            <span className="font-[640] text-[1rem]">AARKYV STUDIOS</span>
           </div>
           <button
             className="cta flex items-center justify-between  text-[0.7rem] font-[680] bg-white text-[#111] p-[6px] px-4"
