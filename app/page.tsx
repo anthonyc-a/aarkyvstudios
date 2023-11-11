@@ -101,7 +101,6 @@ const Home = () => {
       className="relative w-fill flex flex-col items-center"
     >
       <section id="home" className="container overflow-hidden">
-        <Particles />
          <div className="scrollbar">
           <div className="scrollbar-inner"></div>
         </div> 

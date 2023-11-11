@@ -59,7 +59,7 @@ const Systems = () => {
         </a>
       </div>
       <button
-        className={`fixed  p-1 px-10 bg-[#f9f9f9] rounded-2xl z-10 ${
+        className={`fixed  p-1 px-10 bg-[#666] rounded-2xl z-10 ${
           showLogo
             ? "top-[40px] right-8 md:right-8"
             : "top-[40px] right-8 md:left-12 md:right-[unset]"
