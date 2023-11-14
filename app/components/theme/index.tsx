@@ -27,8 +27,8 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="fixed flex gap-2 p-2.5 border border-[#333] rounded-2xl hover:border-[#999] w-fit left-8 md:right-0 bottom-8 md:left-12 z-50">
-      <Image className="" src={"/moon.svg"} alt="" width={11} height={11} onClick={handleToggle} />
+    <div className="flex gap-2 p-2.5 hover:border-[#999] w-fit z-50">
+      <Image className="" src={"/moon.svg"} alt="" width={12} height={12} onClick={handleToggle} />
     </div>
   );
 };

@@ -27,12 +27,12 @@ const Cookies = () => {
   return (
     <>
       {show && (
-        <div className="cookies bg-[#00000054] backdrop-blur grow w-full max-w-[620px] md:whitespace-nowrap fixed bottom-4 md:bottom-8 right-0 md:right-8 border hover:border-[#555] border-[#222]">
+        <div className="cookies bg-[#ffffff54] grow backdrop-blur md:whitespace-nowrap fixed bottom-4 md:bottom-8 left-2 md:right-8 border hover:border-[#aaa] border-[#222]">
           <div className="w-full h-full p-6 flex items-center justify-between">
-            <div className="absolute detail top-0 left-0  bg-[#fff]"></div>
-            <div className="absolute detail top-0 right-0  bg-[#fff]"></div>
-            <div className="absolute detail bottom-0 left-0  bg-[#fff]"></div>
-            <div className="absolute detail bottom-0 right-0  bg-[#fff]"></div>
+            <div className="absolute detail top-0 left-0  bg-[#000]"></div>
+            <div className="absolute detail top-0 right-0  bg-[#000]"></div>
+            <div className="absolute detail bottom-0 left-0  bg-[#000]"></div>
+            <div className="absolute detail bottom-0 right-0  bg-[#000]"></div>
             <p className="flex items-center gap-3 txt font-[450]">
               <Image src={"/cookie.svg"} alt="" width={19} height={19} />
               This website uses cookies to enhance your experience.
@@ -42,7 +42,7 @@ const Cookies = () => {
                 className="underline hover:underline"
                 onClick={close}
               >
-                I Understand
+                Understood
               </span>
             </div>
           </div>

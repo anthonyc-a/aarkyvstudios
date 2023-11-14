@@ -35,12 +35,12 @@ const Archive: React.FC<GridItemButtonProps> = ({ images }: any) => {
         onClick={handleButtonClick}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className={`fixed archive grid grid-cols-3 gap-1 py-2 grid-rows-3 bottom-[31px] right-12 z-50`}
+        className={`fixed archive grid grid-cols-3 gap-1 p-2 grid-rows-3 bottom-[16px] right-4 z-50`}
       >
         {images.slice(0, 9).map((_: any, index: any) => (
           <div
             key={index}
-            className="w-[3px] h-[3px] bg-white bg-cover bg-center"
+            className="w-[3px] h-[3px] bg-[#000] bg-cover bg-center"
           />
         ))}
       </div>

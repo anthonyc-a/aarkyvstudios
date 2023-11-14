@@ -44,30 +44,14 @@ const Systems = () => {
   return (
     <>
       <div
-        className={`systems fixed z-10 hidden md:block  hover:underline ${
-          showLogo
-            ? "right-10 hidden top-11 hover:text-inherit md:right-[12rem]"
-            : "left-10 top-11 md:left-[18rem]"
+        className={`systems z-10  hover:underline ${
+          showLogo ? "hidden hover:text-inherit" : ""
         }`}
         onClick={handleOpenModal}
       >
         <span>systems</span>
-        <a
-        
-        >
-          online
-        </a>
       </div>
-      <button
-        className={`fixed  p-1 px-10 bg-[#666] rounded-2xl z-10 ${
-          showLogo
-            ? "top-[40px] right-8 md:right-8"
-            : "top-[40px] right-8 md:left-12 md:right-[unset]"
-        }`}
-        onClick={handleOpenContactModal}
-      >
-        <Image src="/mail.svg" alt="mail" width={15} height={15} />
-      </button>
+  
       <Modal
         title={
           <div className="flex items-center">
@@ -93,26 +77,6 @@ const Systems = () => {
           {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })}{" "}
           (ICT), Thailand
         </p>
-      </Modal>
-      <Modal
-        title="Get in touch"
-        visible={isContactModalOpen}
-        onCancel={handleCloseContactModal}
-        footer={[
-          <button key="close" onClick={handleCloseContactModal}>
-            Close Modal
-          </button>,
-        ]}
-      >
-        <form>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
       </Modal>
     </>
   );

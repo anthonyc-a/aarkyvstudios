@@ -12,6 +12,7 @@ import Logo from "./components/logo";
 import Archive from "./components/archive";
 import { VisibilityProvider } from "./context/Visibility";
 import Particles from "./components/particles";
+import ContactButton from "./components/contact";
 
 const images: any = [
   {
@@ -75,18 +76,23 @@ export default function RootLayout({
     <VisibilityProvider>
       <html lang="en">
         <head>
-          <meta name="theme-color" content="#030303" />
+          <meta name="theme-color" content="#fafafa" />
         </head>
         <body>
           <div className="overlay"></div>
           <Cursor />
-          <Logo />
-          <Nav />
-          <ThemeToggle />
-          <MarqueeCpt />
-          <Systems />
+          <header className="relative w-full p-4 flex justify-between items-center ">
+            <ContactButton />
+            <div className="flex items-center gap-6">
+              <Systems />
+              <ThemeToggle />
+              <div className="menu font-light w-8 h-8 flex justify-center items-center text-2xl leading-[1] rounded-[4px] border border-black">
+                =
+              </div>
+            </div>
+          </header>
           <main>{children}</main>
-          <Cookies />
+          <Cookies/>
           <Archive images={images} />
           <Scrollbar />
         </body>

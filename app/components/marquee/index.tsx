@@ -3,21 +3,18 @@ import Marquee from "react-fast-marquee";
 
 const MarqueeCpt = () => {
   return (
-    <div className="marquee hidden md:block absolute top-9 right-8 z-50 w-full max-w-[580px] overflow-hidden  bg-[#f9f9f9] text-[#111] p-[5px]">
+    <div className="marquee z-50 w-[90%] clip max-w-[580px] overflow-hidden border border-[#000] text-[#000] mx-auto p-1.5">
       <Marquee
-      gradient
-        gradientColor="#fff"
-        gradientWidth={24}
-        speed={40}
+        speed={64}
         direction="left"
       >
-        <div className="flex gap-4 font-[560] text-[0.66rem] tracking-[0.045em]">
+        <div className="flex gap-4 font-[580] text-[0.7rem] tracking-[0.05em]">
           <div>
-          Crafting visually  stunning user experiences through cutting-edge design and technology
+          outstanding user experiences made with cutting-edge design and technology
           </div>
           —
           <div>
-          Crafting visually stunning user experiences through cutting-edge design and technology
+          outstanding user experiences made with cutting-edge design and technology
           </div>
           —
         </div>
