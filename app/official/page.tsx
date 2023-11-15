@@ -25,7 +25,7 @@ const Page = () => {
       <MarqueeCpt />
       {/* Hero Section */}
       <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-2">
-        <div className="absolute font-extralight text-[16px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
+        <div className="absolute font-extralight text-[15px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
           <div className="absolute cross top-[28.5vh] right-1 w-4 h-4 flex justify-center items-center">
             +
           </div>
