@@ -84,7 +84,7 @@ const Page = () => {
           <span>scroll down</span>
         </div>
         <div className="flex relative flex-col justify-center h-[50vh] items-center md:w-1/2">
-          <Image src="/pause.svg" alt="" width={8} height={8}className="absolute top-8 right-16 z-50"/>
+          <Image src="/pause.svg" alt="" width={8} height={8}className="absolute top-6 right-16 z-50"/>
           <video
             className={`h-full object-cover clip-lg mr-16 z-10 bg-gray-300}`}
             loop={true}
