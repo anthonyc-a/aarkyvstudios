@@ -45,7 +45,7 @@ const ContactButton = () => {
   return (
     <>
       <button
-        className={` p-1 px-10 bg-[#000] clip-sm z-10 ${
+        className={` p-1 px-10 bg-[#333] clip-sm z-10 ${
           showLogo ? "" : ""
         }`}
         onClick={handleOpenContactModal}
