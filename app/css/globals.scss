@@ -433,8 +433,10 @@ h3 {
 }
  
 video {
+  position: relative;
   background: #999;
   filter: brightness(0.8);
+  z-index: -1;
 }
 
 .divide {
@@ -602,6 +604,7 @@ input {
 
 }
 .detail {
+  display: none;
   &:nth-child(1) {
     transform: translate(-50%, -50%);
   }
@@ -627,7 +630,8 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 550;
+  font-weight: 700;
+  line-height: 1;
   
   &::before {
     position: absolute;

@@ -44,12 +44,12 @@ const Systems = () => {
   return (
     <>
       <div
-        className={`systems lowercase z-10  hover:underline ${
+        className={`systems text-[0.71rem] z-10  hover:underline ${
           showLogo ? "hidden hover:text-inherit" : ""
         }`}
         onClick={handleOpenModal}
       >
-        <span>systems</span>
+        <span>Available</span>
       </div>
 
       <Modal
