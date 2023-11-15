@@ -66,7 +66,7 @@ const Systems = () => {
         }
         open={isModalOpen}
         onCancel={handleCloseModal}
-        className="clip"
+        className="clip-lg"
         okButtonProps={{ disabled: true, style: { display: "none" } }}
       >
         <div className="leading-[1.35]">
