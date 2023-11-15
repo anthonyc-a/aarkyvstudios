@@ -86,7 +86,7 @@ export default function RootLayout({
             <div className="flex items-center gap-6">
               <Systems />
               <ThemeToggle />
-              <div className="menu border border-black font-light w-8 h-8 flex justify-center items-center text-3xl leading-[1] rounded-[4px]">
+              <div className="menu border border-black font-light w-8 h-8 flex justify-center items-center text-2xl leading-[1] rounded-[6px]">
                 =
               </div>
             </div>
