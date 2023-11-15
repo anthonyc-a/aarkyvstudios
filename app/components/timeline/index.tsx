@@ -44,12 +44,11 @@ const CustomTimeline = () => {
 
   return (
     <div className="w-full mt-10 pl-20">
-      <Timeline mode="left" color="white">
+      <Timeline mode="left">
         {timelineItems.map((item, index) => (
           <Timeline.Item
             key={index}
             color={index ? "white" : "blue"}
-            onClick={() => handleItemClick(item)}
           >
             <h5 className="text-[17px] hover:underline font-semibold leading-6 text-white">
               {item.title}
