@@ -36,6 +36,7 @@
 }
 
 .marquee  {
+  left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 32px);
 }
