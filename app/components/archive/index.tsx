@@ -40,7 +40,7 @@ const Archive: React.FC<GridItemButtonProps> = ({ images }: any) => {
         {images.slice(0, 9).map((_: any, index: any) => (
           <div
             key={index}
-            className="w-[4px] h-[4px] bg-[#666] bg-cover bg-center"
+            className="w-[4px] h-[4px] bg-[#000] bg-cover bg-center"
           />
         ))}
       </div>
