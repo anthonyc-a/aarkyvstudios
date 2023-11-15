@@ -94,7 +94,7 @@ const Page = () => {
         
           >
             <source
-              src="https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
+              src="/vid.mp4"
               type="video/mp4"
             />
           </video>
