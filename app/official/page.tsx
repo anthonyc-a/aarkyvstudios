@@ -74,7 +74,7 @@ const Page = () => {
             Aarkyv Studios
           </h1>
           {/* <p className="mt-0.5 tracking-[0.3px] font-[360] text-[#555] text-[0.93rem]  lowercase">Visually stunning multimedia</p> */}
-          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.9rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
+          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.9rem] font-[480] flex items-center justify-between mt-[10px] border border-[#333] clip">
             Learn more <Image src="/arrow.svg" alt="" width={8} height={8} />
           </button>
         </div>
