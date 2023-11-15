@@ -55,10 +55,10 @@ const Page = () => {
         className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-2"
       >
         <div className="absolute font-extralight text-[16px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
-          <div className="absolute cross top-[28vh] right-2 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross top-[28vh] right-1 w-4 h-4 flex justify-center items-center">
             +
           </div>
-          <div className="absolute cross bottom-20 right-2 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross bottom-20 right-1 w-4 h-4 flex justify-center items-center">
             +
           </div>
         </div>
