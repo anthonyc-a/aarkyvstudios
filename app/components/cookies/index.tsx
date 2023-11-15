@@ -27,22 +27,22 @@ const Cookies = () => {
   return (
     <>
       {show && (
-        <div className="cookies bg-[#ffffff54] grow backdrop-blur md:whitespace-nowrap fixed bottom-4 md:bottom-8 left-2 md:right-8 border hover:border-[#aaa] border-[#222]">
-          <div className="w-full h-full p-6 flex items-center justify-between">
+        <div className="cookies clip bg-[#fff] grow backdrop-blur-md md:whitespace-nowrap fixed bottom-4 md:bottom-8 left-2 md:right-8 border hover:border-[#aaa] border-[#000]">
+          <div className="w-full h-full p-4 flex items-center justify-between">
             <div className="absolute detail top-0 left-0  bg-[#000]"></div>
             <div className="absolute detail top-0 right-0  bg-[#000]"></div>
             <div className="absolute detail bottom-0 left-0  bg-[#000]"></div>
             <div className="absolute detail bottom-0 right-0  bg-[#000]"></div>
-            <p className="flex items-center gap-3 txt font-[450]">
+            <p className="flex items-center gap-4 txt pr-6 font-[450]">
               <Image src={"/cookie.svg"} alt="" width={19} height={19} />
               This website uses cookies to enhance your experience.
             </p>
             <div className="flex gap-6">
               <span
-                className="underline hover:underline"
+                className="underline whitespace-nowrap font-[500] hover:underline font-[550"
                 onClick={close}
               >
-                Understood
+                I understand
               </span>
             </div>
           </div>

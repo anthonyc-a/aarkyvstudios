@@ -44,39 +44,50 @@ const Systems = () => {
   return (
     <>
       <div
-        className={`systems z-10  hover:underline ${
+        className={`systems lowercase z-10  hover:underline ${
           showLogo ? "hidden hover:text-inherit" : ""
         }`}
         onClick={handleOpenModal}
       >
         <span>systems</span>
       </div>
-  
+
       <Modal
         title={
           <div className="flex items-center">
             <Image
               src="/logo.svg"
               alt="Aarkyv Studios Logo"
-              width={10}
-              height={10}
-              className="invert-[1]"
+              width={8}
+              height={8}
             />
-            <span className="ml-3">Aarkyv Studios</span>
+            <span className="ml-2">Aarkyv Studios</span>
           </div>
         }
-        visible={isModalOpen}
+        open={isModalOpen}
         onCancel={handleCloseModal}
+        className="clip"
         okButtonProps={{ disabled: true, style: { display: "none" } }}
       >
-        <p className="">Site Version: 2.2.0</p>
-        <p>Language: TypeScript</p>
-        <p>Font: Britti Sans Variable</p>
-        <p>
-          Last Updated:{" "}
-          {new Date().toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })}{" "}
-          (ICT), Thailand
-        </p>
+        <div className="leading-[1.35]">
+          <p className="">Site Version: 2.2.0</p>
+          <p>Language: TypeScript</p>
+          <p>Font: Britti Sans Variable</p>
+          <p>
+            Last Updated:{" "}
+            {new Date().toLocaleString("en-US", {
+              timeZone: "Asia/Ho_Chi_Minh",
+            })}{" "}
+            (ICT), Thailand
+          </p>
+        </div>
+        <Image
+          src="/map.svg"
+          alt="Aarkyv Studios Logo"
+          className="w-full h-full object-cover mt-2"
+          width={300}
+          height={144}
+        />
       </Modal>
     </>
   );

@@ -27,8 +27,12 @@
 }
 
 .cookies {
-  right: 10% !important;
+  position: fixed !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: calc(100% - 32px);
   font-size: 0.72rem;
+  z-index: 9999;
 }
 
 .links {
@@ -61,6 +65,7 @@
 }
 
 .clip {
+  position: relative;
   clip-path: polygon(
     0 0,
     100% 0,
@@ -75,8 +80,21 @@
     calc(100% - 12px) 100%,
     0 100%
   );
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    width: 20px;
+    height: 5px;
+    background-color: black;
+    transform: rotate(-45deg);
+    z-index: 10;
+  }
 }
 .clip-sm {
+  position: relative;
   clip-path: polygon(
     0 0,
     100% 0,
@@ -91,6 +109,17 @@
     calc(100% - 6px) 100%,
     0 100%
   );
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 4px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+  }
 }
 .clip-lg {
   clip-path: polygon(
@@ -130,25 +159,9 @@
 }
 
 .ant-modal {
-  background-color: #f9f9f9 !important;
   border-radius: 0 !important;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 6px),
-    calc(100% - 6px) 100%,
-    0 100%
-  );
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 6px),
-    calc(100% - 6px) 100%,
-    0 100%
-  );
 }
 .ant-modal-content {
-  background-color: #f9f9f9 !important;
   border-radius: 0 !important;
   clip-path: polygon(
     0 0,
@@ -263,7 +276,7 @@ body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   color: #000;
-  background: rgb(183, 170, 170)55;
+  background: #f9f9f9;
 }
 
 .overlay {
@@ -351,7 +364,7 @@ h4 {
   text-transform: none !important;
   font-size: 0.85rem;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.3;
   letter-spacing: 0 !important;
 }
 
@@ -414,8 +427,7 @@ h3 {
 }
 
 video {
-  filter: brightness(0.8);
-  border-radius: 4px;
+  background: #999;
 }
 
 .divide {
@@ -571,20 +583,28 @@ input {
   );
 }
 
-.cross,
-.detail {
-  color: #999;
+.cross {
+  color: #666;
   z-index: 10;
+  &:nth-child(1) {
+    transform: translate(50%, -50%);
+  }
+  &:nth-child(2) {
+    transform: translate(50%, -50%);
+  }
+
+}
+.detail {
   &:nth-child(1) {
     transform: translate(-50%, -50%);
   }
   &:nth-child(2) {
     transform: translate(50%, -50%);
   }
-  &:nth-child(1) {
+  &:nth-child(3) {
     transform: translate(-50%, 50%);
   }
-  &:nth-child(2) {
+  &:nth-child(4) {
     transform: translate(50%, 50%);
   }
 }
@@ -600,8 +620,7 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 580;
-  text-transform: lowercase;
+  font-weight: 550;
   
   &::before {
     position: absolute;
@@ -612,7 +631,7 @@ button {
     width: 6px;
     height: 6px;
     border-radius: 100%;
-    background-color: #73e44a;
+    background-color: #68e939;
   }
 }
 

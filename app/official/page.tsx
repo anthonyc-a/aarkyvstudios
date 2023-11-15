@@ -52,33 +52,30 @@ const Page = () => {
       <MarqueeCpt />
       {/* Hero Section */}
       <div
-        className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-0"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgb(183, 170, 170)55, 255, 1) 100%)",
-        }}
+        className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-2"
       >
-        <div className="absolute font-extralight text-[17px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
-          <div className="absolute cross bottom-0 left-0 w-4 h-4 flex justify-center items-center">
+        <div className="absolute font-extralight text-[16px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
+          <div className="absolute cross top-[28vh] right-0 w-4 h-4 flex justify-center items-center">
             +
           </div>
-          <div className="absolute cross bottom-0 right-0 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross bottom-20 right-0 w-4 h-4 flex justify-center items-center">
             +
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-[35px] md:w-1/2 mb-auto">
-          <h1 className="text-[1.05rem] tracking-[0.35px] flex gap-3 items-center">
+        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto">
+          <h1 className="text-[1.05rem] tracking-[0.6px] flex gap-3 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
-              width={20}
-              height={20}
+              width={22}
+              height={22}
               className="invert"
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 w-[240px] font-[500] flex items-center justify-between mt-[10px] border border-[#111] clip">
-            learn more <Image src="/arrow.svg" alt="" width={8} height={8} />
+          {/* <p className="mt-0.5 tracking-[0.3px] font-[360] text-[#555] text-[0.93rem]  lowercase">Visually stunning multimedia</p> */}
+          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.9rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
+            Learn more <Image src="/arrow.svg" alt="" width={8} height={8} />
           </button>
         </div>
         <div className="absolute bottom-4 left-4 flex items-center gap-3 lowercase">
@@ -86,21 +83,15 @@ const Page = () => {
 
           <span>scroll down</span>
         </div>
-        <div className="flex flex-col justify-center h-[45vh] items-center md:w-1/2">
-          {isVideoLoading && (
-            <div className="h-full w-full flex items-center justify-center">
-              <p>Loading video...</p>
-            </div>
-          )}
+        <div className="flex relative flex-col justify-center h-[50vh] items-center md:w-1/2">
+          <Image src="/pause.svg" alt="" width={8} height={8}className="absolute bottom-8 right-16 z-50"/>
           <video
-            className={`h-full object-cover clip-lg z-10 bg-gray-300 ${
-              isVideoLoading ? "hidden" : ""
-            }`}
+            className={`h-full object-cover clip-lg mr-16 z-10 bg-gray-300}`}
             loop={true}
             muted={true}
             autoPlay={true}
-            onLoadStart={handleVideoLoadStart}
-            onLoadedData={handleVideoLoadedData}
+            playsInline={true}
+        
           >
             <source
               src="https://pininfarina.it/wp-content/uploads/2021/04/Nuovo-video3.mp4"
@@ -112,6 +103,8 @@ const Page = () => {
 
       {/* Clients Section */}
       <div className="flex flex-col md:flex-row h-1/5">
+      <h2>clients</h2>
+
         <div className="flex flex-col justify-center items-center md:w-1/2">
           <div className="grid grid-cols-2 gap-4">
             <div
@@ -142,7 +135,7 @@ const Page = () => {
         </div>
         <Modal
           title="Case Study"
-          visible={isModalVisible}
+          open={isModalVisible}
           onOk={handleOk}
           onCancel={handleCancel}
         >
