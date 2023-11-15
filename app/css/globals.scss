@@ -35,6 +35,11 @@
   z-index: 9999;
 }
 
+.marquee  {
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+}
+
 .links {
   white-space: nowrap;
 }
@@ -425,7 +430,7 @@ h3 {
 
 .underline-anim {
 }
-
+ 
 video {
   background: #999;
   filter: brightness(0.8);
