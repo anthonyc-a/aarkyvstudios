@@ -26,19 +26,21 @@ const Cookies = () => {
 
   return (
     <>
-        <div className="cookies hidden clip bg-[#ffffff8b] grow backdrop-blur md:whitespace-nowrap fixed bottom-2 md:bottom-8 left-2 md:right-8 border hover:border-[#aaa] border-[#000]">
+      {show && (
+
+        <div className="cookies   clip bg-[#ffffff8b] grow backdrop-blur md:whitespace-nowrap fixed bottom-3 md:bottom-8 left-2 md:right-8 border hover:border-[#aaa] border-[#000]">
           <div className="w-full h-full p-4 flex items-center justify-between">
             <div className="absolute detail top-0 left-0  bg-[#000]"></div>
             <div className="absolute detail top-0 right-0  bg-[#000]"></div>
             <div className="absolute detail bottom-0 left-0  bg-[#000]"></div>
             <div className="absolute detail bottom-0 right-0  bg-[#000]"></div>
-            <p className="flex items-center gap-4 txt pr-6 font-[450]">
+            <p className="flex items-center gap-5 txt pr-6 font-[450]">
               <Image src={"/cookie.svg"} alt="" width={19} height={19} />
               This website uses cookies to enhance your experience.
             </p>
             <div className="flex gap-6">
               <span
-                className="underline whitespace-nowrap font-[500] hover:underline font-[550"
+                className="underline whitespace-nowrap font-[500] hover:underline"
                 onClick={close}
               >
                 I understand
@@ -46,6 +48,7 @@ const Cookies = () => {
             </div>
           </div>
         </div>
+      )}
     </>
   );
 };

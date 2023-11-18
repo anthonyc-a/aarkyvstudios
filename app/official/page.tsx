@@ -4,6 +4,7 @@ import { Modal } from "antd";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import MarqueeCpt from "../components/marquee";
+import HeroVideo from "../components/heroVideo";
 
 const Page = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -24,12 +25,12 @@ const Page = () => {
     <div className="flex flex-col">
       <MarqueeCpt />
       {/* Hero Section */}
-      <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-2">
+      <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-1 ">
         <div className="absolute font-extralight text-[15px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
-          <div className="absolute cross top-[28.5vh] right-1 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross top-[28.5vh] right-0.5 w-4 h-4 flex justify-center items-center">
             +
           </div>
-          <div className="absolute cross bottom-32 right-1 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross bottom-0 right-0.5 w-4 h-4 flex justify-center items-center">
             +
           </div>
         </div>
@@ -38,46 +39,26 @@ const Page = () => {
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
-              width={22}
-              height={22}
+              width={24}
+              height={24}
               className="invert"
             />
             Aarkyv Studios
           </h1>
-          {/* <p className="mt-0.5 tracking-[0.3px] font-[360] text-[#555] text-[0.93rem]  lowercase">Visually stunning multimedia</p> */}
           <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.9rem] font-[480] flex items-center justify-between mt-[10px] border border-[#333] clip">
-            Learn more <Image src="/arrow.svg" alt="" width={8} height={8} />
+            Start a project <Image src="/arrow.svg" alt="" width={8} height={8} />
           </button>
         </div>
-        <div className="absolute bottom-4 font-[500] left-4 flex items-center gap-3 lowercase">
+        <div className="absolute bottom-4 font-[450] left-4 flex items-center gap-3 lowercase">
           <Image src="/scrollArrow.svg" alt="" width={15} height={15} />
 
-          <span>scroll down</span>
+          <span>Scroll down for more</span>
         </div>
-        <div className="flex relative flex-col justify-center h-[50vh] items-center md:w-1/2">
-          <Image
-            src="/pause.svg"
-            alt=""
-            width={8}
-            height={8}
-            className="absolute top-8 right-14 z-50"
-          />
-          <video
-            className={`h-full object-cover clip-lg mr-14 z-10 bg-gray-300 relative}`}
-            loop={true}
-            muted={true}
-            autoPlay={true}
-            playsInline={true}
-          >
-            <source src="/vid.mp4" type="video/mp4" />
-            {/* Add gradient in top right corner */}
-           
-          </video>
-        </div>
+      <HeroVideo/>
       </div>
 
       {/* Clients Section */}
-      <div className="flex flex-col md:flex-row h-1/5">
+      <div className="flex flex-col md:flex-row h-1/5 mt-10">
         <h2>clients</h2>
 
         <div className="flex flex-col justify-center items-center md:w-1/2">
