@@ -36,7 +36,7 @@ const HeroVideo = () => {
             absolute bottom-6 right-10 z-50"
         ></div>
 
-        <div className="absolute flex gap-6 text-[0.72rem] items-center bottom-6 left-4 z-50">
+        <div className="absolute flex gap-6 text-[0.72rem] items-center bottom-6 left-6 z-50">
           <Image src="/img2.png" alt="Aarkyv Studios Logo" width={170} height={170} />
           <div className="text-white leading-[15px]">
             <h3>DOuble</h3>
@@ -45,7 +45,7 @@ const HeroVideo = () => {
 
         </div>
         <div className="absolute bottom-0 left-0 bars w-full h-[2px] bg-gray-300 z-50">
-          <div className="w-1/3 h-full bg-blue-500"></div>
+          <div className="w-1/3 h-full bg-blue-500 rounded-sm"></div>
         </div>
 
 
