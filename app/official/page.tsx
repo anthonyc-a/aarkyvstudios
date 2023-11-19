@@ -25,7 +25,7 @@ const Page = () => {
   return (
     <div className="flex flex-col mt-0">
       <div className="header-height mt-[61px]"></div>
-      <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-1 ">
+      <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 ">
         <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
           <div className="absolute cross top-[28.5vh] right-1 w-4 h-4 flex justify-center items-center">
             +
