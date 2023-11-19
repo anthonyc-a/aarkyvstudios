@@ -39,16 +39,16 @@ const HeroVideo = () => {
         <Image
           src="/pause.svg"
           alt="Aarkyv Studios Logo"
-          width={8}
-          height={8}
+          width={7}
+          height={7}
           className="absolute bottom-8 right-8 z-50"
         />
 
-        <div className="absolute rounded-[6px] text-[0.65rem] text-right text-white top-6 right-6 z-50">
+        <div className="absolute rounded-[6px] text-[0.65rem] text-right text-white top-5 right-5 z-50">
           <div className="font-semibold border-b border-gray-400 border-opacity-60 pb-0.5">
             recent updates:
           </div>
-          <ul className="font-light w-[200px]">
+          <ul className="font-light tracking-[0.1px] w-[200px]">
             <li className="py-0.5 border-b border-gray-400 border-opacity-80">
               <a href="#">
                 <span className="font-normal">blok studios launch</span> — Nov /

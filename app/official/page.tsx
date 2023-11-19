@@ -44,14 +44,14 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.83rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
-            Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
+          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
+            Get in touch <Image src="/arrow.svg" alt="" width={6} height={6} />
           </button>
         </div>
-        <div className="absolute bottom-4 font-[450] left-4 flex items-center gap-3 lowercase">
+        <div className="absolute bottom-4 font-[450] text-[0.84rem] left-4 flex items-center gap-3 lowercase">
           <Image src="/scrollArrow.svg" alt="" width={15} height={15} />
 
-          <span className="scroll">Scroll down for more</span>
+          <span className="scroll">Scroll for more</span>
         </div>
       <HeroVideo/>
       </div>

@@ -656,7 +656,7 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 650;
+  font-weight: 700;
   font-size: 75% !important;
   
   &::before {
@@ -665,8 +665,8 @@ button {
     transform: translateY(-50%);
     left: -16px;
     content: "";
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     border-radius: 100%;
     background-color: #68e939;
   }
