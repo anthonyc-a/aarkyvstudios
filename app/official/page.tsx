@@ -51,7 +51,7 @@ const Page = () => {
         </div>
         <a
           href="#clients"
-          className="absolute bottom-4 font-[450] text-[0.84rem] left-4 flex items-center gap-3 lowercase"
+          className="absolute bottom-4 font-[450] text-[0.68rem] left-4 flex items-center gap-3 "
         >
           <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 

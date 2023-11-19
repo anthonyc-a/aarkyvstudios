@@ -37,19 +37,18 @@ const HeroVideo = () => {
         ></div>
 
         <div className="absolute flex gap-6 text-[0.72rem] items-center bottom-6 left-6 z-50">
-          <Image src="/img2.png" alt="Aarkyv Studios Logo" width={170} height={170} />
+          <Image
+            src="/img2.png"
+            alt="Aarkyv Studios Logo"
+            width={170}
+            height={170}
+          />
           <div className="text-white leading-[15px]">
             <h3>DOuble</h3>
             <p className="text-gray-400">Marketing agency</p>
           </div>
-
-        </div>
-        <div className="absolute bottom-0 left-0 bars w-full h-[2px] bg-gray-300 z-50">
-          <div className="w-1/3 h-full bg-blue-500 rounded-sm"></div>
         </div>
 
-
-    
         <div className="absolute top-6 flex justify-center items-center left-6 p-3 bg-white rounded-full bg-opacity-30 z-50">
           <Image
             src="/globe.svg"
@@ -66,26 +65,20 @@ const HeroVideo = () => {
           <ul className="font-light text-[95%] w-[190px]">
             <li className="p-0.5 border-b border-gray-400 border-opacity-60">
               <a href="#">
-                <span className="  text-white">
-                  blok studios launch
-                </span>{" "}
-                — Nov / &apos;23
+                <span className="  text-white">blok studios launch</span> — Nov
+                / &apos;23
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-400 border-opacity-60">
               <a href="#">
-                <span className=" text-white">
-                  available for work{" "}
-                </span>
-                — oct / &apos;23
+                <span className=" text-white">available for work </span>— oct /
+                &apos;23
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-400 border-opacity-60">
               <a href="#">
-                <span className="  text-white">
-                  artfair website{" "}
-                </span>
-                — aug / &apos;23
+                <span className="  text-white">artfair website </span>— aug /
+                &apos;23
               </a>
             </li>
           </ul>
