@@ -27,7 +27,7 @@ const HeroVideo = () => {
 
   return (
     <div
-      className="flex relative flex-col justify-center h-[65%] items-center md:w-1/2"
+      className="flex relative flex-col justify-center h-[65%] mb-2 items-center md:w-1/2"
       ref={containerRef}
     >
       <div className="relative video-container clip-lg h-full ">
@@ -36,14 +36,15 @@ const HeroVideo = () => {
             absolute bottom-6 right-10 z-50"
         ></div>
 
-        <div className="absolute bottom-5 flex justify-center items-center right-6 w-7 h-7 bg-white rounded-full bg-opacity-30 z-50">
-          <Image
-            src="/pause.svg"
-            alt="Aarkyv Studios Logo"
-            width={6}
-            height={6}
-          />
+        <div className="absolute flex gap-5 text-[0.72rem] items-center bottom-8 left-4 z-50">
+          <Image src="/img2.png" alt="Aarkyv Studios Logo" width={170} height={170} />
+          <div className="text-white">
+            <h3>DOuble</h3>
+            <p className="text-gray-400">Marketing agency</p>
+          </div>
         </div>
+
+    
         <div className="absolute top-6 flex justify-center items-center left-6 p-2.5 bg-white rounded-full bg-opacity-30 z-50">
           <Image
             src="/globe.svg"

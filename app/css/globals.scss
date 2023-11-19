@@ -434,8 +434,7 @@ h3 {
 video { 
   position: relative;
   background: #999;
-  filter: brightness(0.75);
-  border-top-right-radius: 6px;
+  filter: brightness(0.5);
   z-index: -1;
   
 
@@ -615,7 +614,7 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 75%; /* Adjust this value to change the height of the gradient */
+  height: 50%; /* Adjust this value to change the height of the gradient */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), transparent);
   z-index: 15; /* Make sure this is higher than the video but lower than controls */
 }
