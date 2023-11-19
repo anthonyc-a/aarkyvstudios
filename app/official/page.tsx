@@ -28,10 +28,10 @@ const Page = () => {
       <MarqueeCpt />
       <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-1 ">
         <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
-          <div className="absolute cross top-[28.5vh] right-0.5 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross top-[28.5vh] right-1 w-4 h-4 flex justify-center items-center">
             +
           </div>
-          <div className="absolute cross bottom-0 right-0.5 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross bottom-0 right-2 w-4 h-4 flex justify-center items-center">
             +
           </div>
         </div>
@@ -56,7 +56,7 @@ const Page = () => {
         >
           <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
-          <span className="scroll ">Scroll down for more</span>
+          <span className="scroll ">Scroll down</span>
         </a>
         <HeroVideo />
       </div>
@@ -73,7 +73,7 @@ const Page = () => {
       <AccentHeaderOne text="projects" />
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
-        <h2 className="leading-5">Our Clients</h2>
+        <h2 className="leading-6">Our Clients</h2>
         <p className="lowercase text-gray-500">
           some of our most recent clients
         </p>
@@ -89,6 +89,13 @@ const Page = () => {
                 <h3>Double</h3>
                 <span className="text-gray-400">Marketing Agency</span>
               </div>
+              <Image
+                src="/arrow.svg"
+                alt="arrow"
+                width={7}
+                height={7}
+                className="absolute bottom-5 right-5"
+              />
             </div>
             <div
               className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
@@ -99,6 +106,13 @@ const Page = () => {
                 <h3>Verve</h3>
                 <span className="text-gray-400">Streaming service</span>
               </div>
+              <Image
+                src="/arrow.svg"
+                alt="arrow"
+                width={7}
+                height={7}
+                className="absolute bottom-5 right-5"
+              />
             </div>
             <div
               className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
@@ -109,9 +123,15 @@ const Page = () => {
                 <h3>Archvizual</h3>
                 <span className="text-gray-400">3D artist</span>
               </div>
+              <Image
+                src="/arrow.svg"
+                alt="arrow"
+                width={7}
+                height={7}
+                className="absolute bottom-5 right-5"
+              />
             </div>
-          </div>
-          <div
+            <div
             className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
             onClick={showModal}
           >
@@ -122,6 +142,8 @@ const Page = () => {
             </div>
           </div>
         </div>
+          </div>
+         
         <Modal
           title="Case Study"
           open={isModalVisible}
