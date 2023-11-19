@@ -61,7 +61,7 @@ const Page = () => {
         <HeroVideo />
       </div>
 
-      <div className="p-4 text-[0.7rem] font-medium">
+      <div className="p-4 text-[0.7rem] opacity-60">
         branding — marketing
         <br />
         SEO <br />

@@ -614,7 +614,7 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 50%; /* Adjust this value to change the height of the gradient */
+  height: 65%; /* Adjust this value to change the height of the gradient */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), transparent);
   z-index: 15; /* Make sure this is higher than the video but lower than controls */
 }

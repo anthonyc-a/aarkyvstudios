@@ -38,9 +38,10 @@ const HeroVideo = () => {
 
         <div className="absolute flex gap-5 text-[0.72rem] items-center bottom-8 left-4 z-50">
           <Image src="/img2.png" alt="Aarkyv Studios Logo" width={170} height={170} />
-          <div className="text-white">
+          <div className="text-white leading-4">
             <h3>DOuble</h3>
             <p className="text-gray-400">Marketing agency</p>
+            <p className="text-gray-400">2023</p>
           </div>
         </div>
 
