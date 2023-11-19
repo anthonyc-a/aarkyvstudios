@@ -11,7 +11,7 @@ const MarqueeCpt = () => {
         gradientColor="#fff"
         gradientWidth={16}
       >
-        <div className="flex font-[550] text-[0.68rem] tracking-[0.03em]">
+        <div className="flex font-[550] text-[0.65rem] tracking-[0.03em]">
           <div>
             thoughtful digital experiences crafted with cutting-edge design and
             technology 
