@@ -35,6 +35,7 @@ const Header = () => {
     gsap.from(logoRef.current, { opacity: 0, duration: 1, delay: 0.5 });
   }, []);
 
+  
   return (
     <header
       className={`fixed bg-white top-0 left-0 z-[9999] w-full p-4 flex justify-between items-center transition-transform duration-200 ${
