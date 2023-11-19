@@ -434,7 +434,7 @@ h3 {
 video { 
   position: relative;
   background: #999;
-  filter: brightness(0.5);
+  filter: brightness(0.65);
   z-index: -1;
   
 
@@ -620,7 +620,7 @@ input {
 }
 
 .cross {
-  color: #999;
+  color: #666;
   z-index: 10;
   &:nth-child(1) {
     transform: translate(50%, -50%);
