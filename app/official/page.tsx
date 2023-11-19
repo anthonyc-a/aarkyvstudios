@@ -80,7 +80,7 @@ const Page = () => {
         <div className="flex flex-col justify-center items-center md:w-1/2 mt-4">
           <div className="grid mt-4 md:grid-cols-2 gap-4 w-full">
             <div
-              className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
+              className="border border-black rounded-md clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img2.png" alt="" width={150} height={150} />
@@ -97,7 +97,7 @@ const Page = () => {
               />
             </div>
             <div
-              className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
+              className="border border-black rounded-md clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img3.png" alt="" width={150} height={150} />
@@ -114,7 +114,7 @@ const Page = () => {
               />
             </div>
             <div
-              className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
+              className="border border-black rounded-md clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img1.png" alt="" width={150} height={150} />
@@ -131,7 +131,7 @@ const Page = () => {
               />
             </div>
             <div
-            className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
+            className="border border-black rounded-md clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
             onClick={showModal}
           >
             <Image src="/img4.png" alt="" width={150} height={150} />
