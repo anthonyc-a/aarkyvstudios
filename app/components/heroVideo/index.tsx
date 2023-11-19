@@ -100,7 +100,6 @@ const HeroVideo = () => {
           muted={true}
           autoPlay={true}
           playsInline={true}
-          ref={videoRef}
         >
           <source src="/vid.mp4" type="video/mp4" />
           {/* Add gradient in top right corner */}
