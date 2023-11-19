@@ -27,7 +27,7 @@ const HeroVideo = () => {
 
   return (
     <div
-      className="flex relative flex-col justify-center h-[52vh] items-center md:w-1/2"
+      className="flex relative flex-col justify-center h-[65%] items-center md:w-1/2"
       ref={containerRef}
     >
       <div className="relative video-container clip-lg h-full ">
