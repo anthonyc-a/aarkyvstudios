@@ -40,8 +40,8 @@ const HeroVideo = () => {
           <Image
             src="/img2.png"
             alt="Aarkyv Studios Logo"
-            width={170}
-            height={170}
+            width={160}
+            height={160}
           />
           <div className="text-white leading-[15px]">
             <h3>DOuble</h3>
