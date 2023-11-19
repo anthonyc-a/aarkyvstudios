@@ -56,12 +56,12 @@ const Page = () => {
         >
           <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
-          <span className="scroll opacity-60">Scroll down</span>
+          <span className="scroll ">Scroll down</span>
         </a>
         <HeroVideo />
       </div>
 
-      <div className="p-4 text-[0.7rem] opacity-60">
+      <div className="p-4 text-[0.7rem]">
         branding — marketing
         <br />
         SEO <br />
