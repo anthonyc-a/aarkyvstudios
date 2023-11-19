@@ -56,18 +56,18 @@ const Page = () => {
         >
           <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
-          <span className="scroll">Scroll down for more </span>
+          <span className="scroll opacity-60">Scroll down for more </span>
         </a>
         <HeroVideo />
       </div>
 
       <div className="p-4 text-[0.7rem] font-medium">
-        marketing — branding<br />
+        branding — marketing
+        <br />
         SEO <br />
         UI/UX Design <br />
         Web & Mobile Development <br />
         3d visualisation <br />
-
       </div>
 
       <AccentHeaderOne text="projects" />

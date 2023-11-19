@@ -49,7 +49,7 @@ const Systems = () => {
         }`}
         onClick={handleOpenModal}
       >
-        <span>systems</span>
+        <span>about</span>
       </div>
 
       <Modal
@@ -67,13 +67,16 @@ const Systems = () => {
         open={isModalOpen}
         onCancel={handleCloseModal}
         className="clip-lg"
-        footer={null}
-        okButtonProps={{ disabled: true, style: { display: "none" } }}
       >
         <div className="leading-[1.35]">
+          <p className="pb-2 lowercase">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            maxime deleniti sapiente, ad voluptatibus eveniet ab at animi
+            assumenda repudiandae.
+          </p>
+
           <p className="">Site Version: 2.2.0</p>
           <p>Language: TypeScript</p>
-          <p>Font: Britti Sans Variable</p>
           <p>
             Last Updated:{" "}
             {new Date().toLocaleString("en-US", {
