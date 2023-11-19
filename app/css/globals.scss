@@ -615,7 +615,7 @@ input {
 }
 
 .cross {
-  color: #666;
+  color: #999;
   z-index: 10;
   &:nth-child(1) {
     transform: translate(50%, -50%);
@@ -656,7 +656,7 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 700;
+  font-weight: 650;
   font-size: 75% !important;
   
   &::before {
