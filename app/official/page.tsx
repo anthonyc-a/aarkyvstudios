@@ -24,6 +24,7 @@ const Page = () => {
   return (
     <div className="flex flex-col mt-0">
       <div className="header-height mt-[61px]"></div>
+      <MarqueeCpt/>
       <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-1 ">
         <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
           <div className="absolute cross top-[28.5vh] right-0.5 w-4 h-4 flex justify-center items-center">
@@ -33,8 +34,8 @@ const Page = () => {
             +
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-[40px] md:w-1/2 mb-auto">
-          <h1 className="text-[1.05rem] tracking-[0.2px] flex gap-3 items-center">
+        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto">
+          <h1 className="text-[1.04rem] tracking-[0.2px] flex gap-3 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
@@ -44,31 +45,40 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[10px] border border-[#333] clip">
+          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>
-        <a href="#clients" className="absolute bottom-5 font-[450] text-[0.84rem] left-4 flex items-center gap-3 lowercase">
-          <Image src="/scrollArrow.svg" alt="" width={15} height={15} />
+        <a
+          href="#clients"
+          className="absolute bottom-5 font-[450] text-[0.84rem] left-4 flex items-center gap-3 lowercase"
+        >
+          <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
           <span className="scroll">Scroll down for more</span>
         </a>
-      <HeroVideo/>
+        <HeroVideo />
       </div>
 
       {/* Clients Section */}
-      <div id="clients" className="container flex flex-col md:flex-row h-1/5 mt-10">
+      <div
+        id="clients"
+        className="p-4 flex flex-col md:flex-row h-1/5 mt-10"
+      >
         <h2>clients</h2>
 
         <div className="flex flex-col justify-center items-center md:w-1/2">
-          <div className="grid md:grid-cols-2 gap-4 w-full">
+          <div className="grid mt-6 md:grid-cols-2 gap-4 w-full">
             <div
-              className="bg-gray-100 p-4 rounded-lg cursor-pointer md:w-1/2 w-full"
+              className="bg-gray-100 flex items-center gap-6 p-4 rounded-md cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
-              Case Study 1
+              <Image src="/img2.png" alt="" width={150} height={150} />
+              <div>
+                <h3>Double</h3>
+                <span>Marketing Agency</span>
+              </div>
             </div>
-
           </div>
         </div>
         <Modal

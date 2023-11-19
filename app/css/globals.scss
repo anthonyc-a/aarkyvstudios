@@ -434,9 +434,9 @@ h3 {
 video { 
   position: relative;
   background: #999;
-  filter: brightness(0.8);
-  z-index: -1;
+  filter: brightness(0.75);
   border-radius: 12px;
+  z-index: -1;
   
 
   &::after {
@@ -621,7 +621,7 @@ input {
 }
 
 .cross {
-  color: #999;
+  color: #666;
   z-index: 10;
   &:nth-child(1) {
     transform: translate(50%, -50%);
@@ -662,7 +662,7 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 600;
+  font-weight: 650;
   font-size: 80% !important;
   
   &::before {

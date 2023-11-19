@@ -36,7 +36,7 @@ const HeroVideo = () => {
             absolute bottom-6 right-10 z-50"
         ></div>
 
-        <div className="absolute bottom-8 flex justify-center items-center right-6 w-7 h-7 bg-white rounded-full bg-opacity-30 z-50">
+        <div className="absolute bottom-6 flex justify-center items-center right-7 w-7 h-7 bg-white rounded-full bg-opacity-30 z-50">
           <Image
             src="/pause.svg"
             alt="Aarkyv Studios Logo"
@@ -45,7 +45,7 @@ const HeroVideo = () => {
           />
         </div>
 
-        <div className="absolute rounded-[6px] text-[0.6rem] text-right text-gray-200 top-5 right-4 z-50">
+        <div className="absolute rounded-[6px] text-[0.65rem] tracking-[0.15px] text-right text-gray-200 top-5 right-4 z-50">
           <div className="font-medium border-b border-gray-400 border-opacity-60 pb-0.5">
             recent updates:
           </div>
@@ -55,7 +55,7 @@ const HeroVideo = () => {
                 <span className="font-normal  text-white">
                   blok studios launch
                 </span>{" "}
-                — Nov / 23
+                — Nov / &apos;23
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-400 border-opacity-80">
@@ -63,7 +63,7 @@ const HeroVideo = () => {
                 <span className="font-normal  text-white">
                   available for work{" "}
                 </span>
-                — oct / 23
+                — oct / &apos;23
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-400 border-opacity-80">
@@ -71,20 +71,18 @@ const HeroVideo = () => {
                 <span className="font-normal  text-white">
                   artfair website{" "}
                 </span>
-                — aug / 23
+                — aug / &apos;23
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-400 border-opacity-80">
               <a href="#">
-                <span className="font-normal  text-white">
-                  studio site update{" "}
-                </span>
-                — aug / 23
+                <span className="font-normal  text-white">studio launch </span>—
+                nov / &apos;22
               </a>
             </li>
           </ul>
-          <div className="mt-2 p-0.5 pb-0 px-2 text-[0.6rem] font-semibold bg-white text-black w-fit rounded-sm ml-auto">
-            load more
+          <div className="mt-2 p-0.5 pb-0 px-2 text-[0.6rem] font-semibold bg-white text-black w-fit rounded-full ml-auto">
+            load more +
           </div>
         </div>
 
