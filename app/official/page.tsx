@@ -70,13 +70,13 @@ const Page = () => {
         <div className="flex flex-col justify-center items-center md:w-1/2">
           <div className="grid mt-6 md:grid-cols-2 gap-4 w-full">
             <div
-              className="bg-gray-100 flex items-center gap-6 p-4 rounded-md cursor-pointer md:w-1/2 w-full"
+              className="bg-gray-50 clip flex items-center gap-6 p-4 rounded-md cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img2.png" alt="" width={150} height={150} />
-              <div>
+              <div className="text-[0.84rem]">
                 <h3>Double</h3>
-                <span>Marketing Agency</span>
+                <span className="text-gray-400">Marketing Agency</span>
               </div>
             </div>
           </div>
