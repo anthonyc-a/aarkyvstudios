@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import MarqueeCpt from "../components/marquee";
 import HeroVideo from "../components/heroVideo";
+import AccentHeaderOne from "../components/accent";
 
 const Page = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -24,7 +25,7 @@ const Page = () => {
   return (
     <div className="flex flex-col mt-0">
       <div className="header-height mt-[61px]"></div>
-      <MarqueeCpt/>
+      <MarqueeCpt />
       <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-1 ">
         <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
           <div className="absolute cross top-[28.5vh] right-0.5 w-4 h-4 flex justify-center items-center">
@@ -35,7 +36,7 @@ const Page = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto">
-          <h1 className="text-[1.04rem] tracking-[0.2px] flex gap-3 items-center">
+          <h1 className="text-[1.04rem] tracking-[0.25px] flex gap-3 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
@@ -51,26 +52,36 @@ const Page = () => {
         </div>
         <a
           href="#clients"
-          className="absolute bottom-5 font-[450] text-[0.84rem] left-4 flex items-center gap-3 lowercase"
+          className="absolute bottom-4 font-[450] text-[0.84rem] left-4 flex items-center gap-3 lowercase"
         >
           <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
-          <span className="scroll">Scroll down for more</span>
+          <span className="scroll">Scroll down for more </span>
         </a>
         <HeroVideo />
       </div>
 
-      {/* Clients Section */}
-      <div
-        id="clients"
-        className="p-4 flex flex-col md:flex-row h-1/5 mt-10"
-      >
-        <h2>clients</h2>
+      <div className="p-4 text-[0.7rem] font-medium">
+        marketing — branding<br />
+        SEO <br />
+        UI/UX Design <br />
+        Web & Mobile Development <br />
+        3d visualisation <br />
 
-        <div className="flex flex-col justify-center items-center md:w-1/2">
-          <div className="grid mt-6 md:grid-cols-2 gap-4 w-full">
+      </div>
+
+      <AccentHeaderOne text="projects" />
+
+      <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
+        <h2>Our Clients</h2>
+        <p className="lowercase text-gray-500">
+          some of our most recent clients
+        </p>
+
+        <div className="flex flex-col justify-center items-center md:w-1/2 mt-4">
+          <div className="grid mt-4 md:grid-cols-2 gap-4 w-full">
             <div
-              className="bg-gray-50 clip flex items-center gap-6 p-4 rounded-md cursor-pointer md:w-1/2 w-full"
+              className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img2.png" alt="" width={150} height={150} />
@@ -78,6 +89,36 @@ const Page = () => {
                 <h3>Double</h3>
                 <span className="text-gray-400">Marketing Agency</span>
               </div>
+            </div>
+            <div
+              className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
+              onClick={showModal}
+            >
+              <Image src="/img3.png" alt="" width={150} height={150} />
+              <div className="text-[0.84rem]">
+                <h3>Verve</h3>
+                <span className="text-gray-400">Streaming service</span>
+              </div>
+            </div>
+            <div
+              className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
+              onClick={showModal}
+            >
+              <Image src="/img1.png" alt="" width={150} height={150} />
+              <div className="text-[0.84rem]">
+                <h3>Archvizual</h3>
+                <span className="text-gray-400">3D artist</span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
+            onClick={showModal}
+          >
+            <Image src="/img4.png" alt="" width={150} height={150} />
+            <div className="text-[0.84rem]">
+              <h3>Snapi</h3>
+              <span className="text-gray-400">Marketing Tool</span>
             </div>
           </div>
         </div>

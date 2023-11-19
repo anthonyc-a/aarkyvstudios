@@ -40,7 +40,7 @@ const Cookies = () => {
             </p>
             <div className="flex gap-6">
               <span
-                className="underline whitespace-nowrap text-[0.68rem] font-[500] hover:underline"
+                className=" underline whitespace-nowrap text-[0.68rem] font-[500] hover:underline"
                 onClick={close}
               >
                 I understand

@@ -86,7 +86,6 @@ export default function RootLayout({
           <main>{children}</main>
           <Cookies/>
           <Archive images={images} />
-          <Scrollbar />
         </body>
       </html>
     </VisibilityProvider>
