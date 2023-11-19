@@ -363,7 +363,7 @@ h4 {
 
 .txt {
   text-transform: none !important;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0 !important;
@@ -435,8 +435,9 @@ video {
   position: relative;
   background: #999;
   filter: brightness(0.8);
-  border-radius: 6px;
   z-index: -1;
+  border-radius: 12px;
+  
 
   &::after {
     content: '';
@@ -602,6 +603,11 @@ input {
     rgba(0, 0, 0, 0.5) 100%
   );
 }
+.video-container {
+  width: calc(100% + 26px);
+  transform: translateX(-13px);
+}
+
 
 .video-container::after {
   content: '';
@@ -609,7 +615,7 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 65%; /* Adjust this value to change the height of the gradient */
+  height: 75%; /* Adjust this value to change the height of the gradient */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), transparent);
   z-index: 15; /* Make sure this is higher than the video but lower than controls */
 }
@@ -656,8 +662,8 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 650;
-  font-size: 75% !important;
+  font-weight: 600;
+  font-size: 80% !important;
   
   &::before {
     position: absolute;
@@ -665,8 +671,8 @@ button {
     transform: translateY(-50%);
     left: -16px;
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     border-radius: 100%;
     background-color: #68e939;
   }

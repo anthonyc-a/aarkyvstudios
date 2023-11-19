@@ -30,45 +30,55 @@ const HeroVideo = () => {
       className="flex relative flex-col justify-center h-[50vh] items-center md:w-1/2"
       ref={containerRef}
     >
-      <div className="relative video-container clip-lg h-full w-full overflow-hidden">
+      <div className="relative video-container clip-lg h-full ">
         <div
           className="flex gap-6 items-center
             absolute bottom-6 right-10 z-50"
         ></div>
 
+        
+        <div className="absolute bottom-8 flex justify-center items-center right-6 w-7 h-7 bg-white rounded-full bg-opacity-30 z-50">
         <Image
           src="/pause.svg"
           alt="Aarkyv Studios Logo"
           width={7}
           height={7}
-          className="absolute bottom-8 right-8 z-50"
         />
+        </div>
 
-        <div className="absolute rounded-[6px] text-[0.65rem] text-right text-white top-5 right-5 z-50">
+ 
+
+        <div className="absolute rounded-[6px] text-[0.6rem] text-right text-white top-5 right-4 z-50">
           <div className="font-semibold border-b border-gray-400 border-opacity-60 pb-0.5">
             recent updates:
           </div>
-          <ul className="font-light tracking-[0.1px] w-[200px]">
-            <li className="py-0.5 border-b border-gray-400 border-opacity-80">
+          <ul className="font-light w-[200px]">
+            <li className="p-0.5 border-b border-gray-400 border-opacity-80">
               <a href="#">
                 <span className="font-normal">blok studios launch</span> — Nov /
                 23
               </a>
             </li>
-            <li className="py-0.5 border-b border-gray-400 border-opacity-80">
+            <li className="p-0.5 border-b border-gray-400 border-opacity-80">
               <a href="#">
                 <span className="font-normal">available for work </span>— oct /
                 23
               </a>
             </li>
-            <li className="py-0.5 border-b border-gray-400 border-opacity-80">
+            <li className="p-0.5 border-b border-gray-400 border-opacity-80">
               <a href="#">
                 <span className="font-normal">artfair website </span>— aug / 23
               </a>
             </li>
+            <li className="p-0.5 border-b border-gray-400 border-opacity-80">
+              <a href="#">
+                <span className="font-normal">studio site update </span>— aug /
+                23
+              </a>
+            </li>
           </ul>
           <div className="mt-2 p-0.5 pb-0 px-2 text-[0.6rem] font-semibold bg-white text-black w-fit rounded-sm ml-auto">
-            + load more
+            load more
           </div>
         </div>
 
