@@ -25,7 +25,7 @@ const Page = () => {
     <div className="flex flex-col mt-0">
       <div className="header-height mt-[61px]"></div>
       <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 mt-1 ">
-        <div className="absolute font-extralight text-[13px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
+        <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
           <div className="absolute cross top-[28.5vh] right-0.5 w-4 h-4 flex justify-center items-center">
             +
           </div>
@@ -44,14 +44,14 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.85rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
+          <button className="p-1 px-3 tracking-[0.2px] w-[240px] text-[0.82rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>
         <div className="absolute bottom-4 font-[450] left-4 flex items-center gap-3 lowercase">
           <Image src="/scrollArrow.svg" alt="" width={15} height={15} />
 
-          <span className="scroll">Scroll down for more</span>
+          <span className="scroll">Scroll for more</span>
         </div>
       <HeroVideo/>
       </div>
