@@ -56,7 +56,7 @@ const Page = () => {
         >
           <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
-          <span className="scroll ">Scroll down</span>
+          <span className="scroll ">Scroll down for more</span>
         </a>
         <HeroVideo />
       </div>
@@ -73,7 +73,7 @@ const Page = () => {
       <AccentHeaderOne text="projects" />
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
-        <h2>Our Clients</h2>
+        <h2 className="leading-5">Our Clients</h2>
         <p className="lowercase text-gray-500">
           some of our most recent clients
         </p>
@@ -81,31 +81,31 @@ const Page = () => {
         <div className="flex flex-col justify-center items-center md:w-1/2 mt-4">
           <div className="grid mt-4 md:grid-cols-2 gap-4 w-full">
             <div
-              className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
+              className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img2.png" alt="" width={150} height={150} />
-              <div className="text-[0.84rem]">
+              <div className="text-[0.72rem]">
                 <h3>Double</h3>
                 <span className="text-gray-400">Marketing Agency</span>
               </div>
             </div>
             <div
-              className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
+              className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img3.png" alt="" width={150} height={150} />
-              <div className="text-[0.84rem]">
+              <div className="text-[0.72rem]">
                 <h3>Verve</h3>
                 <span className="text-gray-400">Streaming service</span>
               </div>
             </div>
             <div
-              className="border border-black clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
+              className="border border-black clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
               <Image src="/img1.png" alt="" width={150} height={150} />
-              <div className="text-[0.84rem]">
+              <div className="text-[0.72rem]">
                 <h3>Archvizual</h3>
                 <span className="text-gray-400">3D artist</span>
               </div>
