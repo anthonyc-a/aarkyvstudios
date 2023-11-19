@@ -74,12 +74,6 @@ const HeroVideo = () => {
                 — aug / &apos;23
               </a>
             </li>
-            <li className="p-0.5 border-b border-gray-400 border-opacity-80">
-              <a href="#">
-                <span className="font-normal  text-white">studio launch </span>—
-                nov / &apos;22
-              </a>
-            </li>
           </ul>
           <div className="mt-2 p-0.5 pb-0 px-2 text-[0.6rem] font-semibold bg-white text-black w-fit rounded-full ml-auto">
             load more +
