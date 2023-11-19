@@ -59,7 +59,7 @@ const Header = () => {
         <Systems />
         <ThemeToggle />
         <div className="menu  text-white bg-transparent font-light w-8 h-6 flex justify-center items-center text-2xl leading-[1] rounded-[1px] border border-black clip-sm">
-          <div className="burger w-10 h-10 flex flex-col gap-[3px] bg-[#222] justify-center items-center">
+          <div className="burger w-10 h-10 flex flex-col gap-[3px] bg-[#000] justify-center items-center">
             <span className="w-1/3 h-[1px] bg-white"></span>
             <span className="w-1/3 h-[1px] bg-white"></span>
           </div>

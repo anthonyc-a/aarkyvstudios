@@ -51,7 +51,7 @@ const Page = () => {
         <div className="absolute bottom-4 font-[450] text-[0.84rem] left-4 flex items-center gap-3 lowercase">
           <Image src="/scrollArrow.svg" alt="" width={15} height={15} />
 
-          <span className="scroll">Scroll for more</span>
+          <span className="scroll">Scroll down for more</span>
         </div>
       <HeroVideo/>
       </div>
