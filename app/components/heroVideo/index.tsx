@@ -44,7 +44,7 @@ const HeroVideo = () => {
           className="absolute bottom-8 right-8 z-50"
         />
 
-        <div className="absolute rounded-[6px] text-[0.65rem] text-right text-white top-5 right-5 z-50">
+        <div className="absolute rounded-[6px] text-[0.65rem] text-right text-white top-6 right-6 z-50">
           <div className="font-semibold border-b border-gray-400 border-opacity-60 pb-0.5">
             recent updates:
           </div>
