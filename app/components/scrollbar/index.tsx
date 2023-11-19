@@ -21,7 +21,7 @@ const Scrollbar = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-0  left-0 w-full bg-transparent h-[1px] mix-blend-difference">
+    <div className="fixed bottom-0  left-0 w-full bg-transparent h-[2px] mix-blend-difference">
       <div
         className="h-full bg-[#e9e9e9]"
         style={{ width: `${scrollPosition}%` }}

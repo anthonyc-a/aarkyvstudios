@@ -34,7 +34,42 @@ const HeroVideo = () => {
         <div
           className="flex gap-6 items-center
             absolute bottom-6 right-10 z-50"
-        >
+        ></div>
+
+        <Image
+          src="/pause.svg"
+          alt="Aarkyv Studios Logo"
+          width={8}
+          height={8}
+          className="absolute bottom-8 right-8 z-50"
+        />
+
+        <div className="absolute border border-gray-400 border-opacity-80 p-2 rounded-[6px] text-[0.65rem] text-right text-white top-4 right-4 z-50">
+          <div className="font-semibold border-b border-gray-400 border-opacity-60 pb-0.5">
+            recent updates:
+          </div>
+          <ul className="font-light w-[200px]">
+            <li className="py-0.5 border-b border-gray-400 border-opacity-80">
+              <a href="#">
+                <span className="font-normal">blok studios launch</span> — Nov /
+                23
+              </a>
+            </li>
+            <li className="py-0.5 border-b border-gray-400 border-opacity-80">
+              <a href="#">
+                <span className="font-normal">available for work </span>— oct /
+                23
+              </a>
+            </li>
+            <li className="py-0.5 border-b border-gray-400 border-opacity-80">
+              <a href="#">
+                <span className="font-normal">artfair website </span>— aug / 23
+              </a>
+            </li>
+          </ul>
+          <div className="mt-2 p-0.5 pb-0 px-2 text-[0.6rem] font-semibold bg-white text-black w-fit rounded-sm ml-auto">
+            + load more
+          </div>
         </div>
 
         <video

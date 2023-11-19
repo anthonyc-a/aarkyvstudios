@@ -28,7 +28,7 @@ const Cookies = () => {
     <>
       {show && (
 
-        <div className="cookies   clip bg-[#ffffff8b] grow backdrop-blur md:whitespace-nowrap fixed bottom-3 md:bottom-8 left-2 md:right-8 border hover:border-[#aaa] border-[#000]">
+        <div className="cookies   clip bg-[#fff] grow backdrop-blur md:whitespace-nowrap fixed bottom-3 md:bottom-8 left-2 md:right-8 border hover:border-[#aaa] border-[#000]">
           <div className="w-full h-full p-4 flex items-center justify-between">
             <div className="absolute detail top-0 left-0  bg-[#000]"></div>
             <div className="absolute detail top-0 right-0  bg-[#000]"></div>

@@ -45,11 +45,11 @@ const Systems = () => {
     <>
       <div
         className={`systems text-[0.72rem] z-10  hover:underline ${
-          showLogo ? "hidden hover:text-inherit" : ""
+          showLogo ? " hover:text-inherit" : ""
         }`}
         onClick={handleOpenModal}
       >
-        <span>systems</span>
+        <span>systems +</span>
       </div>
 
       <Modal
@@ -67,6 +67,7 @@ const Systems = () => {
         open={isModalOpen}
         onCancel={handleCloseModal}
         className="clip-lg"
+        footer={null}
         okButtonProps={{ disabled: true, style: { display: "none" } }}
       >
         <div className="leading-[1.35]">

@@ -13,6 +13,7 @@ import Archive from "./components/archive";
 import { VisibilityProvider } from "./context/Visibility";
 import Particles from "./components/particles";
 import ContactButton from "./components/contact";
+import Header from "./components/header";
 
 const images: any = [
   {
@@ -81,19 +82,7 @@ export default function RootLayout({
         <body>
           <div className="overlay"></div>
           <Cursor />
-          <header className="relative w-full p-4 flex justify-between items-center ">
-            <ContactButton />
-            <div className="flex items-center gap-8">
-              <Systems />
-              <ThemeToggle />
-              <div className="menu  text-white bg-transparent font-light w-8 h-6 flex justify-center items-center text-2xl leading-[1] rounded-[1px] border border-black clip-sm">
-                <div className="burger w-10 h-10 flex flex-col gap-[3px] bg-[#222] justify-center items-center">
-                  <span className="w-1/3 h-[1px] bg-white"></span>
-                  <span className="w-1/3 h-[1px] bg-white"></span>
-                </div>
-              </div>
-            </div>
-          </header>
+         <Header/>
           <main>{children}</main>
           <Cookies/>
           <Archive images={images} />
