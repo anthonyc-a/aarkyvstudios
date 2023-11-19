@@ -56,7 +56,7 @@ const Page = () => {
         >
           <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
-          <span className="scroll opacity-60">Scroll down for more </span>
+          <span className="scroll opacity-60">Scroll down</span>
         </a>
         <HeroVideo />
       </div>
