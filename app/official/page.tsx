@@ -95,7 +95,7 @@ const Page = () => {
                 alt="arrow"
                 width={7}
                 height={7}
-                className="absolute bottom-5 right-5"
+                className="absolute top-5 right-5"
               />
             </div>
             <div
@@ -112,7 +112,7 @@ const Page = () => {
                 alt="arrow"
                 width={7}
                 height={7}
-                className="absolute bottom-5 right-5"
+                className="absolute top-5 right-5"
               />
             </div>
             <div
@@ -129,7 +129,7 @@ const Page = () => {
                 alt="arrow"
                 width={7}
                 height={7}
-                className="absolute bottom-5 right-5"
+                className="absolute top-5 right-5"
               />
             </div>
             <div
