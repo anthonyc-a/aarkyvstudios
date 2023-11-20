@@ -41,7 +41,7 @@ const HeroVideo = () => {
           className="flex gap-6 items-center
             absolute bottom-6 right-10 z-50"
         ></div>
-        <div className="absolute bottom-6 left-0 w-full z-50">
+        <div className="absolute bottom-8 left-0 w-full z-50">
           <Swiper spaceBetween={50} className="swiper-container" autoplay={true}>
             <SwiperSlide>
               <div className=" flex gap-8 text-[0.7rem]  w-full items-center px-6 z-50">

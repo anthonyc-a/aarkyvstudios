@@ -52,9 +52,9 @@ const Page = () => {
         </div>
         <a
           href="#clients"
-          className="absolute bottom-4 rounded-2xl  font-[500] text-[0.82rem] lowercase  left-4 flex items-center gap-2 "
+          className="absolute bottom-4 p-1 pb-0.5 px-2 border border-[#999] rounded-2xl  font-[500] text-[0.75rem] lowercase  left-4 flex items-center gap-1.5 "
         >
-          <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
+          <Image src="/scrollArrow.svg" alt="" width={12} height={12} />
 
           <span className="scroll ">Scroll down</span>
         </a>
