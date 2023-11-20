@@ -72,14 +72,14 @@ const HeroVideo = () => {
             <SwiperSlide>
               <div className=" flex gap-6 text-[0.7rem]  w-full items-center px-6 z-50">
                 <Image
-                  src="/img2.png"
+                  src="/img5.png"
                   alt="Aarkyv Studios Logo"
                   width={160}
                   height={160}
                 />
                 <div className="text-white leading-[15px]">
-                  <h3>DOuble</h3>
-                  <p className="text-gray-400">Marketing agency</p>
+                  <h3>Epoch-a</h3>
+                  <p className="text-gray-400">Jewellery store</p>
 
                   <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-2 text-[0.55rem]">
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">

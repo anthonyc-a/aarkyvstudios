@@ -35,8 +35,8 @@ const Page = () => {
             +
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-[36px] md:w-1/2 mb-auto lg:mb-0">
-          <h1 className="text-[1.02rem] tracking-[0px] flex gap-3 items-center">
+        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
+          <h1 className="text-[0.95rem] tracking-[0px] flex gap-3 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
@@ -46,7 +46,7 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[7px] border border-[#333] clip">
+          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[6px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>

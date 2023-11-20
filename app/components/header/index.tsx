@@ -55,7 +55,6 @@ const Header = () => {
         <ContactButton />
       )}
       <div className="flex items-center gap-6">
-        <Systems />
         <div className="menu  text-white font-light w-8 h-8 flex justify-center items-center text-2xl leading-[1] rounded-[6px] bg-[#111] hover:bg-blue-600 clip-sm">
           <div className="burger w-10 h-10 flex flex-col gap-[4px]  justify-center items-center">
             <span className="w-1/3 h-[1px] rounde-sm bg-white"></span>
