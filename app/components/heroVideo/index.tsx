@@ -33,7 +33,7 @@ const HeroVideo = () => {
 
   return (
     <div
-      className="flex relative flex-col justify-center h-[65%] mb-2 items-center md:w-1/2"
+      className="flex relative flex-col justify-center h-[62%] md:h-[65%] mt-2 md:mt-0 mb-2 items-center md:w-1/2"
       ref={containerRef}
     >
       <div className="relative video-container clip-lg h-full ">
@@ -41,7 +41,7 @@ const HeroVideo = () => {
           className="flex gap-6 items-center
             absolute bottom-6 right-10 z-50"
         ></div>
-        <div className="absolute bottom-10 md:bottom-2 left-0 w-full z-50">
+        <div className="absolute bottom-8 md:bottom-2 left-0 w-full z-50">
           <Swiper spaceBetween={50} autoplay={true}>
             <SwiperSlide className="">
               <div className=" flex gap-7 mx-4 md:mx-6 rounded-[8px]  bg-white bg-opacity-30 text-[0.7rem]  w-fit items-center p-2.5 px-6 z-50">
