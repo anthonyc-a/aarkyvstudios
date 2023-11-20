@@ -30,7 +30,7 @@ const Cursor: React.FC<any> = ({
   }, [cursorRef]);
 
   return (
-    <div className="cursor z-[9999]" ref={cursorRef}>
+    <div className="cursor" ref={cursorRef}>
     </div>
   );
 };

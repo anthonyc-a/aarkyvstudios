@@ -412,7 +412,7 @@ h3 {
   transform-origin: center;
   opacity: 0;
   transition: opacity 0.6s ease;
-  z-index: 9999;
+  z-index: 99999;
 
   @media (pointer: coarse) {
     display: none;
@@ -427,14 +427,18 @@ h3 {
 .underline-anim {
 }
 
+.swiper-container {
+  height: 112px !important;
+}
+
 .scroll {
 }
  
 video { 
   position: relative;
   background: #999;
-  filter: brightness(0.45);
-  border-top-right-radius: 12px;
+  filter: brightness(0.25);
+  border-top-right-radius: 16px;
   z-index: -1;
   
 
@@ -614,13 +618,12 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 50%; /* Adjust this value to change the height of the gradient */
+  height: 75%; /* Adjust this value to change the height of the gradient */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), transparent);
   z-index: 15; /* Make sure this is higher than the video but lower than controls */
 }
 
 .cross {
-  display: none;
   color: #666;
   z-index: 10;
   &:nth-child(1) {
@@ -662,8 +665,8 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 650;
-  font-size: 80% !important;
+  font-weight: 600;
+  font-size: 77% !important;
   
   &::before {
     position: absolute;

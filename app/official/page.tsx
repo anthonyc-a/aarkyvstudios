@@ -25,7 +25,7 @@ const Page = () => {
   return (
     <div className="flex flex-col mt-0">
       <div className="header-height mt-[61px]"></div>
-      <div className="flex flex-col-reverse lg:flex-row h-[85vh] p-5 ">
+      <div className="flex flex-col-reverse lg:flex-row lg:items-center h-[85vh]  p-5 ">
         <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
           <div className="absolute cross top-[28.5vh] right-1 w-4 h-4 flex justify-center items-center">
             +
@@ -34,8 +34,8 @@ const Page = () => {
             +
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto">
-          <h1 className="text-[1.03rem] tracking-[0.15px] flex gap-3 items-center">
+        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
+          <h1 className="text-[1.02rem] tracking-[0.15px] flex gap-3 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
@@ -51,9 +51,9 @@ const Page = () => {
         </div>
         <a
           href="#clients"
-          className="absolute bottom-4 font-[450] text-[0.68rem] left-4 flex items-center gap-3 "
+          className="absolute bottom-4 font-[500] text-[0.82rem] lowercase left-4 flex items-center gap-3 "
         >
-          <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
+          <Image src="/scrollArrow.svg" alt="" width={15} height={15} />
 
           <span className="scroll ">Scroll down</span>
         </a>
@@ -69,7 +69,7 @@ const Page = () => {
         3d visualisation <br />
       </div>
 
-      <AccentHeaderOne text="projects" />
+      <AccentHeaderOne text="work" />
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Our Clients</h2>
@@ -152,6 +152,13 @@ const Page = () => {
           <p>Modal Content</p>
         </Modal>
       </div>
+
+      <div id="research" className="p-4 flex flex-col md:flex-row h-1/5">
+        <h2 className="leading-6">Research</h2>
+        <p className="lowercase text-gray-500">
+          some research we&apos;ve carried out
+        </p>
+        </div>
 
       {/* Contact Section */}
       <div className="flex flex-row h-[100vh]">
