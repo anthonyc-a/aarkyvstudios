@@ -74,7 +74,7 @@ const Header = () => {
         <ThemeToggle />
       </div>
       {isMobileNavVisible && ( // Step 3: Conditionally render mobile nav based on visibility state
-        <div className="mobile-nav fixed top-0 left-0 w-full h-[100vh] bg-white bg-opacity-80 backdrop-blur -z-10 flex justify-center items-center">
+        <div className="mobile-nav fixed top-0 left-0 w-full h-[100vh] bg-black bg-opacity-50 backdrop-blur -z-10 flex justify-center items-center">
           <Nav/>
         </div>
       )}

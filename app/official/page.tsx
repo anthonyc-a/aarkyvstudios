@@ -76,7 +76,7 @@ const Page = () => {
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Our Clients</h2>
-        <p className="lowercase leading-4  text-[0.8rem] ">
+        <p className="lowercase leading-4  text-[0.9rem] ">
           some of our most recent clients
         </p>
 
@@ -89,7 +89,7 @@ const Page = () => {
               <Image src="/img2.png" alt="" width={120} height={120} />
               <div className="text-[0.72rem]">
                 <h3>Double</h3>
-                <span className="text-gray-400">Marketing Agency</span>
+                <span className="text-gray-500">Marketing Agency</span>
               </div>
               <Image
                 src="/arrow.svg"
@@ -106,7 +106,7 @@ const Page = () => {
               <Image src="/img3.png" alt="" width={120} height={120} />
               <div className="text-[0.72rem]">
                 <h3>Verve</h3>
-                <span className="text-gray-400">Streaming service</span>
+                <span className="text-gray-500">Streaming service</span>
               </div>
               <Image
                 src="/arrow.svg"
@@ -123,7 +123,7 @@ const Page = () => {
               <Image src="/img1.png" alt="" width={120} height={120} />
               <div className="text-[0.72rem]">
                 <h3>Archvizual</h3>
-                <span className="text-gray-400">3D artist</span>
+                <span className="text-gray-500">3D artist</span>
               </div>
               <Image
                 src="/arrow.svg"
@@ -140,7 +140,7 @@ const Page = () => {
             <Image src="/img4.png" alt="" width={120} height={120} />
             <div className="text-[0.84rem]">
               <h3>Snapi</h3>
-              <span className="text-gray-400">Marketing Tool</span>
+              <span className="text-gray-500">Marketing Tool</span>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ const Page = () => {
 
       <div id="research" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Research</h2>
-        <p className="lowercase text-gray-500">
+        <p className="lowercase leading-4  text-[0.9rem] ">
           some research we&apos;ve carried out
         </p>
         <Research/>
