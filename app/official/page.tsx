@@ -36,7 +36,7 @@ const Page = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
-          <h1 className="text-[0.95rem] tracking-[0px] flex gap-3 items-center">
+          <h1 className="text-[0.95rem] tracking-[0px] flex gap-4 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
@@ -46,7 +46,7 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[5px] border border-[#333] clip">
+          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[6px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>
@@ -54,37 +54,30 @@ const Page = () => {
           href="#clients"
           className="absolute bottom-4 rounded-2xl  font-[500] text-[0.82rem] lowercase  left-4 flex items-center gap-2 "
         >
-          <Image src="/scrollArrow.svg" alt="" width={13} height={13} />
+          <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
           <span className="scroll ">Scroll down</span>
         </a>
         <HeroVideo />
       </div>
 
-      <div className="p-4 text-[0.7rem]">
-        branding — marketing
-        <br />
-        SEO <br />
-        UI/UX Design <br />
-        Web & Mobile Development <br />
-        3d visualisation <br />
-      </div>
+     
 
-      <AccentHeaderOne text="work" />
+      <AccentHeaderOne text="projects" />
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Our Clients</h2>
-        <p className="lowercase text-gray-500">
+        <p className="lowercase leading-4 text-[0.8rem] text-gray-500">
           some of our most recent clients
         </p>
 
-        <div className="flex flex-col justify-center items-center md:w-1/2 mt-4">
+        <div className="flex flex-col justify-center items-center md:w-1/2 mt-2">
           <div className="grid mt-4 md:grid-cols-2 gap-4 w-full">
             <div
               className="border border-black rounded-md clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
-              <Image src="/img2.png" alt="" width={150} height={150} />
+              <Image src="/img2.png" alt="" width={120} height={120} />
               <div className="text-[0.72rem]">
                 <h3>Double</h3>
                 <span className="text-gray-400">Marketing Agency</span>
@@ -101,7 +94,7 @@ const Page = () => {
               className="border border-black rounded-md clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
-              <Image src="/img3.png" alt="" width={150} height={150} />
+              <Image src="/img3.png" alt="" width={120} height={120} />
               <div className="text-[0.72rem]">
                 <h3>Verve</h3>
                 <span className="text-gray-400">Streaming service</span>
@@ -118,7 +111,7 @@ const Page = () => {
               className="border border-black rounded-md clip flex items-center gap-6 p-4 cursor-pointer md:w-1/2 w-full"
               onClick={showModal}
             >
-              <Image src="/img1.png" alt="" width={150} height={150} />
+              <Image src="/img1.png" alt="" width={120} height={120} />
               <div className="text-[0.72rem]">
                 <h3>Archvizual</h3>
                 <span className="text-gray-400">3D artist</span>
@@ -135,7 +128,7 @@ const Page = () => {
             className="border border-black rounded-md clip flex items-center gap-6 p-3 cursor-pointer md:w-1/2 w-full"
             onClick={showModal}
           >
-            <Image src="/img4.png" alt="" width={150} height={150} />
+            <Image src="/img4.png" alt="" width={120} height={120} />
             <div className="text-[0.84rem]">
               <h3>Snapi</h3>
               <span className="text-gray-400">Marketing Tool</span>
@@ -152,6 +145,15 @@ const Page = () => {
         >
           <p>Modal Content</p>
         </Modal>
+      </div>
+
+      <div className="p-4 text-[0.7rem]">
+        branding — marketing
+        <br />
+        SEO <br />
+        UI/UX Design <br />
+        Web & Mobile Development <br />
+        3d visualisation <br />
       </div>
 
       <div id="research" className="p-4 flex flex-col md:flex-row h-1/5">

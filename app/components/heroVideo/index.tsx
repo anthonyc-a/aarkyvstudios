@@ -44,18 +44,22 @@ const HeroVideo = () => {
         <div className="absolute bottom-6 left-0 w-full z-50">
           <Swiper spaceBetween={50} className="swiper-container" autoplay={true}>
             <SwiperSlide>
-              <div className=" flex gap-6 text-[0.7rem]  w-full items-center px-6 z-50">
+              <div className=" flex gap-8 text-[0.7rem]  w-full items-center px-6 z-50">
                 <Image
                   src="/img2.png"
                   alt="Aarkyv Studios Logo"
                   width={160}
                   height={160}
+                  className="float"
                 />
                 <div className="text-white leading-[15px] tracking-[0.2px]">
                   <h3 className="font-[500]">DOuble</h3>
                   <p className="text-gray-400">Marketing agency</p>
 
-                  <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-1 text-[0.55rem]">
+                  <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-2 text-[0.55rem]">
+                  <span className="tag flex items-center gap-1 p-1 px-2 bg-white text-black rounded-xl">
+                      view <Image src="/arrow.svg" alt="" width={5} height={5} />
+                    </span>
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       ui/ux
                     </span>
@@ -65,17 +69,19 @@ const HeroVideo = () => {
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       consultancy
                     </span>
+                  
                   </div>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className=" flex gap-6 text-[0.7rem]  w-full items-center px-6 z-50">
+              <div className=" flex gap-8 text-[0.7rem]  w-full items-center px-6 z-50">
                 <Image
                   src="/img5.png"
                   alt="Aarkyv Studios Logo"
                   width={160}
                   height={160}
+                  className="float"
                 />
                 <div className="text-white leading-[15px]">
                   <h3>Epoch-a</h3>
@@ -86,10 +92,10 @@ const HeroVideo = () => {
                       ui/ux
                     </span>
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
-                      dev
+                      marketing
                     </span>
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
-                      consultancy
+                      concept
                     </span>
                   </div>
                 </div>
@@ -98,12 +104,12 @@ const HeroVideo = () => {
           </Swiper>
         </div>
 
-        <div className="absolute top-10 flex justify-end items-center left-0 w-16 p-2.5 pr-4 bg-white rounded-r-full bg-opacity-30 z-50">
+        <div className="absolute top-16 flex justify-end items-center left-0 w-16 p-2.5 pr-4 bg-white rounded-r-full bg-opacity-30 z-50">
           <Image
             src="/globe.svg"
             alt="Aarkyv Studios Logo"
-            width={20}
-            height={20}
+            width={22}
+            height={22}
           />
         </div>
 
