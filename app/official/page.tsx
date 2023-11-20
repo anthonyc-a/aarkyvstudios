@@ -46,7 +46,7 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
+          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[7px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>
@@ -67,7 +67,7 @@ const Page = () => {
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Our Clients</h2>
-        <p className="lowercase leading-4 text-[0.8rem] text-gray-500">
+        <p className="lowercase leading-4 font-[500] text-[0.8rem] text-[#666]">
           some of our most recent clients
         </p>
 
