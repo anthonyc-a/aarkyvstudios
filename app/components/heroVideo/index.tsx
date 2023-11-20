@@ -160,19 +160,18 @@ const HeroVideo = () => {
           <ul className=" text-[92%] w-[190px]">
             <li className="p-0.5 border-b border-gray-300 border-opacity-60">
               <a href="#">
-                <span className="  text-white">double site update</span> — Nov / &apos;23
+                <span className="  text-white">double site update</span> — [Nov / &apos;23]
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-300 border-opacity-60">
               <a href="#">
-                <span className=" text-white">available for work </span>— oct /
-                &apos;23
+                <span className=" text-white">available for work </span>— [oct /&apos;23]
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-300 border-opacity-60">
               <a href="#">
-                <span className="  text-white">artfair website </span>— aug /
-                &apos;23
+                <span className="  text-white">artfair website </span>— [aug /
+                &apos;23]
               </a>
             </li>
           </ul>

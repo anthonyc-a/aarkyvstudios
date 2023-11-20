@@ -61,6 +61,15 @@ const Page = () => {
         <HeroVideo />
       </div>
 
+      <div className="p-4 text-[0.7rem]">
+        branding — marketing
+        <br />
+        SEO <br />
+        UI/UX Design <br />
+        Web & Mobile Development <br />
+        3d visualisation <br />
+      </div>
+
      
 
       <AccentHeaderOne text="projects" />
@@ -147,14 +156,7 @@ const Page = () => {
         </Modal>
       </div>
 
-      <div className="p-4 text-[0.7rem]">
-        branding — marketing
-        <br />
-        SEO <br />
-        UI/UX Design <br />
-        Web & Mobile Development <br />
-        3d visualisation <br />
-      </div>
+     
 
       <div id="research" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Research</h2>
