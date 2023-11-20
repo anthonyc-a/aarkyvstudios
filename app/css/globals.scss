@@ -624,6 +624,7 @@ input {
 }
 
 .cross {
+  display: none;
   color: #666;
   z-index: 10;
   &:nth-child(1) {
