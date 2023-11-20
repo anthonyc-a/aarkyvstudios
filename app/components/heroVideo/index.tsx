@@ -55,7 +55,7 @@ const HeroVideo = () => {
                   <h3 className="font-[500]">DOuble</h3>
                   <p className="text-gray-400">Marketing agency</p>
 
-                  <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-2 text-[0.55rem]">
+                  <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-1 text-[0.55rem]">
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       ui/ux
                     </span>
@@ -79,7 +79,7 @@ const HeroVideo = () => {
                 />
                 <div className="text-white leading-[15px]">
                   <h3>Epoch-a</h3>
-                  <p className="text-gray-400">Jewellery store</p>
+                  <p className="text-gray-400">E-comemrce</p>
 
                   <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-2 text-[0.55rem]">
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">

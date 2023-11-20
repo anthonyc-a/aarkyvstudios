@@ -46,15 +46,15 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[6px] border border-[#333] clip">
+          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[5px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>
         <a
           href="#clients"
-          className="absolute bottom-4 font-[500] text-[0.82rem] lowercase left-4 flex items-center gap-3 "
+          className="absolute bottom-4 rounded-2xl  font-[500] text-[0.82rem] lowercase  left-4 flex items-center gap-2 "
         >
-          <Image src="/scrollArrow.svg" alt="" width={15} height={15} />
+          <Image src="/scrollArrow.svg" alt="" width={13} height={13} />
 
           <span className="scroll ">Scroll down</span>
         </a>

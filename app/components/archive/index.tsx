@@ -51,21 +51,24 @@ const Archive: React.FC<GridItemButtonProps> = ({ images }: any) => {
         width={800}
         style={{ borderRadius: "2px", zIndex: 10000 }}
       >
-        <h3 className="text-lg font-bold">projects</h3>
         <div className="flex flex-col gap-2 h-[340px] overflow-scroll">
       
-          <div className="pb-8 w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
-            <Image src={"/img1.png"} alt="" width={500} height={500} />
+          <div className="w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
+            <Image src={"/bali.png"} alt="" width={500} height={500} className="w-full h-full object-cover brightness-50" />
           </div>
-          <div className="pb-8 w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
-            <Image src={"/img1.png"} alt="" width={500} height={500} />
+          <div className="w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
+            <Image src={"/bali.png"} alt="" width={500} height={500} className="w-full h-full object-cover brightness-50" />
           </div>
-          <div className="pb-8 w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
-            <Image src={"/img1.png"} alt="" width={500} height={500} />
+          <div className="w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
+            <Image src={"/bali.png"} alt="" width={500} height={500} className="w-full h-full object-cover brightness-50" />
           </div>
-          <div className="pb-8 w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
-            <Image src={"/img1.png"} alt="" width={500} height={500} />
+          <div className="w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
+            <Image src={"/bali.png"} alt="" width={500} height={500} className="w-full h-full object-cover brightness-50" />
           </div>
+          <div className="w-full min-h-[100px] overflow-hidden rounded-lg bg-blue-500">
+            <Image src={"/bali.png"} alt="" width={500} height={500} className="w-full h-full object-cover brightness-50" />
+          </div>
+
   
         </div>
       </Modal>

@@ -431,6 +431,7 @@ h3 {
 }
 
 .scroll {
+  text-transform: none;
 }
  
 video { 
@@ -665,7 +666,7 @@ button {
 
 .systems {
   position: relative;
-  font-weight: 600;
+  font-weight: 650;
   font-size: 77% !important;
   
   &::before {

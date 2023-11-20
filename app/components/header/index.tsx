@@ -6,11 +6,13 @@ import Systems from "../systems";
 import ThemeToggle from "../theme";
 import Image from "next/image";
 import { gsap } from "gsap";
+import Nav from "../nav";
 
 const Header = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isScrolledPast100vh, setIsScrolledPast100vh] = useState(false);
+  const [isMobileNavVisible, setIsMobileNavVisible] = useState(false); // Step 1: Add state variable for mobile nav visibility
   const logoRef = useRef(null);
 
   useEffect(() => {
@@ -35,6 +37,10 @@ const Header = () => {
     gsap.from(logoRef.current, { opacity: 0, duration: 1, delay: 0.5 });
   }, []);
 
+  const toggleMobileNav = () => {
+    setIsMobileNavVisible(!isMobileNavVisible); // Step 2: Toggle mobile nav visibility
+  };
+
   return (
     <header
       className={`fixed bg-white top-0 left-0 z-[9999] w-full p-4 flex justify-between items-center transition-transform duration-200 ${
@@ -56,7 +62,10 @@ const Header = () => {
       )}
       <div className="flex items-center gap-6">
         <Systems />
-        <div className="menu  text-white font-light w-8 h-8 flex justify-center items-center text-2xl leading-[1] rounded-[6px] bg-[#111] hover:bg-blue-600 clip-sm">
+        <div
+          className="menu  text-white font-light w-8 h-8 flex justify-center items-center text-2xl leading-[1] rounded-[6px] bg-[#111] hover:bg-blue-500 clip-sm"
+          onClick={toggleMobileNav} // Step 3: Add onClick event handler to toggle mobile nav
+        >
           <div className="burger w-10 h-10 flex flex-col gap-[4px]  justify-center items-center">
             <span className="w-1/3 h-[1px] rounde-sm bg-white"></span>
             <span className="w-1/3 h-[1px] rounded-sm bg-white"></span>
@@ -64,6 +73,11 @@ const Header = () => {
         </div>
         <ThemeToggle />
       </div>
+      {isMobileNavVisible && ( // Step 3: Conditionally render mobile nav based on visibility state
+        <div className="mobile-nav fixed top-0 left-0 w-full h-[100vh] bg-white bg-opacity-80 backdrop-blur -z-10 flex justify-center items-center">
+          <Nav/>
+        </div>
+      )}
     </header>
   );
 };

@@ -34,7 +34,7 @@ const Nav = () => {
         <ul
           className={`${
             styles.nav
-          } text-[0.65rem] 3xl:text-[0.75rem] top-[8rem] md:top-[13rem] left-6 md:left-[4rem] flex flex-col gap-y-6 ${
+          } text-[0.65rem] 3xl:text-[0.75rem] top-[8rem] md:top-[13rem] left-12 md:left-[4rem] flex flex-col gap-y-6 ${
             initialAnimation ? styles.initialAnimation : ""
           }`}
         >
