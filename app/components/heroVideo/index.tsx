@@ -33,7 +33,7 @@ const HeroVideo = () => {
 
   return (
     <div
-      className="flex relative flex-col justify-center h-[68%] mb-2 items-center md:w-1/2"
+      className="flex relative flex-col justify-center h-[65%] mb-2 items-center md:w-1/2"
       ref={containerRef}
     >
       <div className="relative video-container clip-lg h-full ">
@@ -41,38 +41,34 @@ const HeroVideo = () => {
           className="flex gap-6 items-center
             absolute bottom-6 right-10 z-50"
         ></div>
-        <div className="absolute bottom-8 left-0 w-full z-50">
-          <Swiper spaceBetween={50} className="swiper-container" autoplay={true}>
-            <SwiperSlide>
-              <div className=" flex gap-6 text-[0.7rem]  w-full items-center px-6 z-50">
+        <div className="absolute bottom-10 md:bottom-2 left-0 w-full z-50">
+          <Swiper spaceBetween={50} autoplay={true}>
+            <SwiperSlide className="">
+              <div className=" flex gap-7 mx-4 md:mx-6 rounded-[8px]  bg-white bg-opacity-30 text-[0.7rem]  w-fit items-center p-2.5 px-6 z-50">
                 <Image
                   src="/img2.png"
                   alt="Aarkyv Studios Logo"
                   width={160}
                   height={160}
-                  className="float"
+                  className="float w-[160px] md:w-[180px]"
                 />
                 <div className="text-white leading-[15px] tracking-[0.2px]">
                   <h3 className="font-[500]">DOuble</h3>
                   <p className="text-gray-400">Marketing agency</p>
 
-                  <div className="tag-contain w-full gap-1.5 font-[500] flex flex-wrap mt-2 text-[0.55rem]">
+                  <div className="tag-contain w-fit lg:w-2/3 gap-1.5 font-[500] flex flex-wrap mt-2 text-[0.55rem]">
                   <span className="tag flex items-center gap-1 p-1 px-2 bg-white text-black rounded-xl">
-                      view site <Image src="/arrow.svg" alt="" width={5} height={5} />
+                      visit <Image src="/arrow.svg" alt="" width={5} height={5} />
                     </span>
-                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                    <span className="tag p-1 px-2 bg-white bg-opacity-30 rounded-xl">
                       ui/ux
                     </span>
-                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                    <span className="tag p-1 px-2 bg-white bg-opacity-30 rounded-xl">
                       dev
                     </span>
-                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                    <span className="tag p-1 px-2 bg-white bg-opacity-30 rounded-xl">
                       consultancy
                     </span>
-                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
-                      2023
-                    </span>
-                  
                   </div>
                 </div>
               </div>
@@ -144,12 +140,13 @@ const HeroVideo = () => {
           </Swiper>
         </div>
 
-        <div className="absolute top-12 flex justify-end items-center left-0 w-16 p-2.5 pr-4 bg-white rounded-r-full bg-opacity-30 z-50">
+        <div className="absolute top-10 flex justify-end items-center left-0 w-16 p-2.5 pr-4 bg-white rounded-r-full bg-opacity-30 z-50">
           <Image
             src="/globe.svg"
             alt="Aarkyv Studios Logo"
             width={20}
             height={20}
+            className="w-[22px] h-[22px]"
           />
         </div>
 

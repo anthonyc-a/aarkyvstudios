@@ -25,17 +25,16 @@ const Page = () => {
 
   return (
     <div className="flex flex-col mt-0">
-      <div className="header-height mt-[61px]"></div>
-      <div className="flex flex-col-reverse lg:flex-row lg:items-center h-[85vh]  p-5 pt-1.5 ">
+      <div className="flex flex-col-reverse pt-[67px] md:pt-0 md:flex-row md:items-center h-[100vh]  p-5 ">
         <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
-          <div className="absolute cross top-[28.5vh] right-1 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross top-[28.5vh] right-2 md:right-[unset] md:left:0 w-4 h-4 flex justify-center items-center">
             +
           </div>
-          <div className="absolute cross bottom-0 right-2 w-4 h-4 flex justify-center items-center">
+          <div className="absolute cross bottom-0 right-2 md:right-[unset] md:left:0 w-4 h-4 flex justify-center items-center">
             +
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
+        <div className="flex flex-col justify-center pt-[32px] md:pt-0 md:ml-20 md:translate-x-[15%] md:w-1/2 mb-auto md:mb-0">
           <h1 className="text-[0.99rem] tracking-[0px] flex gap-4 items-center">
             <Image
               src={"/giflog.gif"}

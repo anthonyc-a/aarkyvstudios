@@ -43,7 +43,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed bg-white top-0 left-0 z-[9999] w-full p-4 flex justify-between items-center transition-transform duration-200 ${
+      className={`fixed  top-0 left-1/2 -translate-x-1/2 z-[9999] w-full max-w-[1280px] p-4 flex justify-between items-center transition-transform duration-200 ${
         isHeaderVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -52,18 +52,24 @@ const Header = () => {
           <Image
             src={"/giflog.gif"}
             alt="AARKYV STUDIOS logo"
-            width={32}
-            height={32}
+            width={28}
+            height={28}
             className="invert"
           />
         </div>
       ) : (
         <ContactButton />
       )}
-      <div className="flex items-center gap-6">
+      <ul className="hidden md:flex gap-8 items-center font-medium text-[0.68rem]">
+        <li>home</li>
+        <li>clients</li>
+        <li>research</li>
+        <li>contact</li>
+      </ul>
+      <div className="flex items-center gap-6 md:gap-8">
         <Systems />
         <div
-          className="menu  text-white font-light w-8 h-8 flex justify-center items-center text-2xl leading-[1] rounded-[6px] bg-[#111] hover:bg-blue-500 clip-sm"
+          className="menu md:hidden  text-white font-light w-8 h-8 flex justify-center items-center text-2xl leading-[1] rounded-[6px] bg-[#111] hover:bg-blue-500 clip-sm"
           onClick={toggleMobileNav} // Step 3: Add onClick event handler to toggle mobile nav
         >
           <div className="burger w-10 h-10 flex flex-col gap-[4px]  justify-center items-center">
