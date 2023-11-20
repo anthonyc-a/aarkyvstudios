@@ -58,7 +58,7 @@ const HeroVideo = () => {
 
                   <div className="tag-contain w-full gap-1.5 font-[500] flex flex-wrap mt-2 text-[0.55rem]">
                   <span className="tag flex items-center gap-1 p-1 px-2 bg-white text-black rounded-xl">
-                      view  <Image src="/arrow.svg" alt="" width={5} height={5} />
+                      view site <Image src="/arrow.svg" alt="" width={5} height={5} />
                     </span>
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       ui/ux
@@ -144,7 +144,7 @@ const HeroVideo = () => {
           </Swiper>
         </div>
 
-        <div className="absolute top-16 flex justify-end items-center left-0 w-16 p-2.5 pr-4 bg-white rounded-r-full bg-opacity-30 z-50">
+        <div className="absolute top-12 flex justify-end items-center left-0 w-16 p-2.5 pr-4 bg-white rounded-r-full bg-opacity-30 z-50">
           <Image
             src="/globe.svg"
             alt="Aarkyv Studios Logo"
