@@ -49,7 +49,7 @@ const Systems = () => {
         }`}
         onClick={handleOpenModal}
       >
-        <span>available</span>
+        <span>status</span>
       </div>
 
       <Modal

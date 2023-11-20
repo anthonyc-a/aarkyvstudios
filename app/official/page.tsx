@@ -36,7 +36,7 @@ const Page = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
-          <h1 className="text-[0.99rem] tracking-[0px] flex gap-4 items-center">
+          <h1 className="text-[0.99rem] tracking-[0.2px] flex gap-4 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
@@ -67,7 +67,7 @@ const Page = () => {
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Our Clients</h2>
-        <p className="lowercase leading-4 font-[500] text-[0.8rem] text-[#666]">
+        <p className="lowercase leading-4  text-[0.8rem] ">
           some of our most recent clients
         </p>
 
