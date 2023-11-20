@@ -148,8 +148,8 @@ const HeroVideo = () => {
           <Image
             src="/globe.svg"
             alt="Aarkyv Studios Logo"
-            width={22}
-            height={22}
+            width={20}
+            height={20}
           />
         </div>
 
