@@ -41,16 +41,16 @@ const HeroVideo = () => {
           className="flex gap-6 items-center
             absolute bottom-6 right-10 z-50"
         ></div>
-        <div className="absolute bottom-8 md:bottom-2 left-0 w-full z-50">
+        <div className="absolute bottom-6 md:bottom-2 left-0 w-full z-50">
           <Swiper spaceBetween={50} autoplay={true}>
             <SwiperSlide className="">
-              <div className=" flex gap-7 mx-4 md:mx-6 rounded-[8px]  bg-white bg-opacity-30 text-[0.7rem]  w-fit items-center p-2.5 px-6 z-50">
+              <div className=" flex gap-7 mx-6 md:mx-6 rounded-[8px]  bg-white bg-opacity-30 text-[0.7rem]  w-fit items-center p-2.5 px-6 z-50">
                 <Image
                   src="/img2.png"
                   alt="Aarkyv Studios Logo"
                   width={160}
                   height={160}
-                  className="float w-[160px] md:w-[180px]"
+                  className="float w-[140px] md:w-[180px]"
                 />
                 <div className="text-white leading-[15px] tracking-[0.2px]">
                   <h3 className="font-[500]">DOuble</h3>
