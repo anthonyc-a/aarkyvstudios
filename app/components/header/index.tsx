@@ -60,7 +60,7 @@ const Header = () => {
       ) : (
         <ContactButton />
       )}
-      <ul className="hidden md:flex gap-8 items-center font-medium text-[0.68rem]">
+      <ul className="hidden md:flex lowercase gap-8 items-center text-[0.85rem]">
         <li>home</li>
         <li>clients</li>
         <li>research</li>
