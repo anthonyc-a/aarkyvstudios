@@ -36,7 +36,7 @@ const Page = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
-          <h1 className="text-[0.99rem] tracking-[0.2px] flex gap-4 items-center">
+          <h1 className="text-[0.99rem] tracking-[0px] flex gap-4 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
@@ -61,7 +61,7 @@ const Page = () => {
         <HeroVideo />
       </div>
 
-      <div className="p-4 text-[0.7rem]">
+      <div className="p-4 font-[500] text-[0.7rem]">
         branding — marketing
         <br />
         SEO <br />
@@ -72,12 +72,12 @@ const Page = () => {
 
      
 
-      <AccentHeaderOne text="projects" />
+      <AccentHeaderOne text="work" />
 
       <div id="clients" className="p-4 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Our Clients</h2>
-        <p className="lowercase leading-4  text-[0.9rem] ">
-          some of our most recent clients
+        <p className="lowercase leading-5 text-[#666] text-[0.85rem] ">
+          some of our most recent clients:
         </p>
 
         <div className="flex flex-col justify-center items-center md:w-1/2 mt-2">
@@ -158,17 +158,21 @@ const Page = () => {
 
      
 
-      <div id="research" className="p-4 flex flex-col md:flex-row h-1/5">
+      <div id="research" className="p-4 mt-10 flex flex-col md:flex-row h-1/5">
         <h2 className="leading-6">Research</h2>
-        <p className="lowercase leading-4  text-[0.9rem] ">
-          some research we&apos;ve carried out
+        <p className="lowercase leading-5 text-[#666]  text-[0.85rem] ">
+          some research we&apos;ve carried out:
         </p>
         <Research/>
         </div>
 
       {/* Contact Section */}
-      <div className="flex flex-row h-[100vh]">
-        <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="p-5">
+        <h2 className="leading-6">Get in touch</h2>
+        <p className="lowercase leading-5 text-[#666] text-[0.85rem] ">
+          some of our most recent clients:
+        </p>
+        <div className="flex mt-6 flex-col justify-center items-center w-1/2">
           <form>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" required />

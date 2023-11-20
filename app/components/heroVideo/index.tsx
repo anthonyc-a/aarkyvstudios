@@ -92,7 +92,7 @@ const HeroVideo = () => {
 
                   <div className="tag-contain w-full gap-1.5 font-[500] flex flex-wrap mt-2 text-[0.55rem]">
                   <span className="tag flex items-center gap-1 p-1 px-2 bg-white text-black rounded-xl">
-                      view  <Image src="/arrow.svg" alt="" width={5} height={5} />
+                      view site  <Image src="/arrow.svg" alt="" width={5} height={5} />
                     </span>
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       ui/ux
@@ -176,7 +176,7 @@ const HeroVideo = () => {
             </li>
           </ul>
           <div className="mt-2 p-1 pb-0.5 px-3 text-[90%] font-semibold bg-white text-black w-fit rounded-full ml-auto">
-            +
+            + more
           </div>
         </div>
 

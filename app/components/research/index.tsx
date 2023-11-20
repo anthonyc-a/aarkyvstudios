@@ -50,12 +50,12 @@ const Research = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="mt-10 flex flex-col-reverse lg:flex-row gap-20">
-      <div className="grid w-full max-w-[800px] max-h-[300px] relative grid-cols-1 gap-5 text-[#222]">
+    <div className="my-6 flex flex-col-reverse lg:flex-row gap-8">
+      <div className="grid w-full max-w-[800px]  relative grid-cols-1 gap-4 text-[#222]">
         {gridItems.map((item: any, index: any) => (
           <div
             key={index}
-            className={`bg-[#e9e9e9] research click hover:brightness-75 relative p-4 flex items-center gap-8`}
+            className={`border border-black rounded-md clip research click hover:brightness-75 relative p-2 flex items-center gap-8`}
             onClick={handleOpenModal}
           >
             <div className="relative flex justify-between items-center w-full gap-10 p-2">
@@ -64,9 +64,9 @@ const Research = () => {
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    width={36}
-                    height={36}
-                    className="border border-gray-300 rounded-md"
+                    width={28}
+                    height={28}
+                    className="rounded-md "
                   />
                 </div>
                 <div>
@@ -98,16 +98,16 @@ const Research = () => {
           <p>Some more content here...</p>
         </Modal>
       )}
-      <div className="w-full h-full clip overflow-hidden relative">
+      <div className="w-full h-full clip-lg rounded-xl overflow-hidden relative">
         <Image
           src="/bali.png"
           alt="blok"
-          className=" w-full object-cover"
+          className=" w-full object-cover brightness-75"
         />
         <div className="absolute bottom-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
         <div className="absolute bottom-0 w-full p-6 text-white">
           <h3 className="text-[16px] font-bold mb-[2px]">Medewi beach, Bali</h3>
-          <p className="text-[#999] text-[0.72rem]">3D Visualisation with midjourney</p>
+          <p className="text-[#999] text-[0.72rem]">Blok studios Visualisation</p>
         </div>
       </div>
     </div>
