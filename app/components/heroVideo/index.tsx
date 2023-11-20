@@ -58,7 +58,7 @@ const HeroVideo = () => {
 
                   <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-2 text-[0.55rem]">
                   <span className="tag flex items-center gap-1 p-1 px-2 bg-white text-black rounded-xl">
-                      view <Image src="/arrow.svg" alt="" width={5} height={5} />
+                      view website <Image src="/arrow.svg" alt="" width={5} height={5} />
                     </span>
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       ui/ux
@@ -68,6 +68,37 @@ const HeroVideo = () => {
                     </span>
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       consultancy
+                    </span>
+                  
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className=" flex gap-8 text-[0.7rem]  w-full items-center px-6 z-50">
+                <Image
+                  src="/img1.png"
+                  alt="Aarkyv Studios Logo"
+                  width={160}
+                  height={160}
+                  className="float"
+                />
+                <div className="text-white leading-[15px] tracking-[0.2px]">
+                  <h3 className="font-[500]">Archvizual</h3>
+                  <p className="text-gray-400">Architecture studio</p>
+
+                  <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-2 text-[0.55rem]">
+                  <span className="tag flex items-center gap-1 p-1 px-2 bg-white text-black rounded-xl">
+                      view website <Image src="/arrow.svg" alt="" width={5} height={5} />
+                    </span>
+                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                      ui/ux
+                    </span>
+                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                      dev
+                    </span>
+                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                      concept
                     </span>
                   
                   </div>
