@@ -51,8 +51,8 @@ const HeroVideo = () => {
                   width={160}
                   height={160}
                 />
-                <div className="text-white leading-[15px]">
-                  <h3>DOuble</h3>
+                <div className="text-white leading-[15px] tracking-[0.2px]">
+                  <h3 className="font-[500]">DOuble</h3>
                   <p className="text-gray-400">Marketing agency</p>
 
                   <div className="tag-contain w-full gap-1.5 flex flex-wrap mt-2 text-[0.55rem]">

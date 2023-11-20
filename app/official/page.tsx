@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import MarqueeCpt from "../components/marquee";
 import HeroVideo from "../components/heroVideo";
 import AccentHeaderOne from "../components/accent";
+import Research from "../components/research";
 
 const Page = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -34,18 +35,18 @@ const Page = () => {
             +
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
-          <h1 className="text-[1.02rem] tracking-[0.15px] flex gap-3 items-center">
+        <div className="flex flex-col justify-center pt-[36px] md:w-1/2 mb-auto lg:mb-0">
+          <h1 className="text-[1.02rem] tracking-[0px] flex gap-3 items-center">
             <Image
               src={"/giflog.gif"}
               alt="AARKYV STUDIOS logo"
-              width={24}
-              height={24}
+              width={23}
+              height={23}
               className="invert"
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
+          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[7px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>
@@ -158,6 +159,7 @@ const Page = () => {
         <p className="lowercase text-gray-500">
           some research we&apos;ve carried out
         </p>
+        <Research/>
         </div>
 
       {/* Contact Section */}

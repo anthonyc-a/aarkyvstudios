@@ -50,7 +50,7 @@ const Research = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="mt-10 flex gap-20">
+    <div className="mt-10 flex flex-col-reverse lg:flex-row gap-20">
       <div className="grid w-full max-w-[800px] max-h-[300px] relative grid-cols-1 gap-5 text-[#222]">
         {gridItems.map((item: any, index: any) => (
           <div
