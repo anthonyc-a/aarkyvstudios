@@ -69,6 +69,9 @@ const HeroVideo = () => {
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       consultancy
                     </span>
+                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                      2023
+                    </span>
                   
                   </div>
                 </div>
@@ -100,6 +103,9 @@ const HeroVideo = () => {
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       concept
                     </span>
+                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                      2021
+                    </span>
                   
                   </div>
                 </div>
@@ -128,6 +134,9 @@ const HeroVideo = () => {
                     <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
                       concept
                     </span>
+                    <span className="tag p-1 px-2 bg-white bg-opacity-50 rounded-xl">
+                      2022
+                    </span>
                   </div>
                 </div>
               </div>
@@ -144,14 +153,14 @@ const HeroVideo = () => {
           />
         </div>
 
-        <div className="absolute rounded-[6px]  text-[0.65rem] bg-white bg-opacity-50 p-2.5 tracking-[0.35px] text-right text-gray-300 top-5 right-4 z-50">
+        <div className="absolute rounded-[8px]  text-[0.65rem] bg-white bg-opacity-30 backdrop-blur p-2.5 tracking-[0.35px] text-right text-gray-300 top-5 right-4 z-50">
           <div className="font-medium border-b text-white border-gray-300 border-opacity-60 pb-0.5">
             recent updates:
           </div>
           <ul className=" text-[92%] w-[190px]">
             <li className="p-0.5 border-b border-gray-300 border-opacity-60">
               <a href="#">
-                <span className="  text-white">blok studios launch</span> — Nov / &apos;23
+                <span className="  text-white">double site update</span> — Nov / &apos;23
               </a>
             </li>
             <li className="p-0.5 border-b border-gray-300 border-opacity-60">

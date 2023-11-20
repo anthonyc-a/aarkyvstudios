@@ -35,7 +35,7 @@ const Page = () => {
             +
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-[28px] md:w-1/2 mb-auto lg:mb-0">
+        <div className="flex flex-col justify-center pt-[32px] md:w-1/2 mb-auto lg:mb-0">
           <h1 className="text-[0.99rem] tracking-[0px] flex gap-4 items-center">
             <Image
               src={"/giflog.gif"}
