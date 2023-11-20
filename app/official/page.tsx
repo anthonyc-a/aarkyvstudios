@@ -26,7 +26,7 @@ const Page = () => {
   return (
     <div className="flex flex-col mt-0">
       <div className="header-height mt-[61px]"></div>
-      <div className="flex flex-col-reverse lg:flex-row lg:items-center h-[85vh]  p-5 ">
+      <div className="flex flex-col-reverse lg:flex-row lg:items-center h-[85vh]  p-5 pt-1.5 ">
         <div className="absolute font-extralight text-[14px] bottom-24 left-[50%] -translate-x-1/2 w-[90%] h-full ">
           <div className="absolute cross top-[28.5vh] right-1 w-4 h-4 flex justify-center items-center">
             +
@@ -46,17 +46,17 @@ const Page = () => {
             />
             Aarkyv Studios
           </h1>
-          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[6px] border border-[#333] clip">
+          <button className="p-1 px-3 rounded-md tracking-[0.2px] w-[240px] text-[0.84rem] font-[480] flex items-center justify-between mt-[8px] border border-[#333] clip">
             Get in touch <Image src="/arrow.svg" alt="" width={7} height={7} />
           </button>
         </div>
         <a
           href="#clients"
-          className="absolute bottom-4 p-1 pb-0.5 px-2 border border-[#999] rounded-2xl  font-[500] text-[0.75rem] lowercase  left-4 flex items-center gap-1.5 "
+          className="absolute bottom-4 p-1 pb-0.5 rounded-2xl  font-[500] text-[0.8rem] lowercase  left-4 flex items-center gap-2 "
         >
-          <Image src="/scrollArrow.svg" alt="" width={12} height={12} />
+          <Image src="/scrollArrow.svg" alt="" width={14} height={14} />
 
-          <span className="scroll ">Scroll down</span>
+          <span className="scroll ">scroll down</span>
         </a>
         <HeroVideo />
       </div>
